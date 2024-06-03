@@ -42,6 +42,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             pageIndex = idx;
           });
         },
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.yellow,
+        unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
