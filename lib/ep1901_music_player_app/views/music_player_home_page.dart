@@ -18,6 +18,24 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               Icons.explore,
             ),
             label: "Discover",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.local_library_outlined,
+            ),
+            label: "Library",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle_outlined,
+            ),
+            label: "Account",
           )
         ],
       ),
