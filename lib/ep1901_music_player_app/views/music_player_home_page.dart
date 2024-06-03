@@ -20,9 +20,16 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.white,
+
                   Colors.black.withOpacity(.4),
+                  Colors.black.withOpacity(.6),
+                  Colors.black.withOpacity(.8),
                   Colors.black,
+                  Colors.black,
+                  Colors.black,
+                  Colors.black,
+                  Colors.black,
+                 
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
