@@ -8,10 +8,36 @@ class MusicPlayerHomePage extends StatefulWidget {
 }
 
 class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+              child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.white,
+                  Colors.black.withOpacity(.4),
+                  Colors.black,
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ))
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
