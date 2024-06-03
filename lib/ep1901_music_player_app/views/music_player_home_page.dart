@@ -37,6 +37,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: pageIndex,
         onTap: (idx) {
           setState(() {
             pageIndex = idx;
