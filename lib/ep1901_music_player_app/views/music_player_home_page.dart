@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicPlayerHomePage extends StatefulWidget {
   const MusicPlayerHomePage({super.key});
 
@@ -11,6 +10,17 @@ class MusicPlayerHomePage extends StatefulWidget {
 class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.explore,
+            ),
+            label: "Discover",
+          )
+        ],
+      ),
+    );
   }
 }
