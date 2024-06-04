@@ -39,6 +39,17 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                 ),
               ],
             ),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Popular Artist",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
           )
         ],
       ),
