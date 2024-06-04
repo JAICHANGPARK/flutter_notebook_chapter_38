@@ -100,7 +100,8 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               )
                             ],
                           ),
-                        ),Gap(12),
+                        ),
+                        Gap(12),
                         Expanded(
                           child: Column(
                             children: [
@@ -164,6 +165,34 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                         height: 82,
                         color: Colors.pink,
                         margin: EdgeInsets.only(bottom: 16),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                              ),
+                            ),
+                            Gap(12),
+                            Expanded(
+                                child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Title"),
+                                Gap(4),
+                                Text("Subtitle"),
+                              ],
+                            )),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.play_arrow,
+                              ),
+                            )
+                          ],
+                        ),
                       );
                     }),
                   )
