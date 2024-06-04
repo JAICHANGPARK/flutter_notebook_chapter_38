@@ -79,8 +79,9 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   Column(
                     children: List.generate(10, (e) {
                       return Container(
-                        height: 64,
+                        height: 82,
                         color: Colors.pink,
+                        margin: EdgeInsets.only(bottom: 16),
                       );
                     }),
                   )
