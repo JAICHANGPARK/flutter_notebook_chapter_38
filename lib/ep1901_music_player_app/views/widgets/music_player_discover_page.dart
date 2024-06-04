@@ -79,8 +79,67 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   ),
                   Gap(8),
                   Container(
-                    height: 200,
+                    height: 180,
                     color: Colors.orange,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: CircleAvatar(
+                                  radius: 64,
+                                ),
+                              ),
+                              Text(
+                                "Title",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),Gap(12),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: CircleAvatar(
+                                  radius: 64,
+                                ),
+                              ),
+                              Text(
+                                "Title",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Gap(12),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: CircleAvatar(
+                                  radius: 64,
+                                ),
+                              ),
+                              Text(
+                                "Title",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
