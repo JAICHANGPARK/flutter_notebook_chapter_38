@@ -40,20 +40,26 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
               ],
             ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Popular Artist",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Popular Artist",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              Container(
-                height: 200,
-                color: Colors.orange,
-              ),
-            ],
+                Gap(8),
+                Container(
+                  height: 200,
+                  color: Colors.orange,
+                ),
+              ],
+            ),
           ),
 
         ],
