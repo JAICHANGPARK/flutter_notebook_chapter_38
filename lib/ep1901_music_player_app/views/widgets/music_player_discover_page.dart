@@ -62,7 +62,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -75,6 +75,14 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   ),
                 ),
                 Gap(8),
+                Column(
+                  children: List.generate(10, (e){
+                    return Container(
+                      height: 64,
+                      color: Colors.pink,
+                    );
+                  }),
+                )
               ],
             ),
           )
