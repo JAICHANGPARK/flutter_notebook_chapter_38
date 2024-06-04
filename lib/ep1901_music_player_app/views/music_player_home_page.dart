@@ -16,24 +16,30 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-              child: Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Colors.black.withOpacity(.4),
-                  Colors.black.withOpacity(.6),
-                  Colors.black.withOpacity(.8),
-                  Colors.black,
-                  Colors.black,
-                  Colors.black,
-                  Colors.black,
-                  Colors.black,
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.black.withOpacity(.4),
+                    Colors.black.withOpacity(.6),
+                    Colors.black.withOpacity(.8),
+                    Colors.black,
+                    Colors.black,
+                    Colors.black,
+                    Colors.black,
+                    Colors.black,
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
               ),
             ),
-          ))
+          ),
+          Positioned.fill(child: IndexedStack(
+            children: [
+              
+            ],
+          ),)
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
