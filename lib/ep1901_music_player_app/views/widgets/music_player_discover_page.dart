@@ -48,9 +48,14 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
+              Container(
+                height: 200,
+                color: Colors.orange,
+              ),
             ],
-          )
+          ),
+
         ],
       ),
     );
