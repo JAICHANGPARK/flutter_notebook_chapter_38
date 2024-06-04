@@ -14,22 +14,30 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Discover",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                  color: Colors.white,
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 16,
+              top: 16,
+              bottom: 16,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Discover",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              Container(
-                height: 200,
-                color: Colors.blue,
-              ),
-            ],
+                Gap(12),
+                Container(
+                  height: 200,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
           )
         ],
       ),
