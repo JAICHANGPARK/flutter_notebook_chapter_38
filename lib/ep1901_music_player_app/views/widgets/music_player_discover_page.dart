@@ -11,11 +11,20 @@ class MusicPlayerDiscoverPage extends StatefulWidget {
 class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-
-      ],
+    return SafeArea(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Discover"),
+          Container(
+            height: 200,
+            color: Colors.blue,
+            
+          ),
+          
+      
+        ],
+      ),
     );
   }
 }
