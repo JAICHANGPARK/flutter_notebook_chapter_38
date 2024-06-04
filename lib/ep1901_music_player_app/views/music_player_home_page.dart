@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1901_music_player_app/views/widgets/music_player_discover_page.dart';
 
 class MusicPlayerHomePage extends StatefulWidget {
   const MusicPlayerHomePage({super.key});
@@ -35,11 +36,14 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               ),
             ),
           ),
-          Positioned.fill(child: IndexedStack(
-            children: [
-              
-            ],
-          ),)
+          Positioned.fill(
+            child: IndexedStack(
+              index: pageIndex,
+              children: [
+                MusicPlayerDiscoverPage(),
+              ],
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
