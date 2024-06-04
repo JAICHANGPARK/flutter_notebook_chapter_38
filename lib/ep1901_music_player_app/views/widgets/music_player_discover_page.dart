@@ -37,6 +37,29 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   Container(
                     height: 200,
                     color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 160,
+                          margin: EdgeInsets.only(right: 16),
+                          color: Colors.orange,
+                          child: Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.green,
+                                  ),
+                                ),
+                              ),
+                              Gap(8),
+                              Text("Title Title Title Title Title Title Title Title")
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
