@@ -41,6 +41,9 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
               index: pageIndex,
               children: [
                 MusicPlayerDiscoverPage(),
+                Container(),
+                Container(),
+                Container(),
               ],
             ),
           )
