@@ -28,7 +28,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   "Discover",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 24,
                     color: Colors.white,
                   ),
                 ),
@@ -49,7 +49,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   "Popular Artist",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: 24,
                     color: Colors.white,
                   ),
                 ),
@@ -61,6 +61,23 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
               ],
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Popular Artist",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    color: Colors.white,
+                  ),
+                ),
+                Gap(8),
+              ],
+            ),
+          )
 
         ],
       ),
