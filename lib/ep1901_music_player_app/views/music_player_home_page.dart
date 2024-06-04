@@ -44,6 +44,7 @@ class _MusicPlayerHomePageState extends State<MusicPlayerHomePage> {
                 Container(),
                 Container(),
                 Container(),
+
               ],
             ),
           )
