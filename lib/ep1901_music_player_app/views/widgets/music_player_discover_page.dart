@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicPlayerDiscoverPage extends StatefulWidget {
   const MusicPlayerDiscoverPage({super.key});
 
@@ -15,14 +14,23 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Discover"),
-          Container(
-            height: 200,
-            color: Colors.blue,
-            
-          ),
-          
-      
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Discover",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+              Container(
+                height: 200,
+                color: Colors.blue,
+              ),
+            ],
+          )
         ],
       ),
     );
