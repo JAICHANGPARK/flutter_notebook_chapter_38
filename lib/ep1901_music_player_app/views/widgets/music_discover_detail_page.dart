@@ -13,20 +13,45 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
     return Stack(
       children: [
         Positioned.fill(
+          bottom: 72,
+          child: Column(
+            children: [
+              Expanded(
+                child: Container(
+                  color: Colors.grey,
+                ),
+              ),
+              Expanded(
+                child: Container(color: Colors.black),
+              ),
+            ],
+          ),
+        ),
+        Positioned.fill(
+          left: 16,
+          right: 16,
+          top: 24,
+          child: SafeArea(
             child: Column(
-          children: [
-            Expanded(
-              child: Container(
-                color: Colors.grey,
-              ),
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.white,
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
             ),
-            Expanded(
-              child: Container(
-                  color:  Colors.black
-              ),
-            ),
-          ],
-        ))
+          ),
+        )
       ],
     );
   }
