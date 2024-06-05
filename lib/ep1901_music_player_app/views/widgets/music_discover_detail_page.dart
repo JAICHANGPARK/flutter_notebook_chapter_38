@@ -18,8 +18,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
             children: [
               Expanded(
                 child: Container(
-                  color: Colors.black,
                   decoration: BoxDecoration(
+                    color: Colors.black,
                     image: DecorationImage(
                       image: NetworkImage(
                         "https://cdn.pixabay.com/photo/2015/08/05/10/31/an-pierle-876094_1280.jpg",
@@ -52,10 +52,31 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                         border: Border.all(
                           color: Colors.grey,
                         ),
+                        color: Colors.grey,
                       ),
                       child: IconButton(
                         icon: Icon(
                           Icons.arrow_back,
+                        ),
+                        color: Colors.white,
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    ),
+                    Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                        color: Colors.grey,
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.more_horiz,
                         ),
                         color: Colors.white,
                         onPressed: () {
