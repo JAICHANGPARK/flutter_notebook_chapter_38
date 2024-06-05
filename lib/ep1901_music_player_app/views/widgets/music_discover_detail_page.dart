@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicDiscoverDetailPage extends StatefulWidget {
   const MusicDiscoverDetailPage({super.key});
@@ -102,45 +103,53 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 24,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Since 2000",
-                            ),
-                            Text(
-                              "Other Direction",
-                              style: TextStyle(
-                                color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 24,
+                        ),
+                        Gap(8),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Since 2000",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
                               ),
-                            ),
-                          ],
+                              Gap(4),
+                              Text(
+                                "Other Direction",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.yellow,
-                        ),
-                        child: Row(
-                          children: [
-                            Text(
-                              "Follow",
-                            ),
-                            Icon(
-                              Icons.add,
-                              size: 14,
-                            )
-                          ],
-                        ),
-                      )
-                    ],
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                          ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "Follow",
+                              ),
+                              Icon(
+                                Icons.add,
+                                size: 14,
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Expanded(
                     child: ListView.builder(
