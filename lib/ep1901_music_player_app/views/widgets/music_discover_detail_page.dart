@@ -11,7 +11,9 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [],
+      children: [
+
+      ],
     );
   }
 }
