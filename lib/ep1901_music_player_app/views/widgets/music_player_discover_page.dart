@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1901_music_player_app/views/widgets/music_discover_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class MusicPlayerDiscoverPage extends StatefulWidget {
@@ -45,10 +46,20 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                           child: Column(
                             children: [
                               Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    showGeneralDialog(
+                                        context: context,
+                                        pageBuilder: (BuildContext context, Animation<double> animation,
+                                            Animation<double> secondaryAnimation) {
+                                          return MusicDiscoverDetailPage();
+                                        });
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                   ),
                                 ),
                               ),
