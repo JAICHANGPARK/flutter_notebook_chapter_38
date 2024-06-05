@@ -49,11 +49,12 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                 child: GestureDetector(
                                   onTap: () {
                                     showGeneralDialog(
-                                        context: context,
-                                        pageBuilder: (BuildContext context, Animation<double> animation,
-                                            Animation<double> secondaryAnimation) {
-                                          return MusicDiscoverDetailPage();
-                                        });
+                                      context: context,
+                                      pageBuilder: (BuildContext context, Animation<double> animation,
+                                          Animation<double> secondaryAnimation) {
+                                        return MusicDiscoverDetailPage();
+                                      },
+                                    );
                                   },
                                   child: Container(
                                     decoration: BoxDecoration(
