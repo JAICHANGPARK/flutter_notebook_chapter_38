@@ -12,7 +12,21 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-
+        Positioned.fill(
+            child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                color: Colors.grey,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                  color:  Colors.black
+              ),
+            ),
+          ],
+        ))
       ],
     );
   }
