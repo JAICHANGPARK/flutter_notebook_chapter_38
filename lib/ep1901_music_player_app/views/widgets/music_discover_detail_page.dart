@@ -45,6 +45,15 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                           color: Colors.white,
                         ),
                       ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.arrow_back,
+                        ),
+                        color: Colors.white,
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
                     )
                   ],
                 )
