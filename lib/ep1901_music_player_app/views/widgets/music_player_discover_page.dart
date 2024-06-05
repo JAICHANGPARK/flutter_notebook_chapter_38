@@ -169,16 +169,13 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                     children: List.generate(10, (e) {
                       return Container(
                         height: 82,
-                        color: Colors.pink,
                         margin: EdgeInsets.only(bottom: 16),
                         child: Row(
                           children: [
                             Container(
                               height: 64,
                               width: 64,
-                              decoration: BoxDecoration(
-                                color: Colors.orange,
-                              ),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(6)),
                             ),
                             Gap(12),
                             Expanded(
@@ -186,9 +183,20 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Title"),
+                                Text(
+                                  "Title",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
                                 Gap(4),
-                                Text("Subtitle"),
+                                Text(
+                                  "Subtitle",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
                               ],
                             )),
                             IconButton(
@@ -196,6 +204,8 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               icon: Icon(
                                 Icons.play_arrow,
                               ),
+                              color: Colors.orange,
+                              iconSize: 25,
                             )
                           ],
                         ),
