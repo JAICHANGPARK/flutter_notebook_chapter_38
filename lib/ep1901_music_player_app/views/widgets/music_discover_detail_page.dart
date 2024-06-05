@@ -8,13 +8,14 @@ class MusicDiscoverDetailPage extends StatefulWidget {
 }
 
 class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
+  int pageIndex = 0;
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Stack(
+    return Scaffold(
+      body: Stack(
         children: [
           Positioned.fill(
-            bottom: 72,
+            
             child: Column(
               children: [
                 Expanded(
@@ -96,6 +97,44 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                 ],
               ),
             ),
+          )
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: pageIndex,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.yellow,
+        unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.explore,
+            ),
+            label: "Discover",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.local_library_outlined,
+            ),
+            label: "Library",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle_outlined,
+            ),
+            label: "Account",
           )
         ],
       ),
