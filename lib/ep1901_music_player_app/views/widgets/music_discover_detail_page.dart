@@ -18,7 +18,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
             children: [
               Expanded(
                 child: Container(
-                  color: Colors.grey,
+                  color: Colors.black,
                 ),
               ),
               Expanded(
@@ -42,7 +42,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Colors.white,
+                          color: Colors.grey,
                         ),
                       ),
                       child: IconButton(
