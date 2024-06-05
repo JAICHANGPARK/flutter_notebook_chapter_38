@@ -9,13 +9,13 @@ class MusicDiscoverDetailPage extends StatefulWidget {
 
 class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Positioned.fill(
-
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -44,6 +44,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
             top: 24,
             child: SafeArea(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,6 +95,24 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                   ),
                   Text(
                     "The Amazing One Band",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 42,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Text("Since 2000"),
+                          Text(
+                            "Other Direction",
+                          ),
+                        ],
+                      ))
+                    ],
                   )
                 ],
               ),
