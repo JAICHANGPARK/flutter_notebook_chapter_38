@@ -99,11 +99,14 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 42,
+                      color: Colors.white,
                     ),
                   ),
                   Row(
                     children: [
-                      CircleAvatar(),
+                      CircleAvatar(
+                        radius: 24,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,6 +116,9 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                             ),
                             Text(
                               "Other Direction",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ],
                         ),
