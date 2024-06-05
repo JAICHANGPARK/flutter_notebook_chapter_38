@@ -151,6 +151,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       ],
                     ),
                   ),
+                  Text("Popular Song"),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {},
