@@ -50,7 +50,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Colors.grey,
+                          color: Colors.blueGrey,
+                          width: 1.5,
                         ),
                         color: Colors.grey,
                       ),
@@ -70,7 +71,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: Colors.grey,
+                          color: Colors.blueGrey,
+                          width: 1.5,
                         ),
                         color: Colors.grey,
                       ),
