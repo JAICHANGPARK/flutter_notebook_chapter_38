@@ -205,7 +205,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                 Icons.play_arrow,
                               ),
                               color: Colors.orange,
-                              iconSize: 25,
+                              iconSize: 32,
                             )
                           ],
                         ),
