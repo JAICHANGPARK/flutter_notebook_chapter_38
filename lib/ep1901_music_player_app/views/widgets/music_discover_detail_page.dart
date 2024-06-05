@@ -19,6 +19,14 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
               Expanded(
                 child: Container(
                   color: Colors.black,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2015/08/05/10/31/an-pierle-876094_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
               ),
               Expanded(
