@@ -93,6 +93,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       ),
                     ],
                   ),
+                  Expanded(child: Container()),
                   Text(
                     "The Amazing One Band",
                     style: TextStyle(
@@ -104,16 +105,42 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                     children: [
                       CircleAvatar(),
                       Expanded(
-                          child: Column(
-                        children: [
-                          Text("Since 2000"),
-                          Text(
-                            "Other Direction",
-                          ),
-                        ],
-                      ))
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Since 2000",
+                            ),
+                            Text(
+                              "Other Direction",
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                        ),
+                        child: Row(
+                          children: [
+                            Text(
+                              "Follow",
+                            ),
+                            Icon(
+                              Icons.add,
+                              size: 14,
+                            )
+                          ],
+                        ),
+                      )
                     ],
-                  )
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {},
+                    ),
+                  ),
                 ],
               ),
             ),
