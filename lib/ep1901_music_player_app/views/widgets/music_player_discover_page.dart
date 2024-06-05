@@ -36,25 +36,30 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   Gap(12),
                   Container(
                     height: 200,
-                    color: Colors.blue,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 160,
                           margin: EdgeInsets.only(right: 16),
-                          color: Colors.orange,
                           child: Column(
                             children: [
                               Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.green,
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
                               ),
                               Gap(8),
-                              Text("Title Title Title Title Title Title Title Title")
+                              Text(
+                                "Title Title Title Title Title Title Title Title",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 12,
+                                ),
+                              )
                             ],
                           ),
                         );
@@ -80,7 +85,6 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                   Gap(8),
                   Container(
                     height: 180,
-                    color: Colors.orange,
                     child: Row(
                       children: [
                         Expanded(
@@ -96,6 +100,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
+                                  fontSize: 16,
                                 ),
                               )
                             ],
