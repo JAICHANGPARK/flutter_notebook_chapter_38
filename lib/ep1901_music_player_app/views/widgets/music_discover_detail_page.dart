@@ -15,8 +15,9 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
       body: Stack(
         children: [
           Positioned.fill(
-            
+
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   child: Container(
