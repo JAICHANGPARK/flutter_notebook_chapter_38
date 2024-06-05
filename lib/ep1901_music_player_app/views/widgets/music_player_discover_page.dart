@@ -150,6 +150,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                 ],
               ),
             ),
+            Gap(8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
