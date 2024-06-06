@@ -135,6 +135,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                           decoration: BoxDecoration(
                             color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(4),
                           ),
                           child: Row(
                             children: [
