@@ -145,6 +145,48 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             decoration: BoxDecoration(
               color: Colors.white,
             ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.favorite_border,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.skip_previous,
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 32,
+
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.skip_next,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.shuffle,
+                      ),
+                    ),
+
+                  ],
+                ),
+                Row(
+                  children: [
+                    
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ],
