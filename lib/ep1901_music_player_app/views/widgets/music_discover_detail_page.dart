@@ -40,9 +40,9 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
             ),
           ),
           Positioned.fill(
-            left: 16,
-            right: 16,
-            top: 24,
+            left: 24,
+            right: 24,
+            top: 32,
             child: SafeArea(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
