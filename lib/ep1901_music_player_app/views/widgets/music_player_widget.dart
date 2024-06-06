@@ -52,7 +52,6 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ),
                 ],
               ),
-
               Gap(32),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -60,7 +59,8 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   children: [
                     Container(
                       padding: EdgeInsets.all(6),
-                      decoration: BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
+                      decoration:
+                          BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -73,7 +73,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                           Expanded(
                             child: Text(
                               "swipe right to reveal the song lyrics, "
-                                  "and do it again to return to position a.",
+                              "and do it again to return to position a.",
                               style: TextStyle(
                                 color: Colors.white,
                               ),
@@ -93,10 +93,15 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ],
                 ),
               ),
-
               SmoothPageIndicator(
                 controller: pageController,
                 count: 2,
+                effect: WormEffect(
+                  dotHeight: 8,
+                  dotWidth: 8,
+                  dotColor: Colors.grey,
+                  activeDotColor: Colors.orange,
+                ),
               ),
               Gap(16),
               Column(
@@ -106,6 +111,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
+                      color: Colors.white,
                     ),
                   ),
                   Gap(8),
@@ -131,7 +137,6 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ],
                 ),
               ),
-
             ],
           ),
         ),
