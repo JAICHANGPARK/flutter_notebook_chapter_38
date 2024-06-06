@@ -59,8 +59,17 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           children: [
             Text(
               "Story of Flutter Development",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
             ),
-            Text("Flutter.dev")
+            Text(
+              "Flutter.dev",
+              style: TextStyle(
+                color: Colors.grey,
+              ),
+            )
           ],
         ),
         Slider(
@@ -71,10 +80,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("1:56"),
-              Text("3:00")
-            ],
+            children: [Text("1:56"), Text("3:00")],
           ),
         )
       ],
