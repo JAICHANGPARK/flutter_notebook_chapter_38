@@ -62,6 +62,17 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             ),
             Text("Flutter.dev")
           ],
+        ),
+        Slider(
+          value: 0,
+          onChanged: (b) {},
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("1:56"),
+            Text("3:00")
+          ],
         )
       ],
     );
