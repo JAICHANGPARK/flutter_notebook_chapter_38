@@ -220,6 +220,8 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16)
                                   ),
+                                  backgroundColor: Colors.black,
+
                                   builder: (context) {
                                     return SizedBox(
                                       height: MediaQuery.of(context).size.height - 120,
