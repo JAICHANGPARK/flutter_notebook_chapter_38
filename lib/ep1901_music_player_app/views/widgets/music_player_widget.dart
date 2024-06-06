@@ -30,6 +30,19 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               ),
             ),
           ],
+        ),
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.grey,
+          ),
+          child: Row(
+            children: [
+              Icon(
+                Icons.info_outline,
+              ),
+              
+            ],
+          ),
         )
       ],
     );
