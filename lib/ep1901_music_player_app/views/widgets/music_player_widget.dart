@@ -10,6 +10,22 @@ class MusicPlayerWidget extends StatefulWidget {
 class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.keyboard_arrow_down,
+              ),
+            ),
+            Expanded(
+              child: Text("Favorite"),
+            ),
+          ],
+        )
+      ],
+    );
   }
 }
