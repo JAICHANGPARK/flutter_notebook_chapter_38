@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_38/ep1901_music_player_app/views/widgets/music_discover_detail_page.dart';
+import 'package:flutter_notebook_chapter_38/ep1901_music_player_app/views/widgets/music_player_widget.dart';
 import 'package:gap/gap.dart';
 
 class MusicPlayerDiscoverPage extends StatefulWidget {
@@ -212,7 +213,14 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               ],
                             )),
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                showModalBottomSheet(
+                                  context: context,
+                                  builder: (context) {
+                                    return MusicPlayerWidget();
+                                  },
+                                );
+                              },
                               icon: const Icon(
                                 Icons.play_arrow,
                               ),
