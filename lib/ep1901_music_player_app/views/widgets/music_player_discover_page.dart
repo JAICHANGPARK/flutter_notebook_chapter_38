@@ -224,7 +224,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
 
                                   builder: (context) {
                                     return SizedBox(
-                                      height: MediaQuery.of(context).size.height - 120,
+                                      height: MediaQuery.of(context).size.height - 72,
                                       child: MusicPlayerWidget(),
                                     );
                                   },
