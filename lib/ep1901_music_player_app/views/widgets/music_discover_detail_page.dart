@@ -151,7 +151,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                         )
                       ],
                     ),
-                  ),
+                  ), Gap(18),
                   Text(
                     "Popular Song",
                     style: TextStyle(
@@ -160,7 +160,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       fontSize: 20,
                     ),
                   ),
-                  
+                  Gap(18),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
