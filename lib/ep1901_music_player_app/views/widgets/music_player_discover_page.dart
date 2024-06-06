@@ -218,12 +218,13 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                   context: context,
                                   isScrollControlled: true,
                                   shape: RoundedRectangleBorder(
-                                    
+                                    borderRadius: BorderRadius.circular(16)
                                   ),
                                   builder: (context) {
                                     return SizedBox(
-                                        height: MediaQuery.of(context).size.height - 120,
-                                        child: MusicPlayerWidget());
+                                      height: MediaQuery.of(context).size.height - 120,
+                                      child: MusicPlayerWidget(),
+                                    );
                                   },
                                 );
                               },
