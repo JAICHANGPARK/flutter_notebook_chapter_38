@@ -132,7 +132,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                           ),
                         ),
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                           decoration: BoxDecoration(
                             color: Colors.yellow,
                             borderRadius: BorderRadius.circular(4),
@@ -145,6 +145,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              Gap(4),
                               Icon(
                                 Icons.add,
                                 size: 14,
