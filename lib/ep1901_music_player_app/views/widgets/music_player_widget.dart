@@ -25,15 +25,26 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     icon: Icon(
                       Icons.keyboard_arrow_down,
                     ),
+                    iconSize: 32,
                   ),
                   Expanded(
-                    child: Center(child: Text("Favorite"),),
+                    child: Center(
+                      child: Text(
+                        "Favorite",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
                   ),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(
                       Icons.more_horiz,
                     ),
+                    iconSize: 32,
                   ),
                 ],
               ),
@@ -49,7 +60,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     Expanded(
                       child: Text(
                         "swipe right to reveal the song lyrics, "
-                            "and do it again to return to position a.",
+                        "and do it again to return to position a.",
                       ),
                     ),
                   ],
@@ -92,7 +103,6 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             ],
           ),
         )
-
       ],
     );
   }
