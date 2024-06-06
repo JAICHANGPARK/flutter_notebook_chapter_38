@@ -162,39 +162,43 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
-                        return Row(
-                          children: [
-                            Container(
-                              height: 64,
-                              width: 64,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            Gap(12),
-                            Expanded(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "Perfect",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.white,
+                              Gap(12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Perfect",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.white,
+                                      ),
                                     ),
-                                  ),
-                                  Text(
-                                    "Real Perfect",
-                                  )
-                                ],
+                                    Text(
+                                      "Real Perfect",
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: Icon(
-                                Icons.favorite_border,
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.favorite_border,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         );
                       },
                     ),
