@@ -26,7 +26,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Discover",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Container(
                     height: 200,
                     child: ListView.builder(
@@ -42,7 +42,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 160,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           child: Column(
                             children: [
                               Expanded(
@@ -52,7 +52,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                       context: context,
                                       pageBuilder: (BuildContext context, Animation<double> animation,
                                           Animation<double> secondaryAnimation) {
-                                        return MusicDiscoverDetailPage();
+                                        return const MusicDiscoverDetailPage();
                                       },
                                     );
                                   },
@@ -64,8 +64,8 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                                   ),
                                 ),
                               ),
-                              Gap(8),
-                              Text(
+                              const Gap(8),
+                              const Text(
                                 "Title Title Title Title Title Title Title Title",
                                 style: TextStyle(
                                   color: Colors.grey,
@@ -86,7 +86,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Popular Artist",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -94,10 +94,10 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Container(
                     height: 180,
-                    child: Row(
+                    child: const Row(
                       children: [
                         Expanded(
                           child: Column(
@@ -162,13 +162,13 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                 ],
               ),
             ),
-            Gap(8),
+            const Gap(8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Popular Artist",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -176,12 +176,12 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                       color: Colors.white,
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Column(
                     children: List.generate(10, (e) {
                       return Container(
                         height: 82,
-                        margin: EdgeInsets.only(bottom: 16),
+                        margin: const EdgeInsets.only(bottom: 16),
                         child: Row(
                           children: [
                             Container(
@@ -189,8 +189,8 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               width: 64,
                               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(6)),
                             ),
-                            Gap(12),
-                            Expanded(
+                            const Gap(12),
+                            const Expanded(
                                 child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -213,7 +213,7 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                             )),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.play_arrow,
                               ),
                               color: Colors.orange,
