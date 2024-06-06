@@ -15,13 +15,15 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
         Row(
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
               icon: Icon(
                 Icons.keyboard_arrow_down,
               ),
             ),
             Expanded(
-              child: Text("Favorite"),
+              child: Center(child: Text("Favorite"),),
             ),
             IconButton(
               onPressed: () {},
@@ -43,7 +45,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               Expanded(
                 child: Text(
                   "swipe right to reveal the song lyrics, "
-                  "and do it again to return to position a.",
+                      "and do it again to return to position a.",
                 ),
               ),
             ],
