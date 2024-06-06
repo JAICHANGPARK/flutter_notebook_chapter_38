@@ -152,10 +152,38 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                       ],
                     ),
                   ),
-                  Text("Popular Song"),
+                  Text(
+                    "Popular Song",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                   Expanded(
                     child: ListView.builder(
-                      itemBuilder: (context, index) {},
+                      itemBuilder: (context, index) {
+                        return Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                            ),
+                            Expanded(
+                                child: Column(
+                              children: [],
+                            )),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.favorite_border,
+                              ),
+                            ),
+                          ],
+                        );
+                      },
                     ),
                   ),
                 ],
