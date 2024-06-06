@@ -141,6 +141,9 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                             children: [
                               Text(
                                 "Follow",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                               Icon(
                                 Icons.add,
@@ -151,7 +154,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                         )
                       ],
                     ),
-                  ), Gap(18),
+                  ),
+                  Gap(18),
                   Text(
                     "Popular Song",
                     style: TextStyle(
