@@ -51,15 +51,18 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               ),
               Gap(24),
               Container(
-                padding: EdgeInsets.all(4),
+                padding: EdgeInsets.all(6),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(.3),
+                  borderRadius: BorderRadius.circular(6)
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Icon(
                       Icons.info_outline,
+                      color: Colors.white,
+                      size: 18,
                     ),
                     Gap(4),
                     Expanded(
