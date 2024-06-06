@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class MusicPlayerWidget extends StatefulWidget {
   const MusicPlayerWidget({super.key});
@@ -9,6 +10,8 @@ class MusicPlayerWidget extends StatefulWidget {
 }
 
 class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
+  PageController pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -52,10 +55,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               Gap(32),
               Container(
                 padding: EdgeInsets.all(6),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(.3),
-                  borderRadius: BorderRadius.circular(6)
-                ),
+                decoration: BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -79,11 +79,17 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               ),
               Gap(24),
               Container(
-                height: 200,
+                height: 280,
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
               ),
+              Gap(12),
+              SmoothPageIndicator(
+                controller: pageController,
+                count: 2,
+              ),
+              Gap(16),
               Column(
                 children: [
                   Text(
@@ -93,6 +99,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                       fontSize: 24,
                     ),
                   ),
+                  Gap(8),
                   Text(
                     "Flutter.dev",
                     style: TextStyle(
