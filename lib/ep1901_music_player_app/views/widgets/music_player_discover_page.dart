@@ -216,8 +216,14 @@ class _MusicPlayerDiscoverPageState extends State<MusicPlayerDiscoverPage> {
                               onPressed: () {
                                 showModalBottomSheet(
                                   context: context,
+                                  isScrollControlled: true,
+                                  shape: RoundedRectangleBorder(
+                                    
+                                  ),
                                   builder: (context) {
-                                    return MusicPlayerWidget();
+                                    return SizedBox(
+                                        height: MediaQuery.of(context).size.height - 120,
+                                        child: MusicPlayerWidget());
                                   },
                                 );
                               },
