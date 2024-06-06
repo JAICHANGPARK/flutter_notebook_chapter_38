@@ -177,6 +177,10 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                 children: [
                                   Text(
                                     "Perfect",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                   Text(
                                     "Real Perfect",
