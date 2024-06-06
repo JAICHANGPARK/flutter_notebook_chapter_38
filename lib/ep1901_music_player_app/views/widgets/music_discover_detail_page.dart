@@ -157,8 +157,10 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 20,
                     ),
                   ),
+                  
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
