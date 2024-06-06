@@ -51,8 +51,9 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               ),
               Gap(24),
               Container(
+                padding: EdgeInsets.all(4),
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color: Colors.white.withOpacity(.3),
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,10 +61,14 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     Icon(
                       Icons.info_outline,
                     ),
+                    Gap(4),
                     Expanded(
                       child: Text(
                         "swipe right to reveal the song lyrics, "
                         "and do it again to return to position a.",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ],
