@@ -23,6 +23,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             Expanded(
               child: Text("Favorite"),
             ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.more_horiz,
+              ),
+            ),
           ],
         )
       ],
