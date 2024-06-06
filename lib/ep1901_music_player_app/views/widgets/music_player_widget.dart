@@ -157,7 +157,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     ),
                     Expanded(child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-    
+
                       children: [
                       IconButton(
                         onPressed: () {},
