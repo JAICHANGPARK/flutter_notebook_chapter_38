@@ -169,8 +169,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                           child: Row(
                             children: [
                               Container(
-                                height: 54,
-                                width: 54,
+                                height: 58,
+                                width: 58,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
@@ -189,6 +189,10 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                     ),
                                     Text(
                                       "Real Perfect",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.grey,
+                                      ),
                                     )
                                   ],
                                 ),
@@ -198,6 +202,7 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                 icon: Icon(
                                   Icons.favorite_border,
                                 ),
+                                color: Colors.white,
                               ),
                             ],
                           ),
