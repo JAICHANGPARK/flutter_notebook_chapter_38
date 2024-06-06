@@ -52,39 +52,48 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ),
                 ],
               ),
+
               Gap(32),
-              Container(
-                padding: EdgeInsets.all(6),
-                decoration: BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
                   children: [
-                    Icon(
-                      Icons.info_outline,
-                      color: Colors.white,
-                      size: 18,
-                    ),
-                    Gap(4),
-                    Expanded(
-                      child: Text(
-                        "swipe right to reveal the song lyrics, "
-                        "and do it again to return to position a.",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                    Container(
+                      padding: EdgeInsets.all(6),
+                      decoration: BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(
+                            Icons.info_outline,
+                            color: Colors.white,
+                            size: 18,
+                          ),
+                          Gap(4),
+                          Expanded(
+                            child: Text(
+                              "swipe right to reveal the song lyrics, "
+                                  "and do it again to return to position a.",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
+                    Gap(24),
+                    Container(
+                      height: 280,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Gap(12),
                   ],
                 ),
               ),
-              Gap(24),
-              Container(
-                height: 280,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-              ),
-              Gap(12),
+
               SmoothPageIndicator(
                 controller: pageController,
                 count: 2,
@@ -116,12 +125,23 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("1:56"), Text("3:00")],
+                  children: [
+                    Text("1:56"),
+                    Text("3:00"),
+                  ],
                 ),
-              )
+              ),
+
             ],
           ),
-        )
+        ),
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+          ),
+        ),
       ],
     );
   }
