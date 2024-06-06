@@ -49,7 +49,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ),
                 ],
               ),
-              Gap(24),
+              Gap(32),
               Container(
                 padding: EdgeInsets.all(6),
                 decoration: BoxDecoration(
