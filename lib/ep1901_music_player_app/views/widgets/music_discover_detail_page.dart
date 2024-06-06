@@ -126,6 +126,8 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                 "Other Direction",
                                 style: TextStyle(
                                   color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
                                 ),
                               ),
                             ],
