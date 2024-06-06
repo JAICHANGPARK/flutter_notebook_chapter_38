@@ -155,34 +155,46 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                         Icons.favorite_border,
                       ),
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.skip_previous,
+                    Expanded(child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+    
+                      children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.skip_previous,
+                        ),
                       ),
-                    ),
-                    CircleAvatar(
-                      radius: 32,
+                      CircleAvatar(
+                        radius: 32,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.skip_next,
+                        ),
+                      ),
 
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.skip_next,
-                      ),
-                    ),
+                    ],),),
+
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
                         Icons.shuffle,
                       ),
                     ),
-
                   ],
                 ),
                 Row(
                   children: [
-                    
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.share),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.download),
+                    ),
                   ],
                 )
               ],
