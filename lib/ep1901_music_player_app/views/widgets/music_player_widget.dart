@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicPlayerWidget extends StatefulWidget {
   const MusicPlayerWidget({super.key});
@@ -48,11 +49,13 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ),
                 ],
               ),
+              Gap(24),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.grey,
                 ),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Icon(
                       Icons.info_outline,
@@ -66,6 +69,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ],
                 ),
               ),
+              Gap(24),
               Container(
                 height: 200,
                 decoration: BoxDecoration(
