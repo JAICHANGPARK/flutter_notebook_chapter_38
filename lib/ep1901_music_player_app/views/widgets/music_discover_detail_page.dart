@@ -171,10 +171,19 @@ class _MusicDiscoverDetailPageState extends State<MusicDiscoverDetailPage> {
                                 color: Colors.white,
                               ),
                             ),
+                            Gap(12),
                             Expanded(
-                                child: Column(
-                              children: [],
-                            )),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Perfect",
+                                  ),
+                                  Text(
+                                    "Real Perfect",
+                                  )
+                                ],
+                              ),
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: Icon(
