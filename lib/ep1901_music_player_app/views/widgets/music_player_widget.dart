@@ -67,12 +67,15 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           value: 0,
           onChanged: (b) {},
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text("1:56"),
-            Text("3:00")
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("1:56"),
+              Text("3:00")
+            ],
+          ),
         )
       ],
     );
