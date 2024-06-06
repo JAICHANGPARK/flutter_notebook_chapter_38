@@ -40,9 +40,28 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               Icon(
                 Icons.info_outline,
               ),
-              
+              Expanded(
+                child: Text(
+                  "swipe right to reveal the song lyrics, "
+                  "and do it again to return to position a.",
+                ),
+              ),
             ],
           ),
+        ),
+        Container(
+          height: 200,
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
+        ),
+        Column(
+          children: [
+            Text(
+              "Story of Flutter Development",
+            ),
+            Text("Flutter.dev")
+          ],
         )
       ],
     );
