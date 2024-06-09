@@ -127,6 +127,8 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
               Slider(
                 value: 0,
                 onChanged: (b) {},
+                activeColor: Colors.white,
+                inactiveColor: Colors.white,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -136,7 +138,9 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     Text("1:56", style: TextStyle(
                       color: Colors.grey,
                     ),),
-                    Text("3:00"),
+                    Text("3:00", style: TextStyle(
+                      color: Colors.grey,
+                    ),),
                   ],
                 ),
               ),
