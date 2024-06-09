@@ -26,12 +26,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.keyboard_arrow_down,
                     ),
                     iconSize: 32,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Favorite",
@@ -45,23 +45,23 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.more_horiz,
                     ),
                     iconSize: 32,
                   ),
                 ],
               ),
-              Gap(32),
+              const Gap(32),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(6),
+                      padding: const EdgeInsets.all(6),
                       decoration:
                           BoxDecoration(color: Colors.white.withOpacity(.3), borderRadius: BorderRadius.circular(6)),
-                      child: Row(
+                      child: const Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Icon(
@@ -82,29 +82,29 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                         ],
                       ),
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Container(
                       height: 280,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                   ],
                 ),
               ),
               SmoothPageIndicator(
                 controller: pageController,
                 count: 2,
-                effect: WormEffect(
+                effect: const WormEffect(
                   dotHeight: 8,
                   dotWidth: 8,
                   dotColor: Colors.grey,
                   activeDotColor: Colors.orange,
                 ),
               ),
-              Gap(32),
-              Column(
+              const Gap(32),
+              const Column(
                 children: [
                   Text(
                     "Story of Flutter Development",
@@ -130,41 +130,47 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                 activeColor: Colors.white,
                 inactiveColor: Colors.white,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("1:56", style: TextStyle(
-                      color: Colors.grey,
-                    ),),
-                    Text("3:00", style: TextStyle(
-                      color: Colors.grey,
-                    ),),
+                    Text(
+                      "1:56",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Text(
+                      "3:00",
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
                   ],
                 ),
               ),
             ],
           ),
         ),
-        Gap(12),
+        const Gap(12),
         Expanded(
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(.1),
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topRight: Radius.circular(16),
                 topLeft: Radius.circular(16),
               ),
             ),
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Column(
               children: [
                 Row(
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.favorite_border,
                       ),
                       color: Colors.white,
@@ -175,14 +181,14 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                         children: [
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.skip_previous,
                             ),
                             color: Colors.white,
                             iconSize: 32,
                           ),
-                          Gap(24),
-                          CircleAvatar(
+                          const Gap(24),
+                          const CircleAvatar(
                             radius: 32,
                             backgroundColor: Colors.yellow,
                             child: Icon(
@@ -190,10 +196,10 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                               size: 40,
                             ),
                           ),
-                          Gap(24),
+                          const Gap(24),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.skip_next,
                             ),
                             color: Colors.white,
@@ -204,7 +210,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.shuffle,
                       ),
                       color: Colors.white,
@@ -216,12 +222,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.share),
+                      icon: const Icon(Icons.share),
                       color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.download),
+                      icon: const Icon(Icons.download),
                       color: Colors.white,
                     ),
                   ],
