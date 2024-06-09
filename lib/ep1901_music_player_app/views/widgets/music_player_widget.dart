@@ -127,8 +127,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                 ],
               ),
               Slider(
-                value: 0,
-                onChanged: (b) {},
+                value: sliderValue,
+                onChanged: (b) {
+                  setState(() {
+                    sliderValue = b;
+                  });
+                },
                 activeColor: Colors.white,
                 inactiveColor: Colors.white,
               ),
