@@ -20,6 +20,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
+
               Row(
                 children: [
                   IconButton(
@@ -93,6 +94,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ],
                 ),
               ),
+
               SmoothPageIndicator(
                 controller: pageController,
                 count: 2,
@@ -103,7 +105,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   activeDotColor: Colors.orange,
                 ),
               ),
-              Gap(16),
+              Gap(32),
               Column(
                 children: [
                   Text(
@@ -119,6 +121,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     "Flutter.dev",
                     style: TextStyle(
                       color: Colors.grey,
+                      fontSize: 18,
                     ),
                   )
                 ],
