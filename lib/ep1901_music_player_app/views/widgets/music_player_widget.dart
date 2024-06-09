@@ -11,6 +11,7 @@ class MusicPlayerWidget extends StatefulWidget {
 
 class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
   PageController pageController = PageController();
+  double sliderValue = 0.0;
 
   @override
   Widget build(BuildContext context) {
