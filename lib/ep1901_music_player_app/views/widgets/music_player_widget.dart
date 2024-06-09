@@ -177,8 +177,13 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                           Gap(24),
                           CircleAvatar(
                             radius: 32,
-                    
-                          ),   Gap(24),
+                            backgroundColor: Colors.yellow,
+                            child: Icon(
+                              Icons.play_arrow,
+                              size: 40,
+                            ),
+                          ),
+                          Gap(24),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(
