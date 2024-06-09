@@ -85,8 +85,9 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     const Gap(24),
                     Container(
                       height: 280,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
                       ),
                     ),
                     const Gap(12),
