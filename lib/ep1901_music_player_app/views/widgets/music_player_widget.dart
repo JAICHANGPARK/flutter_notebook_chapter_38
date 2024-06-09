@@ -147,6 +147,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             ],
           ),
         ),
+        Gap(12),
         Expanded(
           child: Container(
             decoration: BoxDecoration(
