@@ -217,10 +217,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.share),
+                      color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.download),
+                      color: Colors.white,
                     ),
                   ],
                 )
