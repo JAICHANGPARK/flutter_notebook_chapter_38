@@ -20,7 +20,6 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-
               Row(
                 children: [
                   IconButton(
@@ -94,7 +93,6 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                   ],
                 ),
               ),
-
               SmoothPageIndicator(
                 controller: pageController,
                 count: 2,
@@ -162,6 +160,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                       icon: Icon(
                         Icons.favorite_border,
                       ),
+                      color: Colors.white,
                     ),
                     Expanded(
                       child: Row(
@@ -172,15 +171,19 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                             icon: Icon(
                               Icons.skip_previous,
                             ),
+                            color: Colors.white,
                           ),
+                          Gap(24),
                           CircleAvatar(
                             radius: 32,
-                          ),
+
+                          ),   Gap(24),
                           IconButton(
                             onPressed: () {},
                             icon: Icon(
                               Icons.skip_next,
                             ),
+                            color: Colors.white,
                           ),
                         ],
                       ),
