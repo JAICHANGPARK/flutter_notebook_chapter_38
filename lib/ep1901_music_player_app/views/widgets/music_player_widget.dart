@@ -172,11 +172,12 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                               Icons.skip_previous,
                             ),
                             color: Colors.white,
+                            iconSize: 32,
                           ),
                           Gap(24),
                           CircleAvatar(
                             radius: 32,
-
+                    
                           ),   Gap(24),
                           IconButton(
                             onPressed: () {},
@@ -184,6 +185,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                               Icons.skip_next,
                             ),
                             color: Colors.white,
+                            iconSize: 32,
                           ),
                         ],
                       ),
