@@ -144,6 +144,10 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(16),
+                topLeft: Radius.circular(16),
+              ),
             ),
             child: Column(
               children: [
@@ -155,28 +159,28 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                         Icons.favorite_border,
                       ),
                     ),
-                    Expanded(child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-
-                      children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.skip_previous,
-                        ),
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.skip_previous,
+                            ),
+                          ),
+                          CircleAvatar(
+                            radius: 32,
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.skip_next,
+                            ),
+                          ),
+                        ],
                       ),
-                      CircleAvatar(
-                        radius: 32,
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.skip_next,
-                        ),
-                      ),
-
-                    ],),),
-
+                    ),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(
