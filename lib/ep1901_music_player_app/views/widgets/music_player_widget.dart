@@ -200,6 +200,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                       icon: Icon(
                         Icons.shuffle,
                       ),
+                      color: Colors.white,
                     ),
                   ],
                 ),
