@@ -1,6 +1,5 @@
 # flutter_notebook_chapter_38
 
-
 ## EP1901
 
 - Music Player Application
