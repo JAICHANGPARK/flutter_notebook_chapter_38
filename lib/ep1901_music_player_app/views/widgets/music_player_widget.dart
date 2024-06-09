@@ -143,7 +143,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
         Expanded(
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.white.withOpacity(.1),
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(16),
                 topLeft: Radius.circular(16),
