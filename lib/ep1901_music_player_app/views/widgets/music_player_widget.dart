@@ -133,7 +133,9 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("1:56"),
+                    Text("1:56", style: TextStyle(
+                      color: Colors.grey,
+                    ),),
                     Text("3:00"),
                   ],
                 ),
