@@ -132,13 +132,63 @@ class BeautyHomePage extends StatelessWidget {
                     Color.fromRGBO(232, 236, 245, 1),
                     Colors.white.withOpacity(.5),
                     Colors.white.withOpacity(.3)
-
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
               ),
-              
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(.05),
+                          blurRadius: 5,
+                          spreadRadius: 6,
+                        ),
+                      ],
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.arrow_back_ios_new_outlined,
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Your Plan"),
+                        Text("This week (1-7 Jan)"),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(.05),
+                          blurRadius: 5,
+                          spreadRadius: 6,
+                        ),
+                      ],
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.arrow_back_ios_new_outlined,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           )
         ],
