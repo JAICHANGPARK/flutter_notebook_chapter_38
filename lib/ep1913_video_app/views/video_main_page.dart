@@ -18,6 +18,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
         foregroundColor: Colors.blueGrey,
         leading: IconButton(
           onPressed: () {},
+          iconSize: 32,
           icon: Icon(Icons.account_circle_outlined),
         ),
         actions: [
@@ -26,36 +27,42 @@ class _VideoMainPageState extends State<VideoMainPage> {
             icon: Icon(
               Icons.search,
             ),
+            iconSize: 32,
           )
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Browse",
-            ),
-            Container(
-              height: 240,
-              color: Colors.blueGrey,
-            ),
-            Text(
-              "Recommended",
-            ),
-            Container(
-              height: 200,
-              color: Colors.blueGrey,
-            ),
-
-            Text(
-              "Meditation",
-            ),
-            Container(
-              height: 200,
-              color: Colors.blueGrey,
-            ),
-          ],
+      body: Padding(
+        padding: const EdgeInsets.only(
+          left: 16,
+          top: 32,
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Browse",
+              ),
+              Container(
+                height: 240,
+                color: Colors.blueGrey,
+              ),
+              Text(
+                "Recommended",
+              ),
+              Container(
+                height: 200,
+                color: Colors.blueGrey,
+              ),
+              Text(
+                "Meditation",
+              ),
+              Container(
+                height: 200,
+                color: Colors.blueGrey,
+              ),
+            ],
+          ),
         ),
       ),
     );
