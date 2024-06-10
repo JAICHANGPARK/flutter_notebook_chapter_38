@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/video_main_page.dart';
+
 void main() {
   runApp(VideoMobileApp());
 }
@@ -10,7 +12,7 @@ class VideoMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold();
+      home: VideoMainPage(),
     );
   }
 }
