@@ -31,19 +31,19 @@ class BeautyHomePage extends StatelessWidget {
                                     width: 62,
                                     color: Colors.blueGrey,
                                   ),
-                                  Gap(12),
-                                  Text("Creams"),
-                                  Text("Day Cream"),
+                                  const Gap(12),
+                                  const Text("Creams"),
+                                  const Text("Day Cream"),
                                   Container(
                                     decoration:
                                         BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                    child: Row(
+                                    child: const Row(
                                       children: [
                                         Gap(8),
                                         Text("\$79.00"),
                                         Spacer(),
                                         Padding(
-                                          padding: const EdgeInsets.all(2.0),
+                                          padding: EdgeInsets.all(2.0),
                                           child: CircleAvatar(
                                             radius: 16,
                                             backgroundColor: Colors.black,
@@ -65,7 +65,7 @@ class BeautyHomePage extends StatelessWidget {
                       },
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
@@ -81,19 +81,19 @@ class BeautyHomePage extends StatelessWidget {
                                     width: 62,
                                     color: Colors.blueGrey,
                                   ),
-                                  Gap(12),
-                                  Text("Creams"),
-                                  Text("Day Cream"),
+                                  const Gap(12),
+                                  const Text("Creams"),
+                                  const Text("Day Cream"),
                                   Container(
                                     decoration:
                                         BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
-                                    child: Row(
+                                    child: const Row(
                                       children: [
                                         Gap(8),
                                         Text("\$79.00"),
                                         Spacer(),
                                         Padding(
-                                          padding: const EdgeInsets.all(2.0),
+                                          padding: EdgeInsets.all(2.0),
                                           child: CircleAvatar(
                                             radius: 16,
                                             backgroundColor: Colors.black,
@@ -128,16 +128,16 @@ class BeautyHomePage extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Color.fromRGBO(232, 236, 245, 1),
-                    Color.fromRGBO(232, 236, 245, 1),
-                    Color.fromRGBO(232, 236, 245, 1),
+                    const Color.fromRGBO(232, 236, 245, 1),
+                    const Color.fromRGBO(232, 236, 245, 1),
+                    const Color.fromRGBO(232, 236, 245, 1),
                     Colors.white.withOpacity(.3)
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -156,12 +156,12 @@ class BeautyHomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back_ios_new_outlined,
                       ),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -191,7 +191,7 @@ class BeautyHomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.tune,
                       ),
                     ),
