@@ -22,8 +22,26 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
             fit: BoxFit.cover,
           ),
         ),
-        child: Column(
-          children: [],
+        child: SafeArea(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.arrow_back_ios_new,
+                      ),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
       // body: Stack(
