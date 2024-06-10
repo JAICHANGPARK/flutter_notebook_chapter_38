@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_38
 
-## EP1908
+## EP1913
+
+- Video app for iOS
+- Danilo Tanic for FineTune
+- https://dribbble.com/shots/24285256-Video-app-for-iOS
+
+<img src="https://cdn.dribbble.com/userupload/14906886/file/original-9b5ab8583f1e8a6c15de6336e2d472b5.png?resize=1600x1199"/>
+
+## EP1908-1912
 
 - Beauty product e-commerce mobile app
 - Kateryna Bormashenko for Spaceberry Studio
