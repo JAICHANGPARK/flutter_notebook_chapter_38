@@ -130,13 +130,14 @@ class BeautyHomePage extends StatelessWidget {
                   colors: [
                     Color.fromRGBO(232, 236, 245, 1),
                     Color.fromRGBO(232, 236, 245, 1),
-                    Colors.white.withOpacity(.5),
+                    Color.fromRGBO(232, 236, 245, 1),
                     Colors.white.withOpacity(.3)
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -162,8 +163,16 @@ class BeautyHomePage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text("Your Plan"),
+                        Text(
+                          "Your Plan",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         Text("This week (1-7 Jan)"),
                       ],
                     ),
@@ -183,7 +192,7 @@ class BeautyHomePage extends StatelessWidget {
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
-                        Icons.arrow_back_ios_new_outlined,
+                        Icons.tune,
                       ),
                     ),
                   ),
