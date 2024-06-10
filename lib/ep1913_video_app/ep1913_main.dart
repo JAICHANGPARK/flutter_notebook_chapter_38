@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  
+  runApp(VideoMobileApp());
 }
 
 class VideoMobileApp extends StatelessWidget {
@@ -9,6 +9,8 @@ class VideoMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+        home: Scaffold();
+    );
   }
 }
