@@ -83,14 +83,26 @@ class BeautyHomePage extends StatelessWidget {
                                   ),
                                   const Gap(12),
                                   const Text("Creams"),
-                                  const Text("Day Cream"),
+                                  Gap(4),
+                                  const Text(
+                                    "Day Cream",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                  Gap(8),
                                   Container(
                                     decoration:
                                         BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                     child: const Row(
                                       children: [
                                         Gap(8),
-                                        Text("\$79.00"),
+                                        Text(
+                                          "\$79.00",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                         Spacer(),
                                         Padding(
                                           padding: EdgeInsets.all(2.0),
@@ -205,3 +217,67 @@ class BeautyHomePage extends StatelessWidget {
     );
   }
 }
+
+class _ListViewWidget extends StatelessWidget {
+  const _ListViewWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Container(
+                height: 74,
+                width: 62,
+                color: Colors.blueGrey,
+              ),
+              const Gap(12),
+              const Text("Creams"),
+              Gap(4),
+              const Text(
+                "Day Cream",
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+              ),
+              Gap(8),
+              Container(
+                decoration:
+                BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                child: const Row(
+                  children: [
+                    Gap(8),
+                    Text(
+                      "\$79.00",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Spacer(),
+                    Padding(
+                      padding: EdgeInsets.all(2.0),
+                      child: CircleAvatar(
+                        radius: 16,
+                        backgroundColor: Colors.black,
+                        foregroundColor: Colors.white,
+                        child: Icon(
+                          Icons.add_shopping_cart,
+                          size: 16,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
