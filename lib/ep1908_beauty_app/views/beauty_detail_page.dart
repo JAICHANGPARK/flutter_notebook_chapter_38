@@ -171,10 +171,12 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                 color: Colors.blue,
                               ),
                               child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index) {
                                   return Padding(
                                     padding: const EdgeInsets.only(bottom: 12),
                                     child: SizedBox(
+                                      width: 120,
                                       child: InkWell(
                                         onTap: () {
                                           Navigator.of(context).push(
@@ -185,11 +187,12 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                         },
                                         child: Card(
                                           child: Padding(
-                                            padding: const EdgeInsets.all(16.0),
+                                            padding: const EdgeInsets.all(8.0),
                                             child: Column(
+                                              mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
                                                 Container(
-                                                  height: 74,
+                                                  height: 64,
                                                   width: 62,
                                                   color: Colors.blueGrey,
                                                 ),
@@ -204,7 +207,8 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                                 ),
                                                 Gap(8),
                                                 Container(
-                                                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                                  decoration: BoxDecoration(
+                                                      color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                                   child: const Row(
                                                     children: [
                                                       Gap(8),
@@ -212,13 +216,14 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                                         "\$79.00",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
+                                                          fontSize: 12,
                                                         ),
                                                       ),
                                                       Spacer(),
                                                       Padding(
                                                         padding: EdgeInsets.all(2.0),
                                                         child: CircleAvatar(
-                                                          radius: 16,
+                                                          radius: 14,
                                                           backgroundColor: Colors.black,
                                                           foregroundColor: Colors.white,
                                                           child: Icon(
