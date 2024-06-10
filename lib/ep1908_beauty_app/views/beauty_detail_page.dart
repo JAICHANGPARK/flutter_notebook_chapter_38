@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class BeautyDetailPage extends StatefulWidget {
@@ -25,20 +27,79 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
         child: SafeArea(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                    ),
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.arrow_back_ios_new,
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    ClipRRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.black.withOpacity(.2),
+                            border: Border.all(
+                              width: .5,
+                              color: Colors.white,
+                            ),
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_back_ios_new,
+                            ),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ),
                       ),
-                      onPressed: () {},
                     ),
-                  )
-                ],
+                    Expanded(
+                      child: Center(
+                        child: ClipRRect(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                            child: Container(
+                              width: 140,
+                              height: 32,
+                              padding: EdgeInsets.symmetric(horizontal: 15),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16),
+                                color: Colors.black.withOpacity(.2),
+                                border: Border.all(
+                                  width: .5,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              child: Center(child: Text("Skin age: 21"))
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    ClipRRect(
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.black.withOpacity(.2),
+                            border: Border.all(
+                              width: .5,
+                              color: Colors.white,
+                            ),
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.tune,
+                            ),
+                            color: Colors.white,
+                            onPressed: () {},
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
