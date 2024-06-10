@@ -118,6 +118,23 @@ class BeautyHomePage extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 120,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Color.fromRGBO(232, 236, 245, 1),
+                    Colors.white.withOpacity(.5),
+                    Colors.white.withOpacity(.1),
+                  ],
+                ),
+              ),
+            ),
           )
         ],
       ),
