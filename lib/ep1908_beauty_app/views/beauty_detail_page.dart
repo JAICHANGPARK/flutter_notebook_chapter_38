@@ -57,20 +57,27 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                       child: Center(
                         child: ClipRRect(
                           child: BackdropFilter(
-                            filter: ImageFilter.blur(sigmaX: 3, sigmaY: 5),
+                            filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
                             child: Container(
                               width: 140,
-                              height: 32,
+                              height: 42,
                               padding: EdgeInsets.symmetric(horizontal: 15),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                color: Colors.black.withOpacity(.2),
+                                borderRadius: BorderRadius.circular(24),
+                                color: Colors.white.withOpacity(.2),
                                 border: Border.all(
                                   width: .5,
                                   color: Colors.white,
                                 ),
                               ),
-                              child: Center(child: Text("Skin age: 21"))
+                              child: Center(
+                                child: Text(
+                                  "Skin age: 21",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                         ),
