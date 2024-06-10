@@ -124,16 +124,21 @@ class BeautyHomePage extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              height: 120,
+              height: 200,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
                     Color.fromRGBO(232, 236, 245, 1),
+                    Color.fromRGBO(232, 236, 245, 1),
                     Colors.white.withOpacity(.5),
-                    Colors.white.withOpacity(.1),
+                    Colors.white.withOpacity(.3)
+
                   ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
                 ),
               ),
+              
             ),
           )
         ],
