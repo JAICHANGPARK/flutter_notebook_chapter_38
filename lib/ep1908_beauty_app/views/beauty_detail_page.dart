@@ -157,9 +157,22 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         children: [
                           Text(
                             "Special For You",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 21,
+                            ),
                           ),
-                          Expanded(child: Container()),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            ),
+                          ),
                           Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                            ),
                             child: Center(
                               child: Text(
                                 "View all products",
