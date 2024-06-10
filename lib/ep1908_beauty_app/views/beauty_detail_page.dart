@@ -258,7 +258,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                                 "View all products",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 18,
+                                  fontSize: 16,
                                 ),
                               ),
                             ),
