@@ -29,6 +29,35 @@ class _VideoMainPageState extends State<VideoMainPage> {
           )
         ],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Browse",
+            ),
+            Container(
+              height: 240,
+              color: Colors.blueGrey,
+            ),
+            Text(
+              "Recommended",
+            ),
+            Container(
+              height: 200,
+              color: Colors.blueGrey,
+            ),
+
+            Text(
+              "Meditation",
+            ),
+            Container(
+              height: 200,
+              color: Colors.blueGrey,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
