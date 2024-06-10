@@ -36,7 +36,11 @@ class BeautyHomePage extends StatelessWidget {
                                     Text("\$79.00"),
                                     Spacer(),
                                     CircleAvatar(
+                                      radius: 18,
                                       backgroundColor: Colors.black,
+                                      child: Icon(
+                                        Icons.add_shopping_cart,
+                                      ),
                                     ),
                                   ],
                                 ),
