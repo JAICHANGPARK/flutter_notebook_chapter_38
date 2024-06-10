@@ -13,7 +13,25 @@ class BeautyHomePage extends StatelessWidget {
               children: [
                 Expanded(
                   child: ListView.builder(
-                    itemBuilder: (itemBuilder),
+                    itemBuilder: (context, index) {
+                      return Card(
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 62,
+                              color: Colors.blueGrey,
+                            ),
+                            Text("Creams"),
+                            Text("Day Cream"),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    },
                   ),
                 ),
                 Expanded(
