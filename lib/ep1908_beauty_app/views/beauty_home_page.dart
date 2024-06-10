@@ -27,9 +27,11 @@ class BeautyHomePage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 62,
+                                    height: 74,
+                                    width: 62,
                                     color: Colors.blueGrey,
                                   ),
+                                  Gap(12),
                                   Text("Creams"),
                                   Text("Day Cream"),
                                   Container(
@@ -63,6 +65,7 @@ class BeautyHomePage extends StatelessWidget {
                       },
                     ),
                   ),
+                  Gap(12),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
@@ -74,9 +77,11 @@ class BeautyHomePage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 62,
+                                    height: 74,
+                                    width: 62,
                                     color: Colors.blueGrey,
                                   ),
+                                  Gap(12),
                                   Text("Creams"),
                                   Text("Day Cream"),
                                   Container(
