@@ -37,7 +37,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.black.withOpacity(.2),
+                            color: Colors.white.withOpacity(.2),
                             border: Border.all(
                               width: .5,
                               color: Colors.white,
@@ -89,7 +89,7 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.black.withOpacity(.2),
+                            color: Colors.white.withOpacity(.2),
                             border: Border.all(
                               width: .5,
                               color: Colors.white,
@@ -107,7 +107,71 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Expanded(child: Container()),
+              Container(
+                height: 340,
+                margin: EdgeInsets.only(
+                  left: 24,
+                  bottom: 24,
+                ),
+                decoration: BoxDecoration(
+                    // color: Colors.red,
+                    ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      right: 24,
+                      bottom: 0,
+                      left: 0,
+                      child: ClipRRect(
+                        child: BackdropFilter(
+                          filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
+                          child: Container(
+                            padding: EdgeInsets.symmetric(horizontal: 15),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(32),
+                              color: Colors.white.withOpacity(.2),
+                              border: Border.all(
+                                width: .5,
+                                color: Colors.white,
+                              ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Skin age: 21",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned.fill(
+                      top: 24,
+                      bottom: 24,
+                      child: Column(
+                        children: [
+                          Text(
+                            "Special For You",
+                          ),
+                          Expanded(child: Container()),
+                          Container(
+                            child: Center(
+                              child: Text(
+                                "View all products",
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
