@@ -168,15 +168,14 @@ class _BeautyDetailPageState extends State<BeautyDetailPage> {
                             child: Container(
                               margin: EdgeInsets.only(left: 16),
                               decoration: BoxDecoration(
-                                color: Colors.blue,
                               ),
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index) {
                                   return Padding(
-                                    padding: const EdgeInsets.only(bottom: 12),
+                                    padding: const EdgeInsets.only(right: 5),
                                     child: SizedBox(
-                                      width: 120,
+                                      width: 140,
                                       child: InkWell(
                                         onTap: () {
                                           Navigator.of(context).push(
