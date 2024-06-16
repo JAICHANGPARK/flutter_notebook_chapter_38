@@ -50,7 +50,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
               ),
               Gap(8),
               Container(
-                height: 240,
+                height: 260,
                 color: Colors.blueGrey,
                 child: ListView.builder(
                   itemCount: 10,
@@ -69,6 +69,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.red,
+                                borderRadius: BorderRadius.circular(8)
                               ),
                             ),
                           ),
