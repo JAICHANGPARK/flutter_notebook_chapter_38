@@ -61,7 +61,9 @@ class _VideoMainPageState extends State<VideoMainPage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                      margin: EdgeInsets.only(right: 12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
