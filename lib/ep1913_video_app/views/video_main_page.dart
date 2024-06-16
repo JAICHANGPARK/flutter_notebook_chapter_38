@@ -44,7 +44,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                 "Browse",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 24,
+                  fontSize: 26,
                 ),
               ),
               Container(
