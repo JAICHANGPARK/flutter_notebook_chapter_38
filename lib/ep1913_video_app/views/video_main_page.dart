@@ -51,26 +51,20 @@ class _VideoMainPageState extends State<VideoMainPage> {
               Gap(8),
               Container(
                 height: 260,
-                color: Colors.blueGrey,
                 child: ListView.builder(
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
                       width: 340,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
+                      decoration: BoxDecoration(),
                       margin: EdgeInsets.only(right: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                              decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                             ),
                           ),
                           Gap(12),
@@ -91,8 +85,13 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   },
                 ),
               ),
+              Gap(32),
               Text(
                 "Recommended",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 28,
+                ),
               ),
               Container(
                 height: 200,
