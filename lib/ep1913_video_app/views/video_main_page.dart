@@ -42,6 +42,10 @@ class _VideoMainPageState extends State<VideoMainPage> {
             children: [
               Text(
                 "Browse",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
               Container(
                 height: 240,
