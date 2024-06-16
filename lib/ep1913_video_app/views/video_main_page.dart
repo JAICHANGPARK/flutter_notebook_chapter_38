@@ -70,6 +70,9 @@ class _VideoMainPageState extends State<VideoMainPage> {
                           Gap(12),
                           Text(
                             "FEATURED",
+                            style: TextStyle(
+                              color: Colors.
+                            ),
                           ),
                           Gap(8),
                           Text(
@@ -85,7 +88,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   },
                 ),
               ),
-              Gap(32),
+              Gap(24),
               Text(
                 "Recommended",
                 style: TextStyle(
@@ -93,6 +96,8 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   fontSize: 28,
                 ),
               ),
+              Gap(12),
+
               Container(
                 height: 200,
                 color: Colors.blueGrey,
