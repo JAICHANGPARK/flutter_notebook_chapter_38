@@ -20,12 +20,12 @@ class _VideoMainPageState extends State<VideoMainPage> {
         leading: IconButton(
           onPressed: () {},
           iconSize: 32,
-          icon: Icon(Icons.account_circle_outlined),
+          icon: const Icon(Icons.account_circle_outlined),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
             ),
             iconSize: 32,
@@ -41,14 +41,14 @@ class _VideoMainPageState extends State<VideoMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Browse",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 28,
                 ),
               ),
-              Gap(8),
+              const Gap(8),
               Container(
                 height: 280,
                 child: ListView.builder(
@@ -57,34 +57,37 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 340,
-                      decoration: BoxDecoration(),
-                      margin: EdgeInsets.only(right: 12),
+                      decoration: const BoxDecoration(),
+                      margin: const EdgeInsets.only(right: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
                             ),
                           ),
-                          Gap(12),
-                          Text(
+                          const Gap(12),
+                          const Text(
                             "FEATURED",
                             style: TextStyle(
                               color: Color.fromRGBO(32, 108, 255, 1),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Gap(8),
-                          Text(
+                          const Gap(8),
+                          const Text(
                             "Meet New Teacher, Unknown Name",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
                             ),
                           ),
-                          Gap(4),
-                          Text(
+                          const Gap(4),
+                          const Text(
                             "Unknown Teacher",
                           )
                         ],
@@ -93,20 +96,20 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   },
                 ),
               ),
-              Gap(24),
-              Text(
+              const Gap(24),
+              const Text(
                 "Recommended",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 28,
                 ),
               ),
-              Gap(12),
+              const Gap(12),
               Container(
                 height: 200,
                 color: Colors.blueGrey,
               ),
-              Text(
+              const Text(
                 "Meditation",
               ),
               Container(
