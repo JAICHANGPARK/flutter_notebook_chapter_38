@@ -53,6 +53,8 @@ class _VideoMainPageState extends State<VideoMainPage> {
                 height: 240,
                 color: Colors.blueGrey,
                 child: ListView.builder(
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
                       width: 320,
