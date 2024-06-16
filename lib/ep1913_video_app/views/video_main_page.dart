@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class VideoMainPage extends StatefulWidget {
   const VideoMainPage({super.key});
@@ -44,12 +45,40 @@ class _VideoMainPageState extends State<VideoMainPage> {
                 "Browse",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 26,
+                  fontSize: 28,
                 ),
               ),
+              Gap(8),
               Container(
                 height: 240,
                 color: Colors.blueGrey,
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 320,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "FEATURED",
+                          ),
+                          Text(
+                            "Meet New Teacher, Unknown Name",
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
               Text(
                 "Recommended",
