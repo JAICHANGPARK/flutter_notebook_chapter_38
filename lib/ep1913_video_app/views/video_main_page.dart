@@ -72,11 +72,16 @@ class _VideoMainPageState extends State<VideoMainPage> {
                             "FEATURED",
                             style: TextStyle(
                               color: Color.fromRGBO(32, 108, 255, 1),
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                           Gap(8),
                           Text(
                             "Meet New Teacher, Unknown Name",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                           Gap(4),
                           Text(
