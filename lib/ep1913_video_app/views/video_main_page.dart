@@ -35,7 +35,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
       body: Padding(
         padding: const EdgeInsets.only(
           left: 16,
-          top: 32,
+          top: 24,
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -50,7 +50,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
               ),
               Gap(8),
               Container(
-                height: 260,
+                height: 280,
                 child: ListView.builder(
                   itemCount: 10,
                   scrollDirection: Axis.horizontal,
