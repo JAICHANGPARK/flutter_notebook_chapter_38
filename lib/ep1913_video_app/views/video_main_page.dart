@@ -57,7 +57,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     return Container(
-                      width: 320,
+                      width: 340,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
@@ -72,11 +72,17 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               ),
                             ),
                           ),
+                          Gap(12),
                           Text(
                             "FEATURED",
                           ),
+                          Gap(8),
                           Text(
                             "Meet New Teacher, Unknown Name",
+                          ),
+                          Gap(4),
+                          Text(
+                            "Unknown Teacher",
                           )
                         ],
                       ),
