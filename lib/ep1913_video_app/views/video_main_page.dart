@@ -71,7 +71,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                           Text(
                             "FEATURED",
                             style: TextStyle(
-                              color: Colors.
+                              color: Color.fromRGBO(32, 108, 255, 1),
                             ),
                           ),
                           Gap(8),
@@ -97,7 +97,6 @@ class _VideoMainPageState extends State<VideoMainPage> {
                 ),
               ),
               Gap(12),
-
               Container(
                 height: 200,
                 color: Colors.blueGrey,
