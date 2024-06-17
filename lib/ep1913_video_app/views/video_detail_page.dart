@@ -23,36 +23,40 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
         ],
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: 200,
-              child: Placeholder(),
-            ),
-            Text(
-              "Home - A 30 Day Yoga Journey",
-            ),
-            Text("Unknown Master - 30 Videos"),
-            Container(
-              height: 42,
-              child: Row(
-                children: [],
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 200,
+                child: Placeholder(),
               ),
-            ),
-            Text("title titletitletitletitletitletitletitletitletitle"),
-            TextButton(
-              onPressed: () {},
-              child: Text(
-                "Read more",
+              Text(
+                "Home - A 30 Day Yoga Journey",
               ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: 30,
-                itemBuilder: (context, index) {},
+              Text("Unknown Master - 30 Videos"),
+              Container(
+                height: 42,
+                child: Row(
+                  children: [],
+                ),
               ),
-            )
-          ],
+              Text("title titletitletitletitletitletitletitletitletitle"),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Read more",
+                ),
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: 30,
+                  itemBuilder: (context, index) {},
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
