@@ -113,7 +113,6 @@ class _VideoMainPageState extends State<VideoMainPage> {
               const Gap(12),
               Container(
                 height: 200,
-                color: Colors.blueGrey,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
@@ -128,13 +127,26 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               width: 240,
                               decoration: BoxDecoration(
                                 color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2013/04/03/06/08/teacher-99741_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
+                          Gap(6),
                           Text(
                             "Union Practice",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                          Text("Flutter Developer")
+                          Gap(6),
+                          Text("Flutter Developer"),
+                          Gap(6),
                         ],
                       ),
                     );
