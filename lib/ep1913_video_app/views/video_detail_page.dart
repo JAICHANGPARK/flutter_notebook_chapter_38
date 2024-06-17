@@ -22,6 +22,39 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
           ),
         ],
       ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 200,
+              child: Placeholder(),
+            ),
+            Text(
+              "Home - A 30 Day Yoga Journey",
+            ),
+            Text("Unknown Master - 30 Videos"),
+            Container(
+              height: 42,
+              child: Row(
+                children: [],
+              ),
+            ),
+            Text("title titletitletitletitletitletitletitletitletitle"),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "Read more",
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 30,
+                itemBuilder: (context, index) {},
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
