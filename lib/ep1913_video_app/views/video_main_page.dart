@@ -67,7 +67,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2024/03/29/17/55/ai-generated-8663329_1280.png",
                                   ),
@@ -128,7 +128,7 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(12),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2013/04/03/06/08/teacher-99741_1280.jpg",
                                   ),
@@ -137,28 +137,71 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               ),
                             ),
                           ),
-                          Gap(6),
-                          Text(
+                          const Gap(6),
+                          const Text(
                             "Union Practice",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Gap(6),
-                          Text("Flutter Developer"),
-                          Gap(6),
+                          const Gap(6),
+                          const Text("Flutter Developer"),
+                          const Gap(6),
                         ],
                       ),
                     );
                   },
                 ),
               ),
+              const Gap(24),
               const Text(
                 "Meditation",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 28,
+                ),
               ),
               Container(
                 height: 200,
-                color: Colors.blueGrey,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Container(
+                              width: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2013/04/03/06/08/teacher-99741_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const Gap(6),
+                          const Text(
+                            "Union Practice",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const Gap(6),
+                          const Text("Flutter Developer"),
+                          const Gap(6),
+                        ],
+                      ),
+                    );
+                  },
+                ),
               ),
             ],
           ),
