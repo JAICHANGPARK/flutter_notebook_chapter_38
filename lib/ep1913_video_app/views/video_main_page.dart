@@ -108,6 +108,16 @@ class _VideoMainPageState extends State<VideoMainPage> {
               Container(
                 height: 200,
                 color: Colors.blueGrey,
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (context, index){
+                    return Column(
+                      children: [
+                        
+                      ],
+                    );
+                  },
+                ),
               ),
               const Text(
                 "Meditation",
