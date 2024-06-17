@@ -67,6 +67,12 @@ class _VideoMainPageState extends State<VideoMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2024/03/29/17/55/ai-generated-8663329_1280.png",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
@@ -109,11 +115,19 @@ class _VideoMainPageState extends State<VideoMainPage> {
                 height: 200,
                 color: Colors.blueGrey,
                 child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
                   itemCount: 10,
-                  itemBuilder: (context, index){
+                  itemBuilder: (context, index) {
                     return Column(
                       children: [
-                        
+                        Expanded(
+                          child: Container(
+                            width: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          ),
+                        )
                       ],
                     );
                   },
