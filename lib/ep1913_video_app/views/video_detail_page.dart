@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class VideoDetailPage extends StatefulWidget {
   const VideoDetailPage({super.key});
 
@@ -11,6 +10,18 @@ class VideoDetailPage extends StatefulWidget {
 class _VideoDetailPageState extends State<VideoDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.more_horiz,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
