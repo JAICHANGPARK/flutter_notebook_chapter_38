@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'video_detail_page.dart';
+
 class VideoMainPage extends StatefulWidget {
   const VideoMainPage({super.key});
 
@@ -117,37 +119,48 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.only(right: 12),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Container(
-                              width: 240,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(12),
-                                image: const DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2013/04/03/06/08/teacher-99741_1280.jpg",
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return VideoDetailPage();
+                            },
+                          ),
+                        );
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                width: 240,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                  borderRadius: BorderRadius.circular(12),
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2013/04/03/06/08/teacher-99741_1280.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
                                   ),
-                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
-                          ),
-                          const Gap(6),
-                          const Text(
-                            "Union Practice",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                            const Gap(6),
+                            const Text(
+                              "Union Practice",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          const Gap(6),
-                          const Text("Flutter Developer"),
-                          const Gap(6),
-                        ],
+                            const Gap(6),
+                            const Text("Flutter Developer"),
+                            const Gap(6),
+                          ],
+                        ),
                       ),
                     );
                   },
