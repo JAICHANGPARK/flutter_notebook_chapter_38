@@ -118,17 +118,25 @@ class _VideoMainPageState extends State<VideoMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            width: 240,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Container(
+                              width: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
                             ),
                           ),
-                        )
-                      ],
+                          Text(
+                            "Union Practice",
+                          ),
+                          Text("Flutter Developer")
+                        ],
+                      ),
                     );
                   },
                 ),
