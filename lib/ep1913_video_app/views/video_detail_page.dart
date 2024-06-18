@@ -88,7 +88,8 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                       backgroundColor: Colors.blue[50],
                       foregroundColor: Colors.blue,
                       child: Icon(Icons.arrow_downward),
-                    ),  Gap(12),
+                    ),
+                    Gap(12),
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
@@ -114,7 +115,8 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                       child: Text(
                         "Trailer",
                         style: TextStyle(
-                          color: Colors.blue, fontSize: 16,
+                          color: Colors.blue,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -123,9 +125,10 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                 ),
               ),
               Gap(16),
-              Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-              maxLines: 2,),
-
+              Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                maxLines: 2,
+              ),
               TextButton(
                 onPressed: () {},
                 child: Text(
@@ -137,7 +140,23 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                   itemCount: 30,
                   itemBuilder: (context, index) {
                     return Row(
-                      children: [],
+                      children: [
+                        Container(
+                          height: 120,
+                          width: 240,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Text("Step ${index + 1}"),
+                              Text("21:00"),
+                            ],
+                          ),
+                        )
+                      ],
                     );
                   },
                 ),
