@@ -61,9 +61,16 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                 "Home - A 30 Day Yoga Journey",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
-              Text("Unknown Master - 30 Videos"),
+              Text(
+                "Unknown Master - 30 Videos",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey,
+                ),
+              ),
               Container(
                 height: 42,
                 child: Row(
