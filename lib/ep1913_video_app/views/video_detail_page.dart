@@ -112,7 +112,7 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                         borderRadius: BorderRadius.circular(32),
                       ),
                       child: Text(
-                        "Share",
+                        "Trailer",
                         style: TextStyle(
                           color: Colors.blue, fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -122,7 +122,10 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                   ],
                 ),
               ),
-              Text("title titletitletitletitletitletitletitletitletitle"),
+              Gap(16),
+              Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              maxLines: 2,),
+
               TextButton(
                 onPressed: () {},
                 child: Text(
@@ -132,7 +135,11 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
               Expanded(
                 child: ListView.builder(
                   itemCount: 30,
-                  itemBuilder: (context, index) {},
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [],
+                    );
+                  },
                 ),
               )
             ],
