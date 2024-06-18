@@ -13,6 +13,8 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
         actions: [
           IconButton(
             onPressed: () {},
@@ -30,7 +32,13 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
             children: [
               Container(
                 height: 200,
-                child: Placeholder(),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Center(
+                  child:
+                  ,
+                )
               ),
               Text(
                 "Home - A 30 Day Yoga Journey",
