@@ -64,6 +64,7 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                   fontSize: 16,
                 ),
               ),
+              Gap(12),
               Text(
                 "Unknown Master - 30 Videos",
                 style: TextStyle(
@@ -74,7 +75,13 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
               Container(
                 height: 42,
                 child: Row(
-                  children: [],
+                  children: [
+                    CircleAvatar(
+                      backgroundColor: Colors.blue[100],
+                      foregroundColor: Colors.blue,
+                      child: Icon(Icons.add),
+                    )
+                  ],
                 ),
               ),
               Text("title titletitletitletitletitletitletitletitletitle"),
