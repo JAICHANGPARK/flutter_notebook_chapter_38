@@ -31,15 +31,30 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Center(
-                  child:
-                  ,
-                )
-              ),
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2020/02/15/00/33/yoga-4849681_1280.jpg",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  child: Center(
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.play_arrow,
+                          ),
+                          Text(
+                            "Play all",
+                          )
+                        ],
+                      ),
+                    ),
+                  )),
               Text(
                 "Home - A 30 Day Yoga Journey",
               ),
