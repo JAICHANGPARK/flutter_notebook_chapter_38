@@ -79,16 +79,46 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                 child: Row(
                   children: [
                     CircleAvatar(
-                      backgroundColor: Colors.blue[100],
+                      backgroundColor: Colors.blue[50],
                       foregroundColor: Colors.blue,
                       child: Icon(Icons.add),
                     ),
                     Gap(12),
                     CircleAvatar(
-                      backgroundColor: Colors.blue[100],
+                      backgroundColor: Colors.blue[50],
                       foregroundColor: Colors.blue,
                       child: Icon(Icons.arrow_downward),
-                    )
+                    ),  Gap(12),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.blue[50],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: Text(
+                        "Share",
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.blue[50],
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: Text(
+                        "Share",
+                        style: TextStyle(
+                          color: Colors.blue, fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
