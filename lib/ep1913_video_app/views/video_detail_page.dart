@@ -146,17 +146,20 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                           Container(
                             height: 100,
                             width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(8)
-                            ),
+                            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                           ),
                           Gap(16),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Step ${index + 1}"),
+                                Text(
+                                  "Step ${index + 1}",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
                                 Text("21:00"),
                               ],
                             ),
