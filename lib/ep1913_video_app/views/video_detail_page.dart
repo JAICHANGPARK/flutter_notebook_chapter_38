@@ -70,8 +70,10 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.grey,
+                  fontSize: 16,
                 ),
               ),
+              Gap(16),
               Container(
                 height: 42,
                 child: Row(
@@ -80,6 +82,12 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                       backgroundColor: Colors.blue[100],
                       foregroundColor: Colors.blue,
                       child: Icon(Icons.add),
+                    ),
+                    Gap(12),
+                    CircleAvatar(
+                      backgroundColor: Colors.blue[100],
+                      foregroundColor: Colors.blue,
+                      child: Icon(Icons.arrow_downward),
                     )
                   ],
                 ),
