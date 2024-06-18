@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class VideoDetailPage extends StatefulWidget {
   const VideoDetailPage({super.key});
@@ -55,8 +56,12 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                       ),
                     ),
                   )),
+              Gap(16),
               Text(
                 "Home - A 30 Day Yoga Journey",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Text("Unknown Master - 30 Videos"),
               Container(
