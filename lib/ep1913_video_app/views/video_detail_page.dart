@@ -139,24 +139,30 @@ class _VideoDetailPageState extends State<VideoDetailPage> {
                 child: ListView.builder(
                   itemCount: 30,
                   itemBuilder: (context, index) {
-                    return Row(
-                      children: [
-                        Container(
-                          height: 120,
-                          width: 240,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                           ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Text("Step ${index + 1}"),
-                              Text("21:00"),
-                            ],
-                          ),
-                        )
-                      ],
+                          Gap(16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Step ${index + 1}"),
+                                Text("21:00"),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
