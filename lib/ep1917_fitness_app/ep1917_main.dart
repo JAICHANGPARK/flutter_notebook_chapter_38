@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_38/ep1917_fitness_app/view/login/fitness_sign_in_page.dart';
 import 'package:go_router/go_router.dart';
 
+import 'view/login/fitness_sign_up_page.dart';
+
 void main() {
   runApp(FitnessApp());
 }
@@ -17,7 +19,13 @@ class FitnessApp extends StatelessWidget {
         builder: (context, state) {
           return FitnessSignInPage();
         },
-      )
+      ),
+      GoRoute(
+        path: "/sign-up",
+        builder: (context, state) {
+          return FitnessSignUpPage();
+        },
+      ),
     ],
   );
 
