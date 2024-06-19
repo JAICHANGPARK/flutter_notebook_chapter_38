@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_38
 
-## EP1913
+## EP1917
+
+- Fitnation- Fitness & Workout Mobile App
+- Mizanur Rahman
+- https://dribbble.com/shots/24288815-Fitnation-Fitness-Workout-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/14917864/file/original-94b17165f1451da77b31ee8c9625997c.jpg?resize=1600x1200"/>
+
+## EP1913-1916
 
 - Video app for iOS
 - Danilo Tanic for FineTune
