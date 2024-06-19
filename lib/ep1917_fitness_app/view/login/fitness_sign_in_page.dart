@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class FitnessSignInPage extends StatefulWidget {
   const FitnessSignInPage({super.key});
@@ -8,6 +10,8 @@ class FitnessSignInPage extends StatefulWidget {
 }
 
 class _FitnessSignInPageState extends State<FitnessSignInPage> {
+  PageController pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +31,15 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
             child: Column(
               children: [
                 Text("Whenever you are\health is number one"),
+                Gap(
+                  16,
+                ),
                 Text("There is no instant way to a healthy life"),
+                Spacer(),
+                SmoothPageIndicator(controller: pageController, count: 2),
+                Gap(
+                  16,
+                ),
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
@@ -42,6 +54,9 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     ],
                   ),
                 ),
+                Gap(
+                  16,
+                ),
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
@@ -55,6 +70,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     ],
                   ),
                 ),
+                Gap(24),
                 Row(
                   children: [
                     Text("Not a member?"),
