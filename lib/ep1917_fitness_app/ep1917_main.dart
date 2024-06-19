@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(FitnessApp());
@@ -6,10 +7,14 @@ void main() {
 
 
 class FitnessApp extends StatelessWidget {
-  const FitnessApp({super.key});
+   FitnessApp({super.key});
+
+  final router = GoRouter(routes: [],);
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp.router(
+          routerConfig: router,
+    );
   }
 }
