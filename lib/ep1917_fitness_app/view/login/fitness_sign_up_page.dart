@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 class FitnessSignUpPage extends StatefulWidget {
@@ -39,11 +40,24 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   borderRadius: BorderRadius.circular(6),
                 ),
               ),
+              Gap(12),
               Container(
                 height: 62,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(6),
+                ),
+              ),
+              Divider(
+                height: 62,
+                color: Colors.grey,
+              ),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: "Email",
+                    border: InputBorder.none,
+                  ),
                 ),
               )
             ],
