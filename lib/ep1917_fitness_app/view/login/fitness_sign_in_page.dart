@@ -30,7 +30,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
             bottom: 32,
             child: Column(
               children: [
-                Text(
+                const Text(
                   "Whenever you are\nhealth is number one",
                   style: TextStyle(
                     color: Color.fromRGBO(35, 195, 95, 1),
@@ -39,31 +39,31 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Gap(
+                const Gap(
                   16,
                 ),
-                Text(
+                const Text(
                   "There is no instant way to a healthy life",
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 16,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 SmoothPageIndicator(
                   controller: pageController,
                   count: 2,
                 ),
-                Gap(
+                const Gap(
                   16,
                 ),
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(35, 195, 95, 1),
+                    color: const Color.fromRGBO(35, 195, 95, 1),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
@@ -81,15 +81,15 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     ],
                   ),
                 ),
-                Gap(
+                const Gap(
                   16,
                 ),
                 Container(
                   height: 62,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
@@ -102,11 +102,11 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     ],
                   ),
                 ),
-                Gap(24),
+                const Gap(24),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Not a member?",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -117,9 +117,9 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     TextButton(
                       onPressed: () {},
                       style: TextButton.styleFrom(
-                        foregroundColor: Color.fromRGBO(35, 195, 95, 1),
+                        foregroundColor: const Color.fromRGBO(35, 195, 95, 1),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Sign Up",
                       ),
                     )
