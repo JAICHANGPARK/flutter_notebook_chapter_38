@@ -43,7 +43,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
-                    color: Colors.greenAccent,
+                    color: Color.fromRGBO(35, 195, 95, 1),
                   ),
                   child: Row(
                     children: [
