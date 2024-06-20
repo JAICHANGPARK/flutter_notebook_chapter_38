@@ -42,9 +42,18 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 Gap(
                   16,
                 ),
-                Text("There is no instant way to a healthy life"),
+                Text(
+                  "There is no instant way to a healthy life",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 16,
+                  ),
+                ),
                 Spacer(),
-                SmoothPageIndicator(controller: pageController, count: 2),
+                SmoothPageIndicator(
+                  controller: pageController,
+                  count: 2,
+                ),
                 Gap(
                   16,
                 ),
