@@ -104,6 +104,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 ),
                 Gap(24),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Not a member?",
                       style: TextStyle(
