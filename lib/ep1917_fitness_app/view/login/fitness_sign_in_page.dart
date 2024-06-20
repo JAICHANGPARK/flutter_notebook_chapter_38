@@ -113,6 +113,9 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                       ),),
                     TextButton(
                       onPressed: () {},
+                      style: TextButton.styleFrom(
+                        foregroundColor: Color.fromRGBO(35, 195, 95, 1),
+                      ),
                       child: Text(
                         "Sign Up",
                       ),
