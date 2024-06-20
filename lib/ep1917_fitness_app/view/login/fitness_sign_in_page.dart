@@ -31,10 +31,13 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
             child: Column(
               children: [
                 Text(
-                  "Whenever you are\health is number one",
+                  "Whenever you are\nhealth is number one",
                   style: TextStyle(
                     color: Color.fromRGBO(35, 195, 95, 1),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Gap(
                   16,
