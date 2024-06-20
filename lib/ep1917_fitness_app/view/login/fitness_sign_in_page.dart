@@ -106,12 +106,14 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Not a member?",
+                    Text(
+                      "Not a member?",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
-                        color: Colors.white
-                      ),),
+                        color: Colors.white,
+                      ),
+                    ),
                     TextButton(
                       onPressed: () {},
                       style: TextButton.styleFrom(
