@@ -89,9 +89,14 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     color: Colors.white,
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Sign In with Google",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       )
                     ],
                   ),
