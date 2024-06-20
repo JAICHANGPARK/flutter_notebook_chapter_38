@@ -14,18 +14,21 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(18, 24, 40, 1),
       body: SafeArea(
-        child: Column(
-          children: [
-            IconButton(
-              onPressed: () {
-                context.go("/sign-in");
-              },
-              icon: Icon(
-                Icons.arrow_back_ios_new,
-              ),
-              color: Colors.white,
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              IconButton(
+                onPressed: () {
+                  context.go("/sign-in");
+                },
+                icon: Icon(
+                  Icons.arrow_back_ios_new,
+                ),
+                color: Colors.white,
+              )
+            ],
+          ),
         ),
       ),
     );
