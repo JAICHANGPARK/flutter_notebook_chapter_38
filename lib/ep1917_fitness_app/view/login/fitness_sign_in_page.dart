@@ -46,10 +46,18 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                     color: Color.fromRGBO(35, 195, 95, 1),
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.mail_outline),
+                      Icon(
+                        Icons.mail_outline,
+                        color: Colors.white,
+                      ),
+                      Gap(8),
                       Text(
                         "Sign In with Email",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       )
                     ],
                   ),
