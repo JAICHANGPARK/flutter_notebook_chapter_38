@@ -30,7 +30,12 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
             bottom: 32,
             child: Column(
               children: [
-                Text("Whenever you are\health is number one"),
+                Text(
+                  "Whenever you are\health is number one",
+                  style: TextStyle(
+                    color: Color.fromRGBO(35, 195, 95, 1),
+                  ),
+                ),
                 Gap(
                   16,
                 ),
@@ -44,6 +49,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                   height: 62,
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(35, 195, 95, 1),
+                    borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
