@@ -75,6 +75,7 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                         "Sign In with Email",
                         style: TextStyle(
                           color: Colors.white,
+                          fontSize: 16,
                         ),
                       )
                     ],
@@ -104,7 +105,12 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 Gap(24),
                 Row(
                   children: [
-                    Text("Not a member?"),
+                    Text("Not a member?",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.white
+                      ),),
                     TextButton(
                       onPressed: () {},
                       child: Text(
