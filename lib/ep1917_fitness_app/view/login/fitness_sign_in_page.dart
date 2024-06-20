@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class FitnessSignInPage extends StatefulWidget {
@@ -115,7 +116,9 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.go("/sign-up");
+                      },
                       style: TextButton.styleFrom(
                         foregroundColor: const Color.fromRGBO(35, 195, 95, 1),
                       ),
