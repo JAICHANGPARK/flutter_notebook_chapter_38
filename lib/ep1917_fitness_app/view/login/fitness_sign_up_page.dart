@@ -79,7 +79,6 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 ),
               ),
               Gap(20),
-
               Container(
                 height: 62,
                 decoration: BoxDecoration(
@@ -87,7 +86,22 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   borderRadius: BorderRadius.circular(6),
                 ),
               ),
-              TextButton(onPressed: (){}, child: Text("Forgot password?"))
+              TextButton(
+                onPressed: () {},
+                child: Text("Forgot password?"),
+              ),
+              Spacer(),
+              Row(
+                children: [
+                  Text("Don't have an account?"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Sign Up",
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
