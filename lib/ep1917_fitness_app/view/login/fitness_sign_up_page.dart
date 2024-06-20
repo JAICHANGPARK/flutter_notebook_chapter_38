@@ -53,13 +53,41 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 color: Colors.grey,
               ),
               Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.1),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Email",
                     border: InputBorder.none,
                   ),
                 ),
-              )
+              ),
+              Gap(12),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(.1),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: "Password",
+                    border: InputBorder.none,
+                  ),
+                  obscureText: true,
+                ),
+              ),
+              Gap(20),
+
+              Container(
+                height: 62,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+              ),
+              TextButton(onPressed: (){}, child: Text("Forgot password?"))
             ],
           ),
         ),
