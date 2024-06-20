@@ -17,6 +17,7 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
                 onPressed: () {
@@ -26,6 +27,24 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   Icons.arrow_back_ios_new,
                 ),
                 color: Colors.white,
+              ),
+              Text("Sign In"),
+              Text(
+                "Let's sign in with your Fitline account",
+              ),
+              Container(
+                height: 62,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+              ),
+              Container(
+                height: 62,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(6),
+                ),
               )
             ],
           ),
