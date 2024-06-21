@@ -84,8 +84,14 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 child: Stack(
                   children: [
                     Positioned.fill(
-                        child: Divider(
-                      color: Colors.grey,
+                      child: Divider(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Positioned(child: Center(
+                      child: Text("Or sign up with email",style: TextStyle(
+                        color: Colors.grey,
+                      ),),
                     ))
                   ],
                 ),
