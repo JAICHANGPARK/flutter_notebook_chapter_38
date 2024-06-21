@@ -54,7 +54,6 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 ),
                 child: Center(
                   child: Text(
-
                     "Sign in with Apple",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -70,16 +69,25 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(6),
                 ),
-
                 child: Center(
                   child: Text(
-
                     "Sign in with Google",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                   ),
+                ),
+              ),
+              SizedBox(
+                height: 62,
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                        child: Divider(
+                      color: Colors.grey,
+                    ))
+                  ],
                 ),
               ),
               Divider(
