@@ -41,6 +41,9 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
               Gap(12),
               Text(
                 "Let's sign in with your Fitline account",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
               Gap(16),
               Container(
