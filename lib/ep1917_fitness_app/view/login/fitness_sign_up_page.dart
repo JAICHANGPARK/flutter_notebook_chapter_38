@@ -91,19 +91,26 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                       ),
                     ),
                     Positioned(
-                        left: 0,
-                        right: 0,
+                        // left: 0,
+                        // right: 0,
                         bottom: 0,
                         top: 0,
-                        child: Container(
-                          width: 200,
-                      color: Color.fromRGBO(18, 24, 40, 1),
-                      child: Center(
-                        child: Text("Or sign up with email",style: TextStyle(
-                          color: Colors.grey,
-                        ),),
-                      ),
-                    ))
+                        left: 0,
+                        right: 0,
+                        child: Center(
+                          child: Container(
+                            width: 160,
+                            color: Color.fromRGBO(18, 24, 40, 1),
+                            child: Center(
+                              child: Text(
+                                "Or sign up with email",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ))
                   ],
                 ),
               ),
