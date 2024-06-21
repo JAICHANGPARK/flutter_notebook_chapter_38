@@ -137,6 +137,7 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   style: TextStyle(
                     color: Colors.white,
                   ),
+                  cursorColor: Colors.white,
                 ),
               ),
               Gap(12),
@@ -144,12 +145,19 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(.1),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Password",
                     border: InputBorder.none,
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                    ),
                   ),
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  cursorColor: Colors.white,
                   obscureText: true,
                 ),
               ),
