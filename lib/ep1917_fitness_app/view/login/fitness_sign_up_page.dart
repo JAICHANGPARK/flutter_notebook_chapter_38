@@ -52,6 +52,16 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(6),
                 ),
+                child: Center(
+                  child: Text(
+
+                    "Sign in with Apple",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
               ),
               Gap(12),
               Container(
@@ -59,6 +69,17 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(6),
+                ),
+
+                child: Center(
+                  child: Text(
+
+                    "Sign in with Google",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
               Divider(
