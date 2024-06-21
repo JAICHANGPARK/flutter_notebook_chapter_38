@@ -132,7 +132,6 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                     labelStyle: TextStyle(
                       color: Colors.grey,
                     ),
-
                   ),
                   style: TextStyle(
                     color: Colors.white,
@@ -140,9 +139,10 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                   cursorColor: Colors.white,
                 ),
               ),
-              Gap(12),
+              Gap(16),
               Container(
                 decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6),
                   color: Colors.white.withOpacity(.1),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
@@ -165,8 +165,18 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
               Container(
                 height: 62,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: const Color.fromRGBO(35, 195, 95, 1),
                   borderRadius: BorderRadius.circular(6),
+                ),
+                child: Center(
+                  child: Text(
+                    "Sign Up",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
               TextButton(
