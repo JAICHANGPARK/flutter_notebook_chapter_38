@@ -84,8 +84,10 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                 child: Stack(
                   children: [
                     Positioned.fill(
-                      child: Divider(
-                        color: Colors.grey,
+                      child: Center(
+                        child: Divider(
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                     Positioned(
@@ -94,10 +96,13 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
                         bottom: 0,
                         top: 0,
                         child: Container(
+                          width: 200,
                       color: Color.fromRGBO(18, 24, 40, 1),
-                      child: Text("Or sign up with email",style: TextStyle(
-                        color: Colors.grey,
-                      ),),
+                      child: Center(
+                        child: Text("Or sign up with email",style: TextStyle(
+                          color: Colors.grey,
+                        ),),
+                      ),
                     ))
                   ],
                 ),
