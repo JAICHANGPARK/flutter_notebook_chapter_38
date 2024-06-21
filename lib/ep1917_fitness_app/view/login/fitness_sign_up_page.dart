@@ -122,12 +122,20 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(.1),
+                  borderRadius: BorderRadius.circular(6),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Email",
                     border: InputBorder.none,
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                    ),
+
+                  ),
+                  style: TextStyle(
+                    color: Colors.white,
                   ),
                 ),
               ),
