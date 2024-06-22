@@ -68,6 +68,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     style: TextStyle(
                       color: Colors.white,
                     ),
+                  ),
+                  Container(
+                    height: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
