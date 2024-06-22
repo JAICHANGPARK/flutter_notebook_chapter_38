@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
@@ -14,11 +15,15 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       body: SafeArea(
         child: Column(
           children: [
+            Gap(20),
             Padding(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
+                  Gap(12),
                   Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
