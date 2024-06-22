@@ -70,8 +70,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       "Popular Now",
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 16,
                       ),
                     ),
+                    Gap(16),
                     Container(
                       height: 320,
                       decoration: BoxDecoration(
