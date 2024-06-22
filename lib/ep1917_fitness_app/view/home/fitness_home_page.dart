@@ -58,24 +58,28 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ],
               ),
             ),
+            Gap(16),
             Expanded(
                 child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Popular Now",
-                    style: TextStyle(
-                      color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Popular Now",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Container(
-                    height: 320,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                    ),
-                  )
-                ],
+                    Container(
+                      height: 320,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ))
           ],
