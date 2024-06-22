@@ -105,7 +105,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
-                    )
+                    ),
+                    const Gap(16),
+                    const Text(
+                      "Additional training",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                    ),
+                    const Gap(16),
+                    Container(
+                      height: 200,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
                   ],
                 ),
               ),
