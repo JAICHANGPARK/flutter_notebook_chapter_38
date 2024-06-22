@@ -26,7 +26,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   Gap(12),
                   Expanded(
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Good morning!",
@@ -60,6 +60,35 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.newspaper,
+            ),
+            label: "Article",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_2_outlined,
+            ),
+            label: "Profile",
+          ),
+        ],
       ),
     );
   }
