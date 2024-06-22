@@ -38,6 +38,9 @@ class FitnessApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: router,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Color.fromRGBO(18, 24, 40, 1),
+      ),
     );
   }
 }
