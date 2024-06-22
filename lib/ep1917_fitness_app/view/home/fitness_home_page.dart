@@ -79,6 +79,31 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                       ),
+                    ),
+                    Gap(16),
+                    Row(
+                      children: [
+                        Text(
+                          "Workout types",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        )
+                      ],
+                    ),
+                    // Gap(12),
+                    Container(
+                      height: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
                     )
                   ],
                 ),
