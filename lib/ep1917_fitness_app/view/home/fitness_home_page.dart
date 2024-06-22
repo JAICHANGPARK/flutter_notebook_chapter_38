@@ -15,16 +15,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Gap(20),
+            const Gap(20),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 24,
                   ),
-                  Gap(12),
-                  Expanded(
+                  const Gap(12),
+                  const Expanded(
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -44,12 +44,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   )),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.favorite,
                     ),
                     color: Colors.white,
                   ),
-                  Badge(
+                  const Badge(
                     child: Icon(
                       Icons.notifications,
                       color: Colors.white,
@@ -58,7 +58,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
                 child: SingleChildScrollView(
               child: Padding(
@@ -66,25 +66,25 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Popular Now",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Container(
                       height: 320,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Workout types",
                           style: TextStyle(
                             color: Colors.white,
@@ -93,7 +93,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See all",
                           ),
                         )
@@ -102,7 +102,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     // Gap(12),
                     Container(
                       height: 200,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
                     )
@@ -116,25 +116,25 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
             ),
             label: "Search",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.newspaper,
             ),
             label: "Article",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.person_2_outlined,
             ),
