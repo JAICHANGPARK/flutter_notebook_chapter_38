@@ -28,7 +28,7 @@ class FitnessApp extends StatelessWidget {
         },
       ),
       GoRoute(
-        path: "/home",
+        path: "/",
         builder: (context, state) => FitnessHomePage(),
       ),
     ],
