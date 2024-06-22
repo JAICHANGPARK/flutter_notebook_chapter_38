@@ -82,6 +82,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     ),
                     Gap(16),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "Workout types",
