@@ -11,25 +11,40 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              CircleAvatar(),
-              Expanded(
-                  child: Column(
-                children: [
-                  Text(
-                    "Good morning!",
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text(
+                      "Good morning!",
+                    ),
+                    Text(
+                      "Dream Walker",
+                    )
+                  ],
+                )),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite,
                   ),
-                  Text(
-                    "Dream Walker",
-                  )
-                ],
-              ))
-            ],
-          )
-        ],
+                  color: Colors.white,
+                ),
+                Badge(
+                  child: Icon(
+                    Icons.notifications,
+                  ),
+                  
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
