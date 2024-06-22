@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
 
@@ -14,7 +13,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Row(
+            children: [
+              CircleAvatar(),
+              Expanded(
+                  child: Column(
+                children: [
+                  Text(
+                    "Good morning!",
+                  ),
+                  Text(
+                    "Dream Walker",
+                  )
+                ],
+              ))
+            ],
+          )
         ],
       ),
     );
