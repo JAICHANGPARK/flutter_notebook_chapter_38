@@ -14,7 +14,6 @@ class _FitnessSignUpPageState extends State<FitnessSignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color.fromRGBO(18, 24, 40, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
