@@ -14,34 +14,43 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                    child: Column(
-                  children: [
-                    Text(
-                      "Good morning!",
+            Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Text(
+                        "Good morning!",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      Text(
+                        "Dream Walker",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  )),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.favorite,
                     ),
-                    Text(
-                      "Dream Walker",
-                    )
-                  ],
-                )),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.favorite,
+                    color: Colors.white,
                   ),
-                  color: Colors.white,
-                ),
-                Badge(
-                  child: Icon(
-                    Icons.notifications,
-                  ),
-                  
-                )
-              ],
+                  Badge(
+                    child: Icon(
+                      Icons.notifications,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
