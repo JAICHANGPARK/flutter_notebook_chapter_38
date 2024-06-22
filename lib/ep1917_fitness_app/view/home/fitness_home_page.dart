@@ -21,6 +21,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   CircleAvatar(),
                   Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Good morning!",
