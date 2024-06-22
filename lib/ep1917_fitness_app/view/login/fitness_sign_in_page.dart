@@ -58,28 +58,33 @@ class _FitnessSignInPageState extends State<FitnessSignInPage> {
                 const Gap(
                   16,
                 ),
-                Container(
-                  height: 62,
-                  decoration: BoxDecoration(
-                    color: const Color.fromRGBO(35, 195, 95, 1),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.mail_outline,
-                        color: Colors.white,
-                      ),
-                      Gap(8),
-                      Text(
-                        "Sign In with Email",
-                        style: TextStyle(
+                GestureDetector(
+                  onTap: (){
+                    context.go("/");
+                  },
+                  child: Container(
+                    height: 62,
+                    decoration: BoxDecoration(
+                      color: const Color.fromRGBO(35, 195, 95, 1),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.mail_outline,
                           color: Colors.white,
-                          fontSize: 16,
                         ),
-                      )
-                    ],
+                        Gap(8),
+                        Text(
+                          "Sign In with Email",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
                 const Gap(
