@@ -77,8 +77,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     Container(
                       height: 272,
                       decoration: const BoxDecoration(
-                        // color: Colors.white,
-                      ),
+                          // color: Colors.white,
+                          ),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
@@ -144,6 +144,18 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 340,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          );
+                        },
+                      ),
                     ),
                     const Gap(16),
                     const Text(
@@ -171,8 +183,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
         height: 72,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          backgroundColor:  Color.fromRGBO(18, 24, 40, 1),
-          selectedItemColor:  Color.fromRGBO(35, 195, 95, 1),
+          backgroundColor: Color.fromRGBO(18, 24, 40, 1),
+          selectedItemColor: Color.fromRGBO(35, 195, 95, 1),
           unselectedItemColor: Colors.grey,
           items: const [
             BottomNavigationBarItem(
