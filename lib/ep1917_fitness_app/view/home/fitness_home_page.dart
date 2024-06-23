@@ -160,6 +160,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 fit: BoxFit.cover,
                               ),
                             ),
+                            child: Column(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red[300],
+                                  ),
+                                  padding: EdgeInsets.symmetric(horizontal: 6,),
+                                  child: Text(
+                                    "Free",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
