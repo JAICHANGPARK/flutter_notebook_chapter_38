@@ -94,7 +94,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 Text(
                                   "20+ Effective Health and Fitness Tips for daily life",
                                 ),
-                                Text("5 Oct 2024 3 m")
+                                Text("5 Oct 2024 3 min read")
                               ],
                             ),
                           );
