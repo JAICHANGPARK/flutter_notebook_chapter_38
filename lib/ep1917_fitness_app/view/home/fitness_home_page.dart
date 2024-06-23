@@ -160,19 +160,39 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 fit: BoxFit.cover,
                               ),
                             ),
+                            padding: EdgeInsets.all(16),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.red[300],
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 6,),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 6,
+                                  ),
                                   child: Text(
                                     "Free",
                                     style: TextStyle(
                                       color: Colors.white,
                                     ),
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Quick Push up",
+                                        ),
+                                        Text(
+                                          "Unknown Trainer",
+                                        )
+                                      ],
+                                    ))
+                                  ],
                                 )
                               ],
                             ),
