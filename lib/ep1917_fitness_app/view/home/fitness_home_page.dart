@@ -89,6 +89,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886576_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
