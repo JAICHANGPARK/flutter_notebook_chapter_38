@@ -75,7 +75,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     ),
                     const Gap(16),
                     Container(
-                      height: 320,
+                      height: 272,
                       decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
@@ -83,8 +83,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.only(right: 12),
-                            width: 280,
+                            margin: EdgeInsets.only(right: 16),
+                            width: 320,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
