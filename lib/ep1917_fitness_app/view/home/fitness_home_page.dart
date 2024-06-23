@@ -179,17 +179,48 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 Row(
                                   children: [
                                     Expanded(
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Quick Push up",
-                                        ),
-                                        Text(
-                                          "Unknown Trainer",
-                                        )
-                                      ],
-                                    ))
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Quick Push up",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Unknown Trainer",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withOpacity(.2),
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 12,
+                                      vertical: 4),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.star,
+                                            color: Colors.yellow,
+                                          ),
+                                          Text(
+                                            "4.5",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
