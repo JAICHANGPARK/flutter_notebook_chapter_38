@@ -85,6 +85,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                           return Container(
                             margin: EdgeInsets.only(right: 16),
                             width: 320,
+                            padding: EdgeInsets.all(16),
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
