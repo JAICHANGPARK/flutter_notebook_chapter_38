@@ -79,6 +79,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       decoration: const BoxDecoration(
                         color: Colors.white,
                       ),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          );
+                        },
+                      ),
                     ),
                     const Gap(16),
                     Row(
