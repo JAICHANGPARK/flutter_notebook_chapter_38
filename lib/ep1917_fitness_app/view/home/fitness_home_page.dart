@@ -106,6 +106,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     color: Colors.white,
                                   ),
                                 ),
+                                Gap(6),
                                 Text(
                                   "5 Oct 2024 3 min read",
                                   style: TextStyle(
