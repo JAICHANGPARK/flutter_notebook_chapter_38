@@ -90,11 +90,21 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Text(
                                   "20+ Effective Health and Fitness Tips for daily life",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
-                                Text("5 Oct 2024 3 min read")
+                                Text(
+                                  "5 Oct 2024 3 min read",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
                               ],
                             ),
                           );
