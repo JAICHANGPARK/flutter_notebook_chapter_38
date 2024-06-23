@@ -150,8 +150,15 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 340,
+                            margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.blue,
+                              borderRadius: BorderRadius.circular(12),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2024/05/19/01/36/ai-generated-8771282_1280.png"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           );
                         },
