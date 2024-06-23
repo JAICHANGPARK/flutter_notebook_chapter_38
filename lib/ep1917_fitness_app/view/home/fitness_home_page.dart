@@ -77,7 +77,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     Container(
                       height: 272,
                       decoration: const BoxDecoration(
-                        color: Colors.white,
+                        // color: Colors.white,
                       ),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
