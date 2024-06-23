@@ -83,6 +83,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
+                            margin: EdgeInsets.only(right: 12),
                             width: 280,
                             decoration: BoxDecoration(
                               color: Colors.blue,
