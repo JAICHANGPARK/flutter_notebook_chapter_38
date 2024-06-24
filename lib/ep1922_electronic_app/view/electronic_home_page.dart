@@ -22,20 +22,20 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 children: [
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(38, 39, 44, 1),
+                        color: const Color.fromRGBO(38, 39, 44, 1),
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           CircleAvatar(
                             backgroundColor: Color(0xff4E53EE),
                             radius: 24,
+                            foregroundColor: Colors.white,
                             child: Icon(
                               CupertinoIcons.search,
                             ),
-                            foregroundColor: Colors.white,
                           ),
                           Gap(12),
                           Expanded(
@@ -63,7 +63,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.menu,
                     ),
                     color: Colors.white,
@@ -77,36 +77,36 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-          backgroundColor: Color.fromRGBO(29, 30, 34, 1),
+          backgroundColor: const Color.fromRGBO(29, 30, 34, 1),
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.emoji_objects_outlined,
               ),
               label: "Feeds",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite_outline,
               ),
               label: "Likes",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_bag_outlined,
               ),
               label: "Carts",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_2_outlined,
               ),
