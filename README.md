@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_38
 
-## EP1917
+## EP1922
+
+- Electis - Shopping for Electronic Goods Mobile App
+- Dipa Product for Dipa Inhouse
+- https://dribbble.com/shots/24375469-Electis-Shopping-for-Electronic-Goods-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/14917864/file/original-94b17165f1451da77b31ee8c9625997c.jpg?resize=1600x1200"/>
+
+
+## EP1917-1921
 
 - Fitnation- Fitness & Workout Mobile App
 - Mizanur Rahman
