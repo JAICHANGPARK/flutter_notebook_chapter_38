@@ -30,6 +30,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       child: Row(
                         children: [
                           CircleAvatar(
+                            backgroundColor: Color(0xff4E53EE),
                             radius: 24,
                             child: Icon(
                               CupertinoIcons.search,
