@@ -6,7 +6,7 @@
 - Dipa Product for Dipa Inhouse
 - https://dribbble.com/shots/24375469-Electis-Shopping-for-Electronic-Goods-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/14917864/file/original-94b17165f1451da77b31ee8c9625997c.jpg?resize=1600x1200"/>
+<img src="https://cdn.dribbble.com/userupload/15168902/file/original-3682a43f9f0a287aba7459fba6e1cf80.jpg?resize=1600x1200"/>
 
 
 ## EP1917-1921
