@@ -50,7 +50,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                 Text(
                                   "Electronics Shoes Anything",
                                   style: TextStyle(
-                                    color: Color.fromRGBO(29, 30, 34, 1),
+                                    color: Colors.grey,
                                   ),
                                 ),
                               ],
