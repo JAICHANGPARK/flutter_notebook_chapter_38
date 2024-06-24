@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons:
 
   go_router: ^14.1.4
   google_fonts: ^6.2.1
