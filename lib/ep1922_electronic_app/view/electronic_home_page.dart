@@ -81,32 +81,32 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.grey,
           type: BottomNavigationBarType.fixed,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.emoji_objects_outlined,
               ),
               label: "Feeds",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite_outline,
               ),
               label: "Likes",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_bag_outlined,
               ),
               label: "Carts",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_2_outlined,
               ),
