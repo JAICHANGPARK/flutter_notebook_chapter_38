@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1922_electronic_app/view/electronic_home_page.dart';
 
 
 void main() {
@@ -10,6 +11,8 @@ class ElectronicMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: ElectronicHomePage(),
+    );
   }
 }
