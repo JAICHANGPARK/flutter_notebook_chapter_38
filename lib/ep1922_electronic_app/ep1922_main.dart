@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-
+  runApp(ElectronicMobileApp());
 }
 
 class ElectronicMobileApp extends StatelessWidget {
