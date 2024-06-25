@@ -77,7 +77,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 ],
               ),
             ),
-
             Padding(
               padding: const EdgeInsets.only(bottom: 24),
               child: Container(
@@ -86,13 +85,13 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 child: Placeholder(),
               ),
             ),
-
             SizedBox(
               height: 240,
               child: Container(
-                margin: EdgeInsets.only(left: 0),
+                margin: EdgeInsets.only(left: 20),
                 color: Colors.white,
                 child: PageView(
+                  padEnds: false,
                   controller: pageController,
                   children: [
                     Container(
@@ -109,7 +108,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   ],
                 ),
               ),
-
             ),
             Gap(12),
             SizedBox(
@@ -121,10 +119,28 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   dotHeight: 16,
                   activeDotColor: Colors.white,
                   dotColor: Colors.white.withOpacity(.1),
+                  type: WormType.thin,
+                  dotWidth: 24,
                 ),
-
-
               ),
+            ),
+            Row(
+              children: [
+                Text(
+                  "Electis Choice",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "See all",
+                  ),
+                ),
+              ],
             )
           ],
         ),
