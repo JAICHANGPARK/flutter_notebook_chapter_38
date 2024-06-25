@@ -91,7 +91,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 240,
+                      height: 220,
                       child: Container(
                         margin: EdgeInsets.only(left: 20),
                         color: Colors.white,
@@ -139,7 +139,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 20,),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -165,7 +165,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 20),
-                      height: 280,
+                      height: 240,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
