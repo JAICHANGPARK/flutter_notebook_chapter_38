@@ -85,62 +85,94 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 child: Placeholder(),
               ),
             ),
-            SizedBox(
-              height: 240,
-              child: Container(
-                margin: EdgeInsets.only(left: 20),
-                color: Colors.white,
-                child: PageView(
-                  padEnds: false,
-                  controller: pageController,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      height: 240,
+                      child: Container(
+                        margin: EdgeInsets.only(left: 20),
+                        color: Colors.white,
+                        child: PageView(
+                          padEnds: false,
+                          controller: pageController,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                              margin: EdgeInsets.only(right: 12),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                              margin: EdgeInsets.only(right: 12),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orange,
+                              ),
+                              margin: EdgeInsets.only(right: 12),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Gap(24),
+                    Center(
+                      child: SizedBox(
+                        height: 16,
+                        child: SmoothPageIndicator(
+                          controller: pageController,
+                          count: 4,
+                          effect: WormEffect(
+                            dotHeight: 16,
+                            activeDotColor: Colors.white,
+                            dotColor: Colors.white.withOpacity(.1),
+                            type: WormType.thin,
+                            dotWidth: 24,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Electis Choice",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.grey,
+                            ),
+                            onPressed: () {},
+                            child: Text(
+                              "See all",
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     Container(
+                      margin: EdgeInsets.only(left: 20),
+                      height: 280,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
-                      margin: EdgeInsets.only(right: 12),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                      ),
-                    )
                   ],
                 ),
               ),
-            ),
-            Gap(12),
-            SizedBox(
-              height: 16,
-              child: SmoothPageIndicator(
-                controller: pageController,
-                count: 4,
-                effect: WormEffect(
-                  dotHeight: 16,
-                  activeDotColor: Colors.white,
-                  dotColor: Colors.white.withOpacity(.1),
-                  type: WormType.thin,
-                  dotWidth: 24,
-                ),
-              ),
-            ),
-            Row(
-              children: [
-                Text(
-                  "Electis Choice",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See all",
-                  ),
-                ),
-              ],
             )
           ],
         ),
