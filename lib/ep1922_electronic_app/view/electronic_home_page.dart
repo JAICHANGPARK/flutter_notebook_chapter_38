@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class ElectronicHomePage extends StatefulWidget {
   const ElectronicHomePage({super.key});
@@ -11,7 +12,7 @@ class ElectronicHomePage extends StatefulWidget {
 
 class _ElectronicHomePageState extends State<ElectronicHomePage> {
   PageController pageController = PageController(
-    viewportFraction: .8,
+    viewportFraction: .9,
     initialPage: 0,
   );
 
@@ -92,6 +93,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                      margin: EdgeInsets.only(right: 12),
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -103,6 +105,9 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               ),
             ),
             SmoothPageIndicator(
+              controller: pageController,
+              count: 4,
+
 
             )
           ],
