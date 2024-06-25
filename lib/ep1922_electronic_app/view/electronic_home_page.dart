@@ -70,7 +70,15 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(
+              height: 42,
+              child: Placeholder(),
+            ),
+            SizedBox(height: 320,
+            child: Container(
+              color: Colors.white,
+            ),)
           ],
         ),
       ),
