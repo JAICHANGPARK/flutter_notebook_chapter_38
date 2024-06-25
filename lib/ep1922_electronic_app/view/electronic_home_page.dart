@@ -10,6 +10,11 @@ class ElectronicHomePage extends StatefulWidget {
 }
 
 class _ElectronicHomePageState extends State<ElectronicHomePage> {
+  PageController pageController = PageController(
+    viewportFraction: .8,
+    initialPage: 0,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,16 +80,31 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               height: 42,
               child: Placeholder(),
             ),
-            SizedBox(height: 240,
-            child: Container(
-              margin: EdgeInsets.only(left: 20),
-              color: Colors.white,
-              child: PageView(
-                children: [
-                  
-                ],
+            SizedBox(
+              height: 240,
+              child: Container(
+                margin: EdgeInsets.only(left: 0),
+                color: Colors.white,
+                child: PageView(
+                  controller: pageController,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),)
+            ),
+            SmoothPageIndicator(
+
+            )
           ],
         ),
       ),
