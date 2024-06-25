@@ -75,9 +75,15 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               height: 42,
               child: Placeholder(),
             ),
-            SizedBox(height: 320,
+            SizedBox(height: 240,
             child: Container(
+              margin: EdgeInsets.only(left: 20),
               color: Colors.white,
+              child: PageView(
+                children: [
+                  
+                ],
+              ),
             ),)
           ],
         ),
