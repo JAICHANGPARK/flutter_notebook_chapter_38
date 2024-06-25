@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons:
 
-  go_router: ^14.1.4
+  go_router: ^14.2.0
   google_fonts: ^6.2.1
   gap:
   smooth_page_indicator:
