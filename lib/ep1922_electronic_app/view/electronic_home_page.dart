@@ -112,12 +112,19 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
 
             ),
             Gap(12),
-            SmoothPageIndicator(
-              controller: pageController,
-              count: 4,
-              
+            SizedBox(
+              height: 16,
+              child: SmoothPageIndicator(
+                controller: pageController,
+                count: 4,
+                effect: WormEffect(
+                  dotHeight: 16,
+                  activeDotColor: Colors.white,
+                  dotColor: Colors.white.withOpacity(.1),
+                ),
 
 
+              ),
             )
           ],
         ),
