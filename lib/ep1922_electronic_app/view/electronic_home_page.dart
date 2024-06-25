@@ -139,7 +139,8 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20,),
+                      padding: const EdgeInsets.symmetric(horizontal: 20,
+                      vertical: 12),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
