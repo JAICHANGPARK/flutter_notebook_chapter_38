@@ -77,10 +77,14 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 42,
-              child: Placeholder(),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: SizedBox(
+                height: 52,
+                child: Placeholder(),
+              ),
             ),
+
             SizedBox(
               height: 240,
               child: Container(
@@ -103,7 +107,9 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   ],
                 ),
               ),
+
             ),
+            Gap(12),
             SmoothPageIndicator(
               controller: pageController,
               count: 4,
