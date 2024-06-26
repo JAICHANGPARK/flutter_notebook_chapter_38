@@ -245,16 +245,35 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         color: Colors.blue,
                       ),
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
+                            
                             color: Colors.grey,
                             width: 180,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
-                                  child: Container(),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(.2),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(child: Container(child: Row(
+                                          children: [
+                                          ],
+                                        ),))
+                                      ],
+                                    ),
+                                  ),
                                 ),
+                                Text(
+                                  "Alpha 9 Mark 3 Body Only",
+                                ),
+                                Text("RP 24.500.000"),
                               ],
                             ),
                           );
