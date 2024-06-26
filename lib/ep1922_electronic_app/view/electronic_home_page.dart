@@ -143,12 +143,21 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(12),
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Try Bold"),
-                                  Text("Experience"),
+                                  Text("Try Bold",style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),),
+                                  Text("Experience",style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),),
+                                  Gap(12),
                                   Text("S think diffrents"),
+                                  Gap(24),
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.black
