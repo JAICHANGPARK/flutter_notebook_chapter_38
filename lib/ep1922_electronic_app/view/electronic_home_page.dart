@@ -130,7 +130,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      height: 220,
+                      height: 200,
                       child: Container(
                         margin: EdgeInsets.only(left: 20),
                         color: Colors.white,
@@ -162,7 +162,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.black
                                     ),
-                                    child: Text("Discount 40%"),
+                                    child: Text("Discount 40%",style: TextStyle(),),
                                   )
                                 ],
                               ),
