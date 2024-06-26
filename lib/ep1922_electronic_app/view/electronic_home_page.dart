@@ -213,6 +213,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         ),
                       ),
                     ),
+                    Gap(12),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       child: Row(
@@ -240,7 +241,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 20),
-                      height: 260,
+                      height: 240,
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
@@ -249,9 +250,9 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            
+                            margin: EdgeInsets.only(right: 12),
                             color: Colors.grey,
-                            width: 180,
+                            width: 160,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -270,9 +271,11 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                     ),
                                   ),
                                 ),
+                                Gap(8),
                                 Text(
                                   "Alpha 9 Mark 3 Body Only",
                                 ),
+                                Gap(4),
                                 Text("RP 24.500.000"),
                               ],
                             ),
