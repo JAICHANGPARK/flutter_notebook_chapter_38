@@ -96,22 +96,29 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: tabs.length,
                   itemBuilder: (context, index) {
-                    return Container(
-                      decoration: BoxDecoration(
-                        color: selectedTab == index ? Color(0xff4E53EE) : Colors.white.withOpacity(.1),
-                        borderRadius: BorderRadius.circular(32),
-                      ),
-                      margin: EdgeInsets.only(right: 12),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 20,
-                      ),
-                      child: Center(
-                          child: Text(
-                        "${tabs[index]}",
-                        style: TextStyle(
-                          color: Colors.white,
+                    return GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          selectedTab = index;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: selectedTab == index ? Color(0xff4E53EE) : Colors.white.withOpacity(.1),
+                          borderRadius: BorderRadius.circular(32),
                         ),
-                      )),
+                        margin: EdgeInsets.only(right: 12),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                        ),
+                        child: Center(
+                            child: Text(
+                          "${tabs[index]}",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )),
+                      ),
                     );
                   },
                 ),
