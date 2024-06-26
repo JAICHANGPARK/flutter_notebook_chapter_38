@@ -244,7 +244,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       margin: const EdgeInsets.only(left: 20),
                       height: 240,
                       decoration: const BoxDecoration(
-                        color: Colors.blue,
+
                       ),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
@@ -252,7 +252,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             margin: const EdgeInsets.only(right: 12),
-                            color: Colors.grey,
+                          
                             width: 160,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -264,10 +264,13 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                     ),
                                     child: Stack(
                                       children: [
-                                        Positioned(child: Container(child: const Row(
-                                          children: [
-                                          ],
-                                        ),))
+                                        Positioned(
+                                          child: Container(
+                                            child: const Row(
+                                              children: [],
+                                            ),
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ),
