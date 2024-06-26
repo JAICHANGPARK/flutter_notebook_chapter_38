@@ -141,6 +141,21 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Try Bold"),
+                                  Text("Experience"),
+                                  Text("S think diffrents"),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black
+                                    ),
+                                    child: Text("Discount 40%"),
+                                  )
+                                ],
                               ),
                               margin: EdgeInsets.only(right: 12),
                             ),
