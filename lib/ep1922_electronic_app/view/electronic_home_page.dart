@@ -133,7 +133,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       height: 200,
                       child: Container(
                         margin: EdgeInsets.only(left: 20),
-                        color: Colors.white,
                         child: PageView(
                           padEnds: false,
                           controller: pageController,
@@ -241,9 +240,17 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                     ),
                     Container(
                       margin: EdgeInsets.only(left: 20),
-                      height: 240,
+                      height: 260,
                       decoration: BoxDecoration(
                         color: Colors.blue,
+                      ),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            color: Colors.grey,
+                            width: 180,
+                          );
+                        },
                       ),
                     ),
                   ],
