@@ -92,7 +92,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               child: Container(
                 margin: EdgeInsets.only(left: 20),
                 height: 42,
-
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: tabs.length,
@@ -102,8 +101,17 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         color: selectedTab == index ? Color(0xff4E53EE) : Colors.white.withOpacity(.1),
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 20,),
-                      child: Center(child: Text("${tabs[index]}")),
+                      margin: EdgeInsets.only(right: 12),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 20,
+                      ),
+                      child: Center(
+                          child: Text(
+                        "${tabs[index]}",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )),
                     );
                   },
                 ),
