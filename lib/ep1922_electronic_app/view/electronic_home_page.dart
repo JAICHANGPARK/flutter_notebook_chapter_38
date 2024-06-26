@@ -249,6 +249,14 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                           return Container(
                             color: Colors.grey,
                             width: 180,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(),
+                                ),
+                              ],
+                            ),
                           );
                         },
                       ),
