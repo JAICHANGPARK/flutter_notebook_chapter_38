@@ -252,7 +252,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             margin: const EdgeInsets.only(right: 12),
-                          
+
                             width: 160,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -278,9 +278,15 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                 const Gap(8),
                                 const Text(
                                   "Alpha 9 Mark 3 Body Only",
+                                  style: TextStyle(
+                                    color: Colors.white
+                                  ),
                                 ),
                                 const Gap(4),
-                                const Text("RP 24.500.000"),
+                                const Text("RP 24.500.000",
+                                  style: TextStyle(
+                                      color: Colors.white
+                                  ),),
                               ],
                             ),
                           );
