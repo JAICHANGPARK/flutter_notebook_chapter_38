@@ -96,7 +96,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: BoxDecoration(
-
+                        color: selectedTab == index ? Color(0xff4E53EE) : Colors.white.withOpacity(.1),
                       ),
                       child: Text("${tabs[index]}"),
                     );
