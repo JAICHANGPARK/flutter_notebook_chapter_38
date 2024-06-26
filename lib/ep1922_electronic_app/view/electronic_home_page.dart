@@ -87,6 +87,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 ],
               ),
             ),
+            Gap(12),
             Padding(
               padding: const EdgeInsets.only(bottom: 24),
               child: Container(
