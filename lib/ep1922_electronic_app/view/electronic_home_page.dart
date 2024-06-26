@@ -97,7 +97,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                   itemCount: tabs.length,
                   itemBuilder: (context, index) {
                     return GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           selectedTab = index;
                         });
@@ -140,29 +140,36 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.blue,
+                                color: Color.fromRGBO(213, 196, 251, 1),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               padding: EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Try Bold",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 24,
-                                  ),),
-                                  Text("Experience",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 24,
-                                  ),),
+                                  Text(
+                                    "Try Bold",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Experience",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24,
+                                    ),
+                                  ),
                                   Gap(12),
                                   Text("S think diffrents"),
                                   Gap(24),
                                   Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.black
+                                    decoration: BoxDecoration(color: Colors.black),
+                                    child: Text(
+                                      "Discount 40%",
+                                      style: TextStyle(),
                                     ),
-                                    child: Text("Discount 40%",style: TextStyle(),),
                                   )
                                 ],
                               ),
