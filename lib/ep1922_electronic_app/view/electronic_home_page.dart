@@ -16,6 +16,16 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
     initialPage: 0,
   );
 
+  List<String> tabs = [
+    "Promo",
+    "Best Deals",
+    "Windy Basic",
+    "Spring",
+    "Winter",
+  ];
+
+  int selectedTab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +92,16 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               child: Container(
                 margin: EdgeInsets.only(left: 20),
                 height: 52,
-                child: Placeholder(),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      decoration: BoxDecoration(
+
+                      ),
+                      child: Text("${tabs[index]}"),
+                    );
+                  },
+                ),
               ),
             ),
             Expanded(
@@ -139,8 +158,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20,
-                      vertical: 12),
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
