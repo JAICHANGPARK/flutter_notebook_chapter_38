@@ -161,11 +161,11 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                       fontSize: 24,
                                     ),
                                   ),
-                                  Gap(12),
+                                  Gap(8),
                                   Text("S think diffrents"),
                                   Gap(24),
                                   Container(
-                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                                     decoration: BoxDecoration(
                                       color: Colors.black,
                                       borderRadius: BorderRadius.circular(32),
