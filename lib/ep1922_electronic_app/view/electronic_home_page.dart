@@ -143,7 +143,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                 color: Color.fromRGBO(213, 196, 251, 1),
                                 borderRadius: BorderRadius.circular(12),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: EdgeInsets.all(20),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -165,10 +165,16 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                   Text("S think diffrents"),
                                   Gap(24),
                                   Container(
-                                    decoration: BoxDecoration(color: Colors.black),
+                                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(32),
+                                    ),
                                     child: Text(
                                       "Discount 40%",
-                                      style: TextStyle(),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
                                     ),
                                   )
                                 ],
