@@ -91,14 +91,19 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
               padding: const EdgeInsets.only(bottom: 24),
               child: Container(
                 margin: EdgeInsets.only(left: 20),
-                height: 52,
+                height: 42,
+
                 child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: tabs.length,
                   itemBuilder: (context, index) {
                     return Container(
                       decoration: BoxDecoration(
                         color: selectedTab == index ? Color(0xff4E53EE) : Colors.white.withOpacity(.1),
+                        borderRadius: BorderRadius.circular(32),
                       ),
-                      child: Text("${tabs[index]}"),
+                      padding: EdgeInsets.symmetric(horizontal: 20,),
+                      child: Center(child: Text("${tabs[index]}")),
                     );
                   },
                 ),
