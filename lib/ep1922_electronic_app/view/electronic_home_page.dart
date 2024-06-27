@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class ElectronicHomePage extends StatefulWidget {
@@ -286,10 +287,16 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                     ),
                   ),
                   Gap(16),
-                  Container(
-                    height: 160,
-                    decoration: BoxDecoration(
-                      color: Colors.green
+                  GestureDetector(
+                    onTap: (){
+                      context.push('/detail');
+                    },
+                    child: Container(
+                      height: 160,
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.green
+                      ),
                     ),
                   )
                 ],
