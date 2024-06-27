@@ -26,272 +26,270 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20.0, 32, 20, 20),
-              child: Row(
-                children: [
-                  Expanded(
+    return SafeArea(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20.0, 32, 20, 20),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: const Color.fromRGBO(38, 39, 44, 1),
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    child: const Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color(0xff4E53EE),
+                          radius: 24,
+                          foregroundColor: Colors.white,
+                          child: Icon(
+                            CupertinoIcons.search,
+                          ),
+                        ),
+                        Gap(12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Search on Electis",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                "Electronics Shoes Anything",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.menu,
+                  ),
+                  color: Colors.white,
+                ),
+              ],
+            ),
+          ),
+          const Gap(12),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 24),
+            child: Container(
+              margin: const EdgeInsets.only(left: 20),
+              height: 42,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: tabs.length,
+                itemBuilder: (context, index) {
+                  return GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedTab = index;
+                      });
+                    },
                     child: Container(
-                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: const Color.fromRGBO(38, 39, 44, 1),
+                        color: selectedTab == index ? const Color(0xff4E53EE) : Colors.white.withOpacity(.1),
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      child: const Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: Color(0xff4E53EE),
-                            radius: 24,
-                            foregroundColor: Colors.white,
-                            child: Icon(
-                              CupertinoIcons.search,
+                      margin: const EdgeInsets.only(right: 12),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 20,
+                      ),
+                      child: Center(
+                          child: Text(
+                            "${tabs[index]}",
+                            style: const TextStyle(
+                              color: Colors.white,
                             ),
-                          ),
-                          Gap(12),
-                          Expanded(
+                          )),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 200,
+                    child: Container(
+                      margin: const EdgeInsets.only(left: 20),
+                      child: PageView(
+                        padEnds: false,
+                        controller: pageController,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(213, 196, 251, 1),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            padding: const EdgeInsets.all(20),
+                            margin: const EdgeInsets.only(right: 12),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  "Search on Electis",
+                                const Text(
+                                  "Try Bold",
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
                                   ),
                                 ),
-                                Text(
-                                  "Electronics Shoes Anything",
+                                const Text(
+                                  "Experience",
                                   style: TextStyle(
-                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
                                   ),
                                 ),
+                                const Gap(8),
+                                const Text("S think diffrents"),
+                                const Gap(24),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  child: const Text(
+                                    "Discount 40%",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
+                          ),
+                          Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.red,
+                            ),
+                            margin: const EdgeInsets.only(right: 12),
+                          ),
+                          Container(
+                            decoration: const BoxDecoration(
+                              color: Colors.orange,
+                            ),
+                            margin: const EdgeInsets.only(right: 12),
                           )
                         ],
                       ),
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.menu,
+                  const Gap(24),
+                  Center(
+                    child: SizedBox(
+                      height: 16,
+                      child: SmoothPageIndicator(
+                        controller: pageController,
+                        count: 4,
+                        effect: WormEffect(
+                          dotHeight: 16,
+                          activeDotColor: Colors.white,
+                          dotColor: Colors.white.withOpacity(.1),
+                          type: WormType.thin,
+                          dotWidth: 24,
+                        ),
+                      ),
                     ),
-                    color: Colors.white,
+                  ),
+                  const Gap(12),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Electis Choice",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        TextButton(
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.grey,
+                          ),
+                          onPressed: () {},
+                          child: const Text(
+                            "See all",
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(left: 20),
+                    height: 240,
+                    decoration: const BoxDecoration(),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: const EdgeInsets.only(right: 12),
+                          width: 160,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(.2),
+                                  ),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        child: Container(
+                                          child: const Row(
+                                            children: [],
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              const Gap(8),
+                              const Text(
+                                "Alpha 9 Mark 3 Body Only",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              const Gap(4),
+                              const Text(
+                                "RP 24.500.000",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
             ),
-            const Gap(12),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 24),
-              child: Container(
-                margin: const EdgeInsets.only(left: 20),
-                height: 42,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: tabs.length,
-                  itemBuilder: (context, index) {
-                    return GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          selectedTab = index;
-                        });
-                      },
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: selectedTab == index ? const Color(0xff4E53EE) : Colors.white.withOpacity(.1),
-                          borderRadius: BorderRadius.circular(32),
-                        ),
-                        margin: const EdgeInsets.only(right: 12),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 20,
-                        ),
-                        child: Center(
-                            child: Text(
-                          "${tabs[index]}",
-                          style: const TextStyle(
-                            color: Colors.white,
-                          ),
-                        )),
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 200,
-                      child: Container(
-                        margin: const EdgeInsets.only(left: 20),
-                        child: PageView(
-                          padEnds: false,
-                          controller: pageController,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: const Color.fromRGBO(213, 196, 251, 1),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              padding: const EdgeInsets.all(20),
-                              margin: const EdgeInsets.only(right: 12),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    "Try Bold",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24,
-                                    ),
-                                  ),
-                                  const Text(
-                                    "Experience",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24,
-                                    ),
-                                  ),
-                                  const Gap(8),
-                                  const Text("S think diffrents"),
-                                  const Gap(24),
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-                                    decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.circular(32),
-                                    ),
-                                    child: const Text(
-                                      "Discount 40%",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.red,
-                              ),
-                              margin: const EdgeInsets.only(right: 12),
-                            ),
-                            Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.orange,
-                              ),
-                              margin: const EdgeInsets.only(right: 12),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    const Gap(24),
-                    Center(
-                      child: SizedBox(
-                        height: 16,
-                        child: SmoothPageIndicator(
-                          controller: pageController,
-                          count: 4,
-                          effect: WormEffect(
-                            dotHeight: 16,
-                            activeDotColor: Colors.white,
-                            dotColor: Colors.white.withOpacity(.1),
-                            type: WormType.thin,
-                            dotWidth: 24,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const Gap(12),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          const Text(
-                            "Electis Choice",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.grey,
-                            ),
-                            onPressed: () {},
-                            child: const Text(
-                              "See all",
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(left: 20),
-                      height: 240,
-                      decoration: const BoxDecoration(),
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            margin: const EdgeInsets.only(right: 12),
-                            width: 160,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(.2),
-                                    ),
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          child: Container(
-                                            child: const Row(
-                                              children: [],
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                const Gap(8),
-                                const Text(
-                                  "Alpha 9 Mark 3 Body Only",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                                const Gap(4),
-                                const Text(
-                                  "RP 24.500.000",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
