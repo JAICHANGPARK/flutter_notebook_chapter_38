@@ -20,6 +20,27 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
         ],
       ),
+      body: Column(
+        children: [
+          Container(
+            height: 72,
+            child: Row(
+              children: [],
+            ),
+          ),
+          Expanded(
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.green,
+                      child: Column(),
+                    );
+                  }))
+        ],
+      ),
     );
   }
 }
