@@ -285,6 +285,13 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                       },
                     ),
                   ),
+                  Gap(16),
+                  Container(
+                    height: 160,
+                    decoration: BoxDecoration(
+                      color: Colors.green
+                    ),
+                  )
                 ],
               ),
             ),
