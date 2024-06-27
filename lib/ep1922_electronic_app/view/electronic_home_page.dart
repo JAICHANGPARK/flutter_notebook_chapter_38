@@ -24,7 +24,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
     "Winter",
   ];
 
-  int selectedTab = 0;
+
 
   @override
   Widget build(BuildContext context) {
