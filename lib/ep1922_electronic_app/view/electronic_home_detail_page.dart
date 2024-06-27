@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ElectronicHomeDetailPage extends StatefulWidget {
   const ElectronicHomeDetailPage({super.key});
 
@@ -11,6 +10,13 @@ class ElectronicHomeDetailPage extends StatefulWidget {
 class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Gadget Day"),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+        ],
+      ),
+    );
   }
 }
