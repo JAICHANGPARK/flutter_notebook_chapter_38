@@ -25,26 +25,58 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
           Container(
             height: 72,
             child: Row(
-              children: [],
+              children: [
+                Container(
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  child: Text(
+                    "Latest",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  child: Text(
+                    "Popular",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  child: Text(
+                    "Top Deals",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.tune),
+                )
+              ],
             ),
           ),
           Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
-                    itemBuilder: (context, index) {
-                      return Container(
-                        color: Colors.green,
-                        child: Column(),
-                      );
-                    }),
-              ))
+            padding: const EdgeInsets.all(16.0),
+            child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
+                ),
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.green,
+                    child: Column(),
+                  );
+                }),
+          ))
         ],
       ),
     );
