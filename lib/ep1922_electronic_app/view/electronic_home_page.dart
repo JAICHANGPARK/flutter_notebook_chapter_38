@@ -15,7 +15,7 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
     viewportFraction: .9,
     initialPage: 0,
   );
-
+  int selectedTab = 0;
   List<String> tabs = [
     "Promo",
     "Best Deals",
@@ -23,8 +23,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
     "Spring",
     "Winter",
   ];
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -243,16 +241,13 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                     Container(
                       margin: const EdgeInsets.only(left: 20),
                       height: 240,
-                      decoration: const BoxDecoration(
-
-                      ),
+                      decoration: const BoxDecoration(),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
                             margin: const EdgeInsets.only(right: 12),
-
                             width: 160,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -278,15 +273,13 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                                 const Gap(8),
                                 const Text(
                                   "Alpha 9 Mark 3 Body Only",
-                                  style: TextStyle(
-                                    color: Colors.white
-                                  ),
+                                  style: TextStyle(color: Colors.white),
                                 ),
                                 const Gap(4),
-                                const Text("RP 24.500.000",
-                                  style: TextStyle(
-                                      color: Colors.white
-                                  ),),
+                                const Text(
+                                  "RP 24.500.000",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ],
                             ),
                           );
@@ -297,47 +290,6 @@ class _ElectronicHomePageState extends State<ElectronicHomePage> {
                 ),
               ),
             )
-          ],
-        ),
-      ),
-      bottomNavigationBar: SizedBox(
-        height: 72,
-        child: BottomNavigationBar(
-          backgroundColor: const Color.fromRGBO(29, 30, 34, 1),
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.grey,
-          type: BottomNavigationBarType.fixed,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home_filled,
-              ),
-              label: "Home",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.emoji_objects_outlined,
-              ),
-              label: "Feeds",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite_outline,
-              ),
-              label: "Likes",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.shopping_bag_outlined,
-              ),
-              label: "Carts",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person_2_outlined,
-              ),
-              label: "Profiles",
-            ),
           ],
         ),
       ),
