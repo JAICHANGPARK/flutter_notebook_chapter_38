@@ -13,6 +13,7 @@ class ElectronicMobileApp extends StatelessWidget {
   ElectronicMobileApp({super.key});
 
   final router = GoRouter(
+    initialLocation: "/",
     routes: [
       ShellRoute(
           builder: (context, state, child) {
