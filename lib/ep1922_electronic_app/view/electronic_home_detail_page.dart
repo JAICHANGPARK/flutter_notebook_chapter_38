@@ -29,16 +29,22 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
             ),
           ),
           Expanded(
-              child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                  ),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      color: Colors.green,
-                      child: Column(),
-                    );
-                  }))
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                    ),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        color: Colors.green,
+                        child: Column(),
+                      );
+                    }),
+              ))
         ],
       ),
     );
