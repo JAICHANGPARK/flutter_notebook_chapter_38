@@ -25,13 +25,13 @@ class ElectronicMobileApp extends StatelessWidget {
             GoRoute(
                 path: "/",
                 builder: (context, state) {
-                  return ElectronicHomePage();
+                  return const ElectronicHomePage();
                 },
                 routes: [
                   GoRoute(
                       path: "detail",
                       builder: (context, state) {
-                        return ElectronicHomeDetailPage();
+                        return const ElectronicHomeDetailPage();
                       }),
                 ]),
           ]),
