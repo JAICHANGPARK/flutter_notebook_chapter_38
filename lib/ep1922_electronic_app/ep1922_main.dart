@@ -8,29 +8,33 @@ void main() {
 }
 
 class ElectronicMobileApp extends StatelessWidget {
-  const ElectronicMobileApp({super.key});
+   ElectronicMobileApp({super.key});
 
   final router = GoRouter(
     routes: [
       ShellRoute(
-          pageBuilder: (context, state, child){
-            return ElectronicAppShell(child: child,);
+          builder: (context, state, child) {
+            return ElectronicAppShell(
+              child: child,
+            );
           },
           routes: [
-        GoRoute(
-          path: "/",
-        ),
-      ]),
+            GoRoute(
+                path: "/",
+                builder: (context, state) {
+                  return ElectronicHomePage();
+                }),
+          ]),
     ],
   );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: ElectronicHomePage(),
     );
   }
 }
