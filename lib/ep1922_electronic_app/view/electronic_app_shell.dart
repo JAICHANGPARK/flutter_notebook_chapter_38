@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-
 class ElectronicAppShell extends StatefulWidget {
-  const ElectronicAppShell({super.key});
+  final Widget child;
+
+  const ElectronicAppShell({super.key, required this.child});
 
   @override
   State<ElectronicAppShell> createState() => _ElectronicAppShellState();
 }
 
 class _ElectronicAppShellState extends State<ElectronicAppShell> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: widget.child,
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
