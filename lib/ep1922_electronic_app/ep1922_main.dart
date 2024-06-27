@@ -3,12 +3,14 @@ import 'package:flutter_notebook_chapter_38/ep1922_electronic_app/view/electroni
 import 'package:flutter_notebook_chapter_38/ep1922_electronic_app/view/electronic_home_page.dart';
 import 'package:go_router/go_router.dart';
 
+import 'view/electronic_home_detail_page.dart';
+
 void main() {
   runApp(ElectronicMobileApp());
 }
 
 class ElectronicMobileApp extends StatelessWidget {
-   ElectronicMobileApp({super.key});
+  ElectronicMobileApp({super.key});
 
   final router = GoRouter(
     routes: [
@@ -23,7 +25,14 @@ class ElectronicMobileApp extends StatelessWidget {
                 path: "/",
                 builder: (context, state) {
                   return ElectronicHomePage();
-                }),
+                },
+                routes: [
+                  GoRoute(
+                      path: "detail",
+                      builder: (context, state) {
+                        return ElectronicHomeDetailPage();
+                      }),
+                ]),
           ]),
     ],
   );
