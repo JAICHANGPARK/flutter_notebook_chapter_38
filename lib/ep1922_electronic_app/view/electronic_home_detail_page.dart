@@ -12,6 +12,9 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        foregroundColor: Colors.white,
         title: Text("Gadget Day"),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
