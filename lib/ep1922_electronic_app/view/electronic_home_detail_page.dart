@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ElectronicHomeDetailPage extends StatefulWidget {
   const ElectronicHomeDetailPage({super.key});
@@ -86,6 +87,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
+                  childAspectRatio: .8,
                 ),
                 itemBuilder: (context, index) {
                   return Container(
@@ -96,13 +98,14 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(8),
+                              color: Color.fromRGBO(50, 54, 63, 1),
                             ),
-
                           ),
                         ),
+                        Gap(8),
                         Text("M Action 3"),
+                        Gap(8),
                         Text(
                           "RP 5.4000.000",
                           style: TextStyle(
