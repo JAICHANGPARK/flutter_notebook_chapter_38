@@ -28,6 +28,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
             child: Row(
               children: [
                 Container(
+                  margin: EdgeInsets.only(right: 12),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
@@ -41,6 +42,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.only(right: 12),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
@@ -54,6 +56,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   ),
                 ),
                 Container(
+                  margin: EdgeInsets.only(right: 12),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
@@ -87,7 +90,17 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     color: Colors.green,
-                    child: Column(),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   );
                 }),
           ))
