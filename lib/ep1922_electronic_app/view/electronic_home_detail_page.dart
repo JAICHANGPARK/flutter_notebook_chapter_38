@@ -27,6 +27,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
             child: Row(
               children: [
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
                   decoration: ShapeDecoration(shape: StadiumBorder()),
                   child: Text(
                     "Latest",
