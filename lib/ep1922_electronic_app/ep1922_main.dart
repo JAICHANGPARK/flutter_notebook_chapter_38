@@ -9,32 +9,43 @@ void main() {
   runApp(ElectronicMobileApp());
 }
 
+GlobalKey<NavigatorState> shellRouterKey = GlobalKey();
+
 class ElectronicMobileApp extends StatelessWidget {
   ElectronicMobileApp({super.key});
 
   final router = GoRouter(
     initialLocation: "/",
     routes: [
+      GoRoute(
+          path: "/",
+          builder: (context, state) {
+            return ElectronicHomeDetailPage();
+          }),
       ShellRoute(
-          builder: (context, state, child) {
-            return ElectronicAppShell(
-              child: child,
-            );
-          },
-          routes: [
-            GoRoute(
-                path: "/",
+        navigatorKey: shellRouterKey,
+        builder: (context, state, child) {
+          return ElectronicAppShell(
+            child: child,
+          );
+        },
+        routes: [
+          GoRoute(
+            path: "/",
+            builder: (context, state) {
+              return const ElectronicHomePage();
+            },
+            routes: [
+              GoRoute(
+                path: "detail",
                 builder: (context, state) {
-                  return const ElectronicHomePage();
+                  return const ElectronicHomeDetailPage();
                 },
-                routes: [
-                  GoRoute(
-                      path: "detail",
-                      builder: (context, state) {
-                        return const ElectronicHomeDetailPage();
-                      }),
-                ]),
-          ]),
+              ),
+            ],
+          ),
+        ],
+      ),
     ],
   );
 
