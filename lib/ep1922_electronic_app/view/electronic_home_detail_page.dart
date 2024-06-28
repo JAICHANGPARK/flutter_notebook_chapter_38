@@ -24,6 +24,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
         children: [
           Container(
             height: 72,
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 Container(
@@ -40,7 +41,11 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   ),
                 ),
                 Container(
-                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white.withOpacity(.2),
+                  ),
                   child: Text(
                     "Popular",
                     style: TextStyle(
@@ -49,7 +54,11 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   ),
                 ),
                 Container(
-                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white.withOpacity(.2),
+                  ),
                   child: Text(
                     "Top Deals",
                     style: TextStyle(
@@ -61,6 +70,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.tune),
+                  color: Colors.grey,
                 )
               ],
             ),
