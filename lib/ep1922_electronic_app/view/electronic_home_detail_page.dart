@@ -102,6 +102,8 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                             ),
                             padding: EdgeInsets.all(8),
                             child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
                                   child: Text("NEW"),
