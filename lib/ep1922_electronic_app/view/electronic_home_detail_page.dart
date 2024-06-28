@@ -100,10 +100,36 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                               borderRadius: BorderRadius.circular(8),
                               color: Color.fromRGBO(50, 54, 63, 1),
                             ),
+                            padding: EdgeInsets.all(8),
+                            child: Row(
+                              children: [
+                                Container(
+                                  child: Text("NEW"),
+                                ),
+                                Container(
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.star,
+                                        size: 18,
+                                      ),
+                                      Text(
+                                        "4.6",
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Gap(8),
-                        Text("M Action 3"),
+                        Text(
+                          "M Action 3",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                         Gap(8),
                         Text(
                           "RP 5.4000.000",
