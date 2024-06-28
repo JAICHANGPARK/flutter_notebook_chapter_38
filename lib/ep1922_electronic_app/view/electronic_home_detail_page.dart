@@ -91,12 +91,15 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                   return Container(
                     color: Colors.green,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
+                              color: Colors.grey,
                             ),
+
                           ),
                         ),
                         Text("M Action 3"),
