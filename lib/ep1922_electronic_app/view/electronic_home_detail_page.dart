@@ -100,7 +100,7 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                               borderRadius: BorderRadius.circular(8),
                               color: Color.fromRGBO(50, 54, 63, 1),
                             ),
-                            padding: EdgeInsets.all(8),
+                            padding: EdgeInsets.all(12),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -109,6 +109,14 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                                   child: Text("NEW"),
                                 ),
                                 Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 4,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.yellow[100],
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
                                   child: Row(
                                     children: [
                                       Icon(
