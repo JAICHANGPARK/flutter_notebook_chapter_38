@@ -15,10 +15,10 @@ class ElectronicMobileApp extends StatelessWidget {
   ElectronicMobileApp({super.key});
 
   final router = GoRouter(
-    initialLocation: "/",
+    initialLocation: "/a",
     routes: [
       GoRoute(
-          path: "/",
+          path: "/a",
           builder: (context, state) {
             return ElectronicHomeDetailPage();
           }),
