@@ -91,7 +91,6 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                 ),
                 itemBuilder: (context, index) {
                   return Container(
-                    color: Colors.green,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
