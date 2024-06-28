@@ -99,6 +99,14 @@ class _ElectronicHomeDetailPageState extends State<ElectronicHomeDetailPage> {
                             ),
                           ),
                         ),
+                        Text("M Action 3"),
+                        Text(
+                          "RP 5.4000.000",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        )
                       ],
                     ),
                   );
