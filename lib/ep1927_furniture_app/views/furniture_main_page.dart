@@ -35,7 +35,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("discover\nour product", style: GoogleFonts.montserrat(),)
+            Text(
+              "discover\nour product",
+              style: GoogleFonts.montserrat(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
