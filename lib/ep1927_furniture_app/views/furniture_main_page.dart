@@ -47,17 +47,26 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 42,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: furnitureTabs.length,
-                itemBuilder: (context, index) {
-                  return Text(
-                    "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
-                  );
-                },
-              ),
+            Column(
+              children: [
+                SizedBox(
+                  height: 42,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: furnitureTabs.length,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Text(
+                          "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                SizedBox(height: 300,
+                child: Placeholder(),)
+              ],
             )
           ],
         ),
