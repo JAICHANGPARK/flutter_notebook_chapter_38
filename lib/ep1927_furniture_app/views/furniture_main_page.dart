@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../model/furniture_tab.dart';
+
 class FurnitureMainPage extends StatefulWidget {
   const FurnitureMainPage({super.key});
 
@@ -35,13 +37,28 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "discover\nour product",
-              style: GoogleFonts.montserrat(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                "discover\nour product",
+                style: GoogleFonts.montserrat(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
+            SizedBox(
+              height: 42,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: furnitureTabs.length,
+                itemBuilder: (context, index) {
+                  return Text(
+                    "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
+                  );
+                },
+              ),
+            )
           ],
         ),
       ),
