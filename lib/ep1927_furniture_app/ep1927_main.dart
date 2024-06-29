@@ -12,15 +12,22 @@ class FurnitureApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          scaffoldBackgroundColor: Color.fromRGBO(244, 240, 234, 1),
-          bottomNavigationBarTheme: BottomNavigationBarThemeData(
-            backgroundColor: Colors.black,
-            type: BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.white,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-          )),
+        scaffoldBackgroundColor: Color.fromRGBO(244, 240, 234, 1),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          backgroundColor: Colors.black,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+        ),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Color.fromRGBO(244, 240, 234, 1),
+          elevation: 0,
+          foregroundColor: Colors.black,
+          surfaceTintColor: Color.fromRGBO(244, 240, 234, 1),
+        ),
+      ),
       home: FurnitureMainPage(),
     );
   }
