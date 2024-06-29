@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_38/ep1927_furniture_app/views/furniture_main_page.dart';
 
 void main() {
-  runApp(FurnitureApp());
+  runApp(const FurnitureApp());
 }
 
 class FurnitureApp extends StatelessWidget {
@@ -12,8 +12,8 @@ class FurnitureApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        scaffoldBackgroundColor: Color.fromRGBO(244, 240, 234, 1),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        scaffoldBackgroundColor: const Color.fromRGBO(244, 240, 234, 1),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Colors.black,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.white,
@@ -21,14 +21,14 @@ class FurnitureApp extends StatelessWidget {
           showSelectedLabels: false,
           showUnselectedLabels: false,
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Color.fromRGBO(244, 240, 234, 1),
           elevation: 0,
           foregroundColor: Colors.black,
           surfaceTintColor: Color.fromRGBO(244, 240, 234, 1),
         ),
       ),
-      home: FurnitureMainPage(),
+      home: const FurnitureMainPage(),
     );
   }
 }
