@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FurnitureMainPage extends StatefulWidget {
   const FurnitureMainPage({super.key});
@@ -33,7 +34,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [],
+          children: [
+            Text("discover\nour product", style: GoogleFonts.montserrat(),)
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(
