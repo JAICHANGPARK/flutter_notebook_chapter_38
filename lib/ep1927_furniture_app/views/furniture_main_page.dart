@@ -73,8 +73,18 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 300,
-                    child: Placeholder(),
+                    height: 280,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 170,
+                          margin: EdgeInsets.only(right: 16),
+                          color: Colors.white,
+                        );
+                      },
+                    ),
                   )
                 ],
               ),
