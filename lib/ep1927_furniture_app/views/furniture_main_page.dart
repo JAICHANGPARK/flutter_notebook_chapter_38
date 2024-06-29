@@ -36,21 +36,36 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
           children: [],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.shopping_bag_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.shopping_bag_outlined,
+              ),
+              label: "Cart",
             ),
-            label: "Cart",
-          )
-        ],
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.favorite_outline,
+              ),
+              label: "Favorite",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_2_outlined,
+              ),
+              label: "Personal",
+            )
+          ],
+        ),
       ),
     );
   }
