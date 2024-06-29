@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../model/furniture_tab.dart';
@@ -87,6 +88,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Gap(16),
+            Expanded(
+              child: Container(
+                color: Colors.white,
               ),
             )
           ],
