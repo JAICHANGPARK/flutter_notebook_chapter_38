@@ -47,26 +47,37 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 ),
               ),
             ),
-            Column(
-              children: [
-                SizedBox(
-                  height: 42,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: furnitureTabs.length,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 16),
-                        child: Text(
-                          "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
-                        ),
-                      );
-                    },
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                bottom: 8,
+              ),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 42,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: furnitureTabs.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: Text(
+                            "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
+                            style: TextStyle(
+                              fontSize: 16,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
-                ),
-                SizedBox(height: 300,
-                child: Placeholder(),)
-              ],
+                  SizedBox(
+                    height: 300,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
             )
           ],
         ),
