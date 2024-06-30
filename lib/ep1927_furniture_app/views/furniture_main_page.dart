@@ -83,6 +83,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           width: 170,
                           margin: EdgeInsets.only(right: 16),
                           color: Colors.white,
+                          padding: EdgeInsets.all(12),
                           child: Stack(
                             children: [
                               Positioned.fill(
@@ -90,6 +91,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   children: [
                                     Expanded(child: Container()),
                                     Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text("MINIMALIST"),
                                         Container(
@@ -97,6 +99,15 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                             border: Border(
                                               top: BorderSide(
                                                 width: 1.5,
+                                              ),
+                                              left:BorderSide(
+                                                width: 1.5,
+                                              ),
+                                              right: BorderSide(
+                                                width: .5,
+                                              ),
+                                              bottom: BorderSide(
+                                                width: .5,
                                               ),
                                             ),
                                           ),
