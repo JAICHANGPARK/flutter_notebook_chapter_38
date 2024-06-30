@@ -209,11 +209,21 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("COMFY CUSSION"),
+                                      Text(
+                                        "COMFY CUSSION",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       Gap(6),
                                       Row(
                                         children: [
-                                          Text("\$900.00"),
+                                          Text(
+                                            "\$900.00",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                           Gap(12),
                                           Text("\$1,320.00"),
                                         ],
