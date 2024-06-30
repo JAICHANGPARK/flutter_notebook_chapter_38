@@ -203,18 +203,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 color: Colors.blue,
                               ),
                               Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("COMFY CUSSION"),
-                                  Row(
-                                    children: [
-                                      Text("\$900.00"),
-                                      Text("\$1,320.00")
-                                    ],
-                                  )
-                                ],
-                              ))
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("COMFY CUSSION"),
+                                    Row(
+                                      children: [Text("\$900.00"), Text("\$1,320.00")],
+                                    )
+                                  ],
+                                ),
+                              )
                             ],
                           );
                         },
