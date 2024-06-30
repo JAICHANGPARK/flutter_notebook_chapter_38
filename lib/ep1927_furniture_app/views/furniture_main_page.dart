@@ -12,6 +12,8 @@ class FurnitureMainPage extends StatefulWidget {
 }
 
 class _FurnitureMainPageState extends State<FurnitureMainPage> {
+  int tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
