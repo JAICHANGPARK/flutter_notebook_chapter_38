@@ -83,10 +83,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           width: 170,
                           margin: EdgeInsets.only(right: 16),
                           color: Colors.white,
-                          padding: EdgeInsets.all(12),
+
                           child: Stack(
                             children: [
-                              Positioned.fill(
+                              Positioned(
+                                
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
