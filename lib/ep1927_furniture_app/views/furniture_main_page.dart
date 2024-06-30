@@ -132,6 +132,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   ],
                                 ),
                               ),
+                              if (index == 0)
                               Positioned(
                                 left: 0,
                                 top: 0,
@@ -139,6 +140,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                   ),
+                                  child: Text("NEW",style: TextStyle(
+                                    color: Colors.white
+                                  ),),
                                 ),
                               )
                             ],
