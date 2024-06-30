@@ -87,7 +87,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           child: Stack(
                             children: [
                               Positioned(
-                                
+                                left: 12,
+                                top: 12,
+                                bottom: 12,
+                                right: 12,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
