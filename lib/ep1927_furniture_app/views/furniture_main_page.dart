@@ -196,7 +196,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       child: ListView.separated(
                         itemBuilder: (context, index) {
                           return Row(
-                            children: [],
+                            children: [
+                              Container(
+                                height: 80,
+                                width: 100,
+                                color: Colors.blue,
+                              ),
+                            ],
                           );
                         },
                         separatorBuilder: (context, _) => Divider(),
