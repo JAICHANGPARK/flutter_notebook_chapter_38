@@ -208,7 +208,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   children: [
                                     Text("COMFY CUSSION"),
                                     Row(
-                                      children: [Text("\$900.00"), Text("\$1,320.00")],
+                                      children: [
+                                        Text("\$900.00"),
+                                        Text("\$1,320.00"),
+                                      ],
                                     )
                                   ],
                                 ),
