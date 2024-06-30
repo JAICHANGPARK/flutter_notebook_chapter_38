@@ -83,6 +83,36 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           width: 170,
                           margin: EdgeInsets.only(right: 16),
                           color: Colors.white,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                child: Column(
+                                  children: [
+                                    Expanded(child: Container()),
+                                    Row(
+                                      children: [
+                                        Text("MINIMALIST"),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border(
+                                              top: BorderSide(
+                                                width: 1.5,
+                                              ),
+                                            ),
+                                          ),
+                                          child: Icon(
+                                            Icons.add,
+                                            size: 12,
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+
+                            ],
+                          ),
                         );
                       },
                     ),
