@@ -168,17 +168,25 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 color: Colors.white,
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("recent product"),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "SEE MORE",
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "recent product",
+                            style: TextStyle(
+                              fontSize: 24,
+                            ),
                           ),
-                        )
-                      ],
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "SEE MORE",
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Divider(),
                     Expanded(
