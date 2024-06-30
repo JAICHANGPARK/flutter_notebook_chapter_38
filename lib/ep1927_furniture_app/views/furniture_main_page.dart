@@ -204,11 +204,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                               ),
                               Expanded(
                                   child: Column(
+                                    
                                 children: [
                                   Text("COMFY CUSSION"),
                                   Row(
                                     children: [
-                                      Text("\$900.00")
+                                      Text("\$900.00"),
+                                      Text("\$1,320.00")
                                     ],
                                   )
                                 ],
