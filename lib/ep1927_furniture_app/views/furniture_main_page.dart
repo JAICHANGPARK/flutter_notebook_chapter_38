@@ -195,28 +195,53 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                     Expanded(
                       child: ListView.separated(
                         itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              Container(
-                                height: 80,
-                                width: 100,
-                                color: Colors.blue,
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("COMFY CUSSION"),
-                                    Row(
-                                      children: [
-                                        Text("\$900.00"),
-                                        Text("\$1,320.00"),
-                                      ],
-                                    )
-                                  ],
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 80,
+                                  width: 100,
+                                  color: Colors.blue,
                                 ),
-                              )
-                            ],
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("COMFY CUSSION"),
+                                      Row(
+                                        children: [
+                                          Text("\$900.00"),
+                                          Text("\$1,320.00"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border(
+                                      top: BorderSide(
+                                        width: 1.5,
+                                      ),
+                                      left: BorderSide(
+                                        width: 1.5,
+                                      ),
+                                      right: BorderSide(
+                                        width: .5,
+                                      ),
+                                      bottom: BorderSide(
+                                        width: .5,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Icon(
+                                    Icons.add,
+                                    size: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
                           );
                         },
                         separatorBuilder: (context, _) => Divider(),
