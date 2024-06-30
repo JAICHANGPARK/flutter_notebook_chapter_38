@@ -100,7 +100,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                               top: BorderSide(
                                                 width: 1.5,
                                               ),
-                                              left:BorderSide(
+                                              left: BorderSide(
                                                 width: 1.5,
                                               ),
                                               right: BorderSide(
@@ -117,11 +117,16 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                           ),
                                         ),
                                       ],
+                                    ),
+                                    Text(
+                                      "UNKNOWN",
+                                    ),
+                                    Text(
+                                      "\$580.00",
                                     )
                                   ],
                                 ),
                               )
-
                             ],
                           ),
                         );
