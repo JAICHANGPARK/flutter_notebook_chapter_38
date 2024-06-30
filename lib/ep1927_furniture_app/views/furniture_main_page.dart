@@ -144,8 +144,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 12,
+                                  vertical: 4),
                                   child: Text("NEW",style: TextStyle(
-                                    color: Colors.white
+                                    color: Colors.white,
+                                    fontSize: 12,
                                   ),),
                                 ),
                               )
