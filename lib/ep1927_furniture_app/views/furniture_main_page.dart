@@ -181,6 +181,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           ),
                           TextButton(
                             onPressed: () {},
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.grey,
+                            ),
                             child: Text(
                               "SEE MORE",
                             ),
