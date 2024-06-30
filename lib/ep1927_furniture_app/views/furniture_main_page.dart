@@ -83,7 +83,6 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           width: 170,
                           margin: EdgeInsets.only(right: 16),
                           color: Colors.white,
-
                           child: Stack(
                             children: [
                               Positioned(
@@ -137,21 +136,23 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 ),
                               ),
                               if (index == 0)
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                    ),
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                    child: Text(
+                                      "NEW",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                      ),
+                                    ),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 12,
-                                  vertical: 4),
-                                  child: Text("NEW",style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                  ),),
-                                ),
-                              )
+                                )
                             ],
                           ),
                         );
@@ -169,7 +170,13 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                   children: [
                     Row(
                       children: [
-                        
+                        Text("recent product"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "SEE MORE",
+                          ),
+                        )
                       ],
                     )
                   ],
