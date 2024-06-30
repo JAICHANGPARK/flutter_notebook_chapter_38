@@ -225,7 +225,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                             ),
                                           ),
                                           Gap(12),
-                                          Text("\$1,320.00"),
+                                          Text(
+                                            "\$1,320.00",
+
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                              decoration: TextDecoration.lineThrough
+                                            ),
+                                          ),
                                         ],
                                       )
                                     ],
