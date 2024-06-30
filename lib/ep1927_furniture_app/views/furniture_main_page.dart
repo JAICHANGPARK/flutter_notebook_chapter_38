@@ -74,7 +74,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                     ),
                   ),
                   SizedBox(
-                    height: 280,
+                    height: 260,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
@@ -88,12 +88,15 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             children: [
                               Positioned.fill(
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Container()),
+                                    Gap(12),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text("MINIMALIST"),
+                                        Gap(4),
                                         Container(
                                           decoration: BoxDecoration(
                                             border: Border(
@@ -118,15 +121,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                         ),
                                       ],
                                     ),
+                                    Gap(4),
                                     Text(
                                       "UNKNOWN",
                                     ),
+                                    Gap(4),
                                     Text(
                                       "\$580.00",
                                     )
                                   ],
                                 ),
-                              )
+                              ),
                             ],
                           ),
                         );
