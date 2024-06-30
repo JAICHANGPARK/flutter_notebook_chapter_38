@@ -85,7 +85,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           color: Colors.white,
                           child: Stack(
                             children: [
-                              Positioned(
+                              Positioned.fill(
                                 child: Column(
                                   children: [
                                     Expanded(child: Container()),
