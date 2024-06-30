@@ -196,7 +196,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       child: ListView.separated(
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
                             child: Row(
                               children: [
                                 Container(
