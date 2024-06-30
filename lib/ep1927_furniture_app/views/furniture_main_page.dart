@@ -169,6 +169,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("recent product"),
                         TextButton(
@@ -178,6 +179,18 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           ),
                         )
                       ],
+                    ),
+                    Divider(),
+                    Expanded(
+                      child: ListView.separated(
+                        itemBuilder: (context, index) {
+                          return Row(
+                            children: [],
+                          );
+                        },
+                        separatorBuilder: (context, _) => Divider(),
+                        itemCount: 10,
+                      ),
                     )
                   ],
                 ),
