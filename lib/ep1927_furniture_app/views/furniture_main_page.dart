@@ -202,6 +202,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 width: 100,
                                 color: Colors.blue,
                               ),
+                              Expanded(
+                                  child: Column(
+                                children: [
+                                  Text("COMFY CUSSION"),
+                                  Row(
+                                    children: [
+                                      Text("\$900.00")
+                                    ],
+                                  )
+                                ],
+                              ))
                             ],
                           );
                         },
