@@ -63,12 +63,20 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: furnitureTabs.length,
                       itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 16),
-                          child: Text(
-                            "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
-                            style: TextStyle(
-                              fontSize: 16,
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              tabIndex = index;
+                            });
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: Text(
+                              "${furnitureTabs[index].tabTitle}[${furnitureTabs[index].count}]",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: tabIndex == index ? Colors.black : Colors.grey,
+                              ),
                             ),
                           ),
                         );
@@ -229,11 +237,8 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                           Gap(12),
                                           Text(
                                             "\$1,320.00",
-
-                                            style: TextStyle(
-                                              color: Colors.grey,
-                                              decoration: TextDecoration.lineThrough
-                                            ),
+                                            style:
+                                                TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
                                           ),
                                         ],
                                       )
