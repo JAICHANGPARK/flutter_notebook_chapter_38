@@ -165,6 +165,15 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
             Expanded(
               child: Container(
                 color: Colors.white,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],
