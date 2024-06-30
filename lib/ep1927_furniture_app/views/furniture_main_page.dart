@@ -132,6 +132,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   ],
                                 ),
                               ),
+                              Positioned(child: Container(decoration: BoxDecoration(
+                                color: Colors.black
+                              ),))
                             ],
                           ),
                         );
