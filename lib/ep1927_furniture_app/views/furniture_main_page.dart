@@ -204,7 +204,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                               ),
                               Expanded(
                                   child: Column(
-                                    
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("COMFY CUSSION"),
                                   Row(
