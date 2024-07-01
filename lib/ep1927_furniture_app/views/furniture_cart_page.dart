@@ -33,6 +33,21 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
              ),
            ),
          ),
+         Expanded(child: Placeholder()),
+         Container(
+           decoration: BoxDecoration(
+             color: Colors.black,
+           ),
+           child: Column(
+             children: [
+               Row(
+                 children: [
+                   Text("")
+                 ],
+               )
+             ],
+           ),
+         )
        ],
      ),
     );
