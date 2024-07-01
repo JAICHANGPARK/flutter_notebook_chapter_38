@@ -51,6 +51,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             width: 64,
                             child: Placeholder(),
                           ),
+                          Gap(12),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
