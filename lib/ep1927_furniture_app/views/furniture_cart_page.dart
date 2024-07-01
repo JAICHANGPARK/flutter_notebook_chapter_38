@@ -51,9 +51,19 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             width: 64,
                             child: Placeholder(),
                           ),
-                          Expanded(child: Column(children: [
-                            
-                          ],))
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "STANCE DINNING",
+                                ),
+                                Text(
+                                  "\$560.00",
+                                )
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     );
