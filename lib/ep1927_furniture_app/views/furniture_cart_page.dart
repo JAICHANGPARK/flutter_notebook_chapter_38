@@ -21,6 +21,11 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
           ),
         ],
       ),
+     body: Column(
+       children: [
+         
+       ],
+     ),
     );
   }
 }
