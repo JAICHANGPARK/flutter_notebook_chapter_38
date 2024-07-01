@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1927_furniture_app/views/furniture_cart_page.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -285,6 +286,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          onTap: (idx) {
+            switch (idx) {
+              case 1:
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => FurnitureCartPage()));
+            }
+          },
           items: const [
             BottomNavigationBarItem(
               icon: Icon(
