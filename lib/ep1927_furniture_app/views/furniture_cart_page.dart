@@ -41,7 +41,23 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                 child: ListView.separated(
                   itemCount: 10,
                   separatorBuilder: (_, __) => Divider(),
-                  itemBuilder: (context, index) {},
+                  itemBuilder: (context, index) {
+                    return Dismissible(
+                      key: ValueKey(index),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 64,
+                            width: 64,
+                            child: Placeholder(),
+                          ),
+                          Expanded(child: Column(children: [
+                            
+                          ],))
+                        ],
+                      ),
+                    );
+                  },
                 ),
               )
             ],
