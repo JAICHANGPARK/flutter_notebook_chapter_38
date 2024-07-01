@@ -18,19 +18,19 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Furniture",
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.menu,
             ),
           ),
@@ -91,7 +91,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 170,
-                          margin: EdgeInsets.only(right: 16),
+                          margin: const EdgeInsets.only(right: 16),
                           color: Colors.white,
                           child: Stack(
                             children: [
@@ -104,14 +104,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(child: Container()),
-                                    Gap(12),
+                                    const Gap(12),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("MINIMALIST"),
-                                        Gap(4),
+                                        const Text("MINIMALIST"),
+                                        const Gap(4),
                                         Container(
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             border: Border(
                                               top: BorderSide(
                                                 width: 1.5,
@@ -127,19 +127,19 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                               ),
                                             ),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add,
                                             size: 12,
                                           ),
                                         ),
                                       ],
                                     ),
-                                    Gap(4),
-                                    Text(
+                                    const Gap(4),
+                                    const Text(
                                       "UNKNOWN",
                                     ),
-                                    Gap(4),
-                                    Text(
+                                    const Gap(4),
+                                    const Text(
                                       "\$580.00",
                                     )
                                   ],
@@ -150,11 +150,11 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   left: 0,
                                   top: 0,
                                   child: Container(
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.black,
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                    child: Text(
+                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                    child: const Text(
                                       "NEW",
                                       style: TextStyle(
                                         color: Colors.white,
@@ -172,7 +172,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: Container(
                 color: Colors.white,
@@ -183,7 +183,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "recent product",
                             style: TextStyle(
                               fontSize: 24,
@@ -194,14 +194,14 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             style: TextButton.styleFrom(
                               foregroundColor: Colors.grey,
                             ),
-                            child: Text(
+                            child: const Text(
                               "SEE MORE",
                             ),
                           )
                         ],
                       ),
                     ),
-                    Divider(),
+                    const Divider(),
                     Expanded(
                       child: ListView.separated(
                         itemBuilder: (context, index) {
@@ -214,8 +214,8 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   width: 100,
                                   color: Colors.blue,
                                 ),
-                                Gap(12),
-                                Expanded(
+                                const Gap(12),
+                                const Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -246,7 +246,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     border: Border(
                                       top: BorderSide(
                                         width: 1.5,
@@ -262,7 +262,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                       ),
                                     ),
                                   ),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.add,
                                     size: 12,
                                   ),
@@ -271,7 +271,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             ),
                           );
                         },
-                        separatorBuilder: (context, _) => Divider(),
+                        separatorBuilder: (context, _) => const Divider(),
                         itemCount: 10,
                       ),
                     )
@@ -286,25 +286,25 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         height: 80,
         child: BottomNavigationBar(
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_bag_outlined,
               ),
               label: "Cart",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite_outline,
               ),
               label: "Favorite",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_2_outlined,
               ),
