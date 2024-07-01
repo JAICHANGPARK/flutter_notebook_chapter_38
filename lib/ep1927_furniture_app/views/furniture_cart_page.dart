@@ -24,10 +24,13 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
      body: Column(
        crossAxisAlignment: CrossAxisAlignment.start,
        children: [
-         Text(
-           "Shopping\nCart",
-           style: TextStyle(
-             fontSize: 40,
+         Padding(
+           padding: const EdgeInsets.all(16.0),
+           child: Text(
+             "Shopping\nCart",
+             style: TextStyle(
+               fontSize: 40,
+             ),
            ),
          ),
        ],
