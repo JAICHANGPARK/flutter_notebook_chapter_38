@@ -44,44 +44,96 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                   itemBuilder: (context, index) {
                     return Dismissible(
                       key: ValueKey(index),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              child: Placeholder(),
+                            ),
+                            Gap(12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "STANCE DINNING",
+                                  ),
+                                  Text(
+                                    "\$560.00",
+                                  )
+                                ],
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.remove,
+                              ),
+                            ),
+                            Text("1"),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.add,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
-                            height: 64,
-                            width: 64,
-                            child: Placeholder(),
-                          ),
-                          Gap(12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "STANCE DINNING",
-                                ),
-                                Text(
-                                  "\$560.00",
-                                )
-                              ],
-                            ),
-                          ),
-                          IconButton(
+                          Text("PROMO CODE"),
+                          TextButton(
                             onPressed: () {},
-                            icon: Icon(
-                              Icons.remove,
-                            ),
-                          ),
-                          Text("1"),
-                          IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.add,
+                            child: Text(
+                              "SUBMIT",
                             ),
                           ),
                         ],
                       ),
-                    );
-                  },
+                    ),
+                    Divider(),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("SUB TOTAL"),
+                          Text("\$2.700,00"),
+                        ],
+                      ),
+                    ),
+                    Divider(),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("DISCOUNT"),
+                          Text("\$-700,00"),
+                        ],
+                      ),
+                    ),
+                    Divider(),
+                  ],
                 ),
               )
             ],
