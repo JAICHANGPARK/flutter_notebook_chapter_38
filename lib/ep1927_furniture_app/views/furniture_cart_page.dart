@@ -50,14 +50,14 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         "TOTAL",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 28,
+                          fontSize: 26,
                         ),
                       ),
                       Text(
                         '\$2.010,00',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 28,
+                          fontSize: 26,
                         ),
                       )
                     ],
