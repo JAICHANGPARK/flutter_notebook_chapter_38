@@ -285,26 +285,26 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_bag_outlined,
               ),
               label: "Cart",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite_outline,
               ),
               label: "Favorite",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_2_outlined,
               ),
