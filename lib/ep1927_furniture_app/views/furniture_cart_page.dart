@@ -41,17 +41,31 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "TOTAL",
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 28,
                       ),
                     ),
-                    Text('\$2.010,00',style: TextStyle(
-                      color: Colors.white,
-                    ),)
+                    Text(
+                      '\$2.010,00',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                      ),
+                    )
                   ],
+                ),
+                Divider(),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: () {},
+                  child: Text("CHECKOUT"),
                 )
               ],
             ),
