@@ -21,35 +21,43 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
           ),
         ],
       ),
-     body: Column(
-       crossAxisAlignment: CrossAxisAlignment.start,
-       children: [
-         Padding(
-           padding: const EdgeInsets.all(16.0),
-           child: Text(
-             "Shopping\nCart",
-             style: TextStyle(
-               fontSize: 40,
-             ),
-           ),
-         ),
-         Expanded(child: Placeholder()),
-         Container(
-           decoration: BoxDecoration(
-             color: Colors.black,
-           ),
-           child: Column(
-             children: [
-               Row(
-                 children: [
-                   Text("")
-                 ],
-               )
-             ],
-           ),
-         )
-       ],
-     ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              "Shopping\nCart",
+              style: TextStyle(
+                fontSize: 40,
+              ),
+            ),
+          ),
+          Expanded(child: Placeholder()),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.black,
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      "TOTAL",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text('\$2.010,00',style: TextStyle(
+                      color: Colors.white,
+                    ),)
+                  ],
+                )
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
