@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FurnitureCartPage extends StatefulWidget {
   const FurnitureCartPage({super.key});
@@ -40,33 +41,40 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
             ),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "TOTAL",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "TOTAL",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                        ),
                       ),
-                    ),
-                    Text(
-                      '\$2.010,00',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                      ),
-                    )
-                  ],
+                      Text(
+                        '\$2.010,00',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
                 Divider(),
                 TextButton(
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.white,
+                    textStyle: TextStyle(
+                      fontSize: 18
+                    )
                   ),
                   onPressed: () {},
                   child: Text("CHECKOUT"),
-                )
+                ),
+                Gap(16),
               ],
             ),
           )
