@@ -34,7 +34,18 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
               ),
             ),
           ),
-          Expanded(child: Placeholder()),
+          Expanded(
+              child: Column(
+            children: [
+              Expanded(
+                child: ListView.separated(
+                  itemCount: 10,
+                  separatorBuilder: (_, __) => Divider(),
+                  itemBuilder: (context, index) {},
+                ),
+              )
+            ],
+          )),
           Container(
             decoration: BoxDecoration(
               color: Colors.black,
@@ -65,12 +76,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                 ),
                 Divider(),
                 TextButton(
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    textStyle: TextStyle(
-                      fontSize: 18
-                    )
-                  ),
+                  style: TextButton.styleFrom(foregroundColor: Colors.white, textStyle: TextStyle(fontSize: 18)),
                   onPressed: () {},
                   child: Text("CHECKOUT"),
                 ),
