@@ -63,7 +63,20 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                                 )
                               ],
                             ),
-                          )
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.remove,
+                            ),
+                          ),
+                          Text("1"),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.add,
+                            ),
+                          ),
                         ],
                       ),
                     );
