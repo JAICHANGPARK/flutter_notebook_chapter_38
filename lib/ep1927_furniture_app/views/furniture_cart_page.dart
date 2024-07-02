@@ -49,12 +49,21 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                     final furniture = furnitures[index];
                     return Dismissible(
                       background: Container(
+                        color: Colors.black,
                         child: Row(
                           children: [
-
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.delete_outline,
+                              ),
+                              color: Colors.white,
+                            ),
                           ],
                         ),
                       ),
+                      onDismissed: (direction) {},
+                      direction: DismissDirection.endToStart,
                       key: ValueKey(index),
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -96,12 +105,10 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             IconButton(
                               onPressed: () {
                                 furnitures[index].count = 1 + (furniture.count ?? 1);
-                                furnitures.forEach((element){
+                                furnitures.forEach((element) {
                                   totalPrice += (element.price ?? 0) * (element.count ?? 1);
                                 });
-                                setState(() {
-
-                                });
+                                setState(() {});
                               },
                               icon: Icon(
                                 Icons.add,
