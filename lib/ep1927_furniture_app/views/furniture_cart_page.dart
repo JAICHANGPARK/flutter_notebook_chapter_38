@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1927_furniture_app/model/furniture.dart';
 import 'package:gap/gap.dart';
 
 class FurnitureCartPage extends StatefulWidget {
@@ -39,7 +40,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
             children: [
               Expanded(
                 child: ListView.separated(
-                  itemCount: 10,
+                  itemCount: furnitures.length,
                   separatorBuilder: (_, __) => Divider(),
                   itemBuilder: (context, index) {
                     return Dismissible(
@@ -49,10 +50,12 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         child: Row(
                           children: [
                             Container(
-                              height: 64,
-                              width: 64,
-                              child: Placeholder(),
-                            ),
+                                height: 64,
+                                width: 64,
+                                child: Image.network(
+                                  "${furnitures[index].img}",
+                                  fit: BoxFit.cover,
+                                )),
                             Gap(12),
                             Expanded(
                               child: Column(
