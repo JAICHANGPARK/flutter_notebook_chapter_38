@@ -78,7 +78,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             IconButton(
                               onPressed: () {
                                 setState(() {
-                                  furnitures[index].count = 1 - (furniture.count ?? 1);
+                                  furnitures[index].count = (furniture.count ?? 1) - 1;
                                 });
                               },
                               icon: Icon(
@@ -177,7 +177,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         ),
                       ),
                       Text(
-                        '\$2.010,00',
+                        '\$${totalPrice - discount}',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 26,
