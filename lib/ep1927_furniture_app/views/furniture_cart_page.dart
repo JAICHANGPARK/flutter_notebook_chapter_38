@@ -51,6 +51,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                       background: Container(
                         color: Colors.black,
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             IconButton(
                               onPressed: () {},
@@ -67,7 +68,26 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                       },
                       confirmDismiss: (direction) async{
                         print(direction);
-                        return true;
+                        final action = await showDialog(context: context, builder: (context){
+                          return AlertDialog(
+                            title: Text("Delete"),
+                            content: Text("Delete"),
+                            actions: [
+                              TextButton(onPressed: (){
+                                furnitures.removeAt(index);
+                                Navigator.of(context).pop(true);
+
+                              }, child: Text("OK"))
+                            ],
+                          );
+                        });
+                        if(action){
+                          setState(() {
+
+                          });
+                          return true;
+                        }
+                        return false;
                       },
                       direction: DismissDirection.endToStart,
                       key: ValueKey(index),
