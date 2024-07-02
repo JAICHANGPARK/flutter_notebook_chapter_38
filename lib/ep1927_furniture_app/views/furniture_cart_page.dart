@@ -43,6 +43,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                   itemCount: furnitures.length,
                   separatorBuilder: (_, __) => Divider(),
                   itemBuilder: (context, index) {
+                    final furniture = furnitures[index];
                     return Dismissible(
                       key: ValueKey(index),
                       child: Padding(
@@ -50,22 +51,23 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         child: Row(
                           children: [
                             Container(
-                                height: 64,
-                                width: 64,
-                                child: Image.network(
-                                  "${furnitures[index].img}",
-                                  fit: BoxFit.cover,
-                                )),
+                              height: 64,
+                              width: 64,
+                              child: Image.network(
+                                "${furniture.img}",
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                             Gap(12),
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "STANCE DINNING",
+                                    "${furniture.title}",
                                   ),
                                   Text(
-                                    "\$560.00",
+                                    "\$${((furniture.price ?? 0) * (furniture.count ?? 1)).toStringAsFixed(2)} ",
                                   )
                                 ],
                               ),
@@ -76,9 +78,13 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                                 Icons.remove,
                               ),
                             ),
-                            Text("1"),
+                            Text("${furniture.count}"),
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  furnitures[index].count += 1;
+                                });
+                              },
                               icon: Icon(
                                 Icons.add,
                               ),
