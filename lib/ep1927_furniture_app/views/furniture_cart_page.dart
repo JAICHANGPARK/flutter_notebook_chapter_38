@@ -82,7 +82,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             IconButton(
                               onPressed: () {
                                 setState(() {
-                                  furnitures[index].count += 1;
+                                  furnitures[index].count = 1 + (furniture.count ?? 1);
                                 });
                               },
                               icon: Icon(
