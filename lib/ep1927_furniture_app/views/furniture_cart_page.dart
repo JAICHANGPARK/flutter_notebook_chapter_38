@@ -88,8 +88,12 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                             Text("${furniture.count}"),
                             IconButton(
                               onPressed: () {
+                                furnitures[index].count = 1 + (furniture.count ?? 1);
+                                furnitures.forEach((element){
+                                  totalPrice = element.price * element.count;
+                                });
                                 setState(() {
-                                  furnitures[index].count = 1 + (furniture.count ?? 1);
+
                                 });
                               },
                               icon: Icon(
