@@ -90,7 +90,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                               onPressed: () {
                                 furnitures[index].count = 1 + (furniture.count ?? 1);
                                 furnitures.forEach((element){
-                                  totalPrice = element.price * element.count;
+                                  totalPrice += (element.price ?? 0) * (element.count ?? 1);
                                 });
                                 setState(() {
 
@@ -137,7 +137,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("SUB TOTAL"),
-                          Text("\$}"),
+                          Text("\$${totalPrice.toStringAsFixed(2)}"),
                         ],
                       ),
                     ),
