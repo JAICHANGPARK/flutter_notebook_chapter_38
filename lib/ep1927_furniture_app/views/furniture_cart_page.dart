@@ -148,7 +148,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("DISCOUNT"),
-                          Text("\$-700,00"),
+                          Text("\$-${discount}"),
                         ],
                       ),
                     ),
