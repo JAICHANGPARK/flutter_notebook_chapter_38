@@ -62,8 +62,11 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                           ],
                         ),
                       ),
-                      onDismissed: (direction) {},
+                      onDismissed: (direction) {
+                        print("onDismissed: $direction");
+                      },
                       confirmDismiss: (direction) async{
+                        print(direction);
                         return true;
                       },
                       direction: DismissDirection.endToStart,
