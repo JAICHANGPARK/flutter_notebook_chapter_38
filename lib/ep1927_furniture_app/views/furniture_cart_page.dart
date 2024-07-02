@@ -48,6 +48,13 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                   itemBuilder: (context, index) {
                     final furniture = furnitures[index];
                     return Dismissible(
+                      background: Container(
+                        child: Row(
+                          children: [
+
+                          ],
+                        ),
+                      ),
                       key: ValueKey(index),
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
