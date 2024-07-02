@@ -10,6 +10,8 @@ class FurnitureCartPage extends StatefulWidget {
 }
 
 class _FurnitureCartPageState extends State<FurnitureCartPage> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,7 +75,11 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                               ),
                             ),
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  furnitures[index].count = 1 - (furniture.count ?? 1);
+                                });
+                              },
                               icon: Icon(
                                 Icons.remove,
                               ),
@@ -126,7 +132,7 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("SUB TOTAL"),
-                          Text("\$2.700,00"),
+                          Text("\$}"),
                         ],
                       ),
                     ),
