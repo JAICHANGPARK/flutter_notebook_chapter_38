@@ -63,6 +63,9 @@ class _FurnitureCartPageState extends State<FurnitureCartPage> {
                         ),
                       ),
                       onDismissed: (direction) {},
+                      confirmDismiss: (direction) async{
+                        return true;
+                      },
                       direction: DismissDirection.endToStart,
                       key: ValueKey(index),
                       child: Padding(
