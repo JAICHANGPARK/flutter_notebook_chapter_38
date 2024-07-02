@@ -10,7 +10,8 @@ class FurnitureCartPage extends StatefulWidget {
 }
 
 class _FurnitureCartPageState extends State<FurnitureCartPage> {
-
+  double discount = 700;
+  double totalPrice = 0;
 
   @override
   Widget build(BuildContext context) {
