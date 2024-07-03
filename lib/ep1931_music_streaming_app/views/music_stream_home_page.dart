@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MusicStreamHomePage extends StatefulWidget {
   const MusicStreamHomePage({super.key});
 
@@ -11,6 +10,20 @@ class MusicStreamHomePage extends StatefulWidget {
 class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Library",
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.apps,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
