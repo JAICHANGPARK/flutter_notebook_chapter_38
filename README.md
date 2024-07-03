@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_38
 
-## EP1927
+## EP1927-1930
+
+- kesel furniture masterpiece - website & mobile app
+- SlabPixel Designer for SlabPixel
+- https://dribbble.com/shots/24383933-kesel-furniture-masterpiece-website-mobile-app
+
+<img src="https://cdn.dribbble.com/userupload/15192466/file/original-d71b17072c947a47857bdf3e560c5314.png?resize=1905x1431"/>
+
+
+## EP1927-1930
 
 - kesel furniture masterpiece - website & mobile app
 - SlabPixel Designer for SlabPixel
