@@ -40,7 +40,15 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                       leading: CircleAvatar(
                         radius: 28,
                       ),
+                      title: Text("Playlists"),
+                      trailing: IconButton(
+                        onPressed: (){
+
+                        },
+                        icon: Icon(Icons.keyboard_arrow_right),
+                      ),
                     ),
+
                   );
                 },
               ),
