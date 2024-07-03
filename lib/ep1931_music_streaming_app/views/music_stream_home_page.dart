@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicStreamHomePage extends StatefulWidget {
   const MusicStreamHomePage({super.key});
@@ -24,39 +25,65 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_filled,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Gap(24),
+            Column(
+              children: List.generate(
+                5,
+                (index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListTile(
+                      leading: CircleAvatar(
+                        radius: 28,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_filled,
+              ),
+              label: "Home",
             ),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.music_note,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.music_note,
+              ),
+              label: "Library",
             ),
-            label: "Library",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.video_collection_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.video_collection_outlined,
+              ),
+              label: "Collection",
             ),
-            label: "Collection",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: "Search",
             ),
-            label: "Search",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.settings,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.settings,
+              ),
+              label: "Setting",
             ),
-            label: "Setting",
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
