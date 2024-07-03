@@ -61,12 +61,13 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                 vertical: 16
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Recently Added",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 16,
+                      fontSize: 20,
                     ),
                   ),
                   TextButton(
@@ -77,6 +78,9 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                   )
                 ],
               ),
+            ),
+            Column(
+              children: [],
             )
           ],
         ),
