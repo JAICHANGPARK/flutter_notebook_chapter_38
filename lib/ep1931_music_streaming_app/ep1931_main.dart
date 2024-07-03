@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
-   runApp(MusicStreamApp());
+  runApp(MusicStreamApp());
 }
 
 class MusicStreamApp extends StatelessWidget {
@@ -10,6 +9,13 @@ class MusicStreamApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+        ),
+      ),
+    );
   }
 }
