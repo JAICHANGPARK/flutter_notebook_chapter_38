@@ -4,9 +4,9 @@
 
 - Music streaming mobile application ui
 - Roohi Koohi ✦
-- https://dribbble.com/shots/24383933-kesel-furniture-masterpiece-website-mobile-app
+- https://dribbble.com/shots/24277108-Music-streaming-mobile-application-ui
 
-<img src="https://cdn.dribbble.com/userupload/15192466/file/original-d71b17072c947a47857bdf3e560c5314.png?resize=1905x1431"/>
+<img src="https://cdn.dribbble.com/userupload/14881954/file/original-051e19d16c48e8cdf92993218ca7d4da.png?resize=1905x1429"/>
 
 
 ## EP1927-1930
