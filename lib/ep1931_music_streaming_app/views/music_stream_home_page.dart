@@ -42,15 +42,40 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                       ),
                       title: Text("Playlists"),
                       trailing: IconButton(
-                        onPressed: (){
-
-                        },
+                        onPressed: () {},
                         icon: Icon(Icons.keyboard_arrow_right),
                       ),
+                      titleTextStyle: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
                     ),
-
                   );
                 },
+              ),
+            ),
+            Gap(12),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 16
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    "Recently Added",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See all",
+                    ),
+                  )
+                ],
               ),
             )
           ],
