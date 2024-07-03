@@ -38,6 +38,24 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
             ),
             label: "Library",
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.video_collection_outlined,
+            ),
+            label: "Collection",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+            ),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.settings,
+            ),
+            label: "Setting",
+          ),
         ],
       ),
     );
