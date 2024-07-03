@@ -22,7 +22,7 @@ class MusicStreamApp extends StatelessWidget {
           backgroundColor: Colors.white,
           selectedItemColor: Colors.black,
           type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
         ),
         bottomAppBarTheme: BottomAppBarTheme(
           color: Colors.white,
