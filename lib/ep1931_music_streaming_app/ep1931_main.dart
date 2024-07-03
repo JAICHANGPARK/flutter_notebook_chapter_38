@@ -11,17 +11,21 @@ class MusicStreamApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-        ),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: Colors.white,
-          selectedItemColor: Colors.black,
-          type: BottomNavigationBarType.fixed,
-          unselectedItemColor: Colors.black,
-        ),
-      ),
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+          ),
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            backgroundColor: Colors.white,
+            selectedItemColor: Colors.black,
+            type: BottomNavigationBarType.fixed,
+            unselectedItemColor: Colors.black,
+          ),
+          bottomAppBarTheme: BottomAppBarTheme(
+            color: Colors.white,
+            surfaceTintColor: Colors.white,
+          )),
     );
   }
 }
