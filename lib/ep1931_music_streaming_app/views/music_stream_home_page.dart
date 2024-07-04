@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'widgets/music_stream_library_widget.dart';
+
 class MusicStreamHomePage extends StatefulWidget {
   const MusicStreamHomePage({super.key});
 
@@ -33,6 +35,7 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
           Center(
             child: Text("Home"),
           ),
+          MusicStreamLibraryWidget(),
         ],
       ),
       bottomNavigationBar: SizedBox(
