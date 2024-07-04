@@ -85,10 +85,11 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                   return Row(
                     children: [
                       Container(
-                        height: 64,
-                        width: 64,
+                        height: 72,
+                        width: 72,
                         decoration: BoxDecoration(
                           color: Colors.red,
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       ),
                       Gap(24),
