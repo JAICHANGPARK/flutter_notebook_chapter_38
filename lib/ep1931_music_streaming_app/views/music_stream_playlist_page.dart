@@ -34,7 +34,46 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
           itemBuilder: (context, index) {
             return Container(
               color: Colors.blue,
-              
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 16,
+                    right: 16,
+                    top: 0,
+                    bottom: 0,
+                    child: Container(
+                      color: Colors.purple[50],
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 16,
+                    bottom: 32,
+                    child: Container(
+                      color: Colors.purple[50],
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    bottom: 0,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Dance",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "134 Songs",
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             );
           },
         ),
