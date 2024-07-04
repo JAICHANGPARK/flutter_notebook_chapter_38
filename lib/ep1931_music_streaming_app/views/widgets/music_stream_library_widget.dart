@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../music_stream_playlist_page.dart';
 
 class MusicStreamLibraryWidget extends StatefulWidget {
   const MusicStreamLibraryWidget({super.key});
@@ -20,10 +21,17 @@ class _MusicStreamLibraryWidgetState extends State<MusicStreamLibraryWidget> {
           Column(
             children: List.generate(
               5,
-                  (index) {
+              (index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ListTile(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => MusicStreamPlaylistPage(),
+                        ),
+                      );
+                    },
                     leading: CircleAvatar(
                       radius: 28,
                     ),
