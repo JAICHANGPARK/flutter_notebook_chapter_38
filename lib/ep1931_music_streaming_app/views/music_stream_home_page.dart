@@ -80,7 +80,7 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
               ),
             ),
             Column(
-              children: [],
+              children: List.generate(length, generator)
             )
           ],
         ),
