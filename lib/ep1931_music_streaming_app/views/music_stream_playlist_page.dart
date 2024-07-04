@@ -35,7 +35,6 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
           ),
           itemBuilder: (context, index) {
             return Container(
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
