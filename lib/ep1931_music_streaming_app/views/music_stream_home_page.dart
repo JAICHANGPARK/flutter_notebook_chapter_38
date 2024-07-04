@@ -90,13 +90,15 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                     Gap(24),
                     Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Stay",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
-                        )
+                        ),
+                        Text("The Kid, ... ... ...")
                       ],
                     ))
                   ],
