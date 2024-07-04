@@ -76,34 +76,39 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                 ],
               ),
             ),
-            Column(
-              children: List.generate(10, (index) {
-                return Row(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                      ),
-                    ),
-                    Gap(24),
-                    Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Stay",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              child: Column(
+                children: List.generate(10, (index) {
+                  return Row(
+                    children: [
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
                         ),
-                        Text("The Kid, ... ... ...")
-                      ],
-                    ))
-                  ],
-                );
-              }).toList(),
+                      ),
+                      Gap(24),
+                      Expanded(
+                          child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Stay",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text("The Kid, ... ... ...")
+                        ],
+                      ))
+                    ],
+                  );
+                }).toList(),
+              ),
             )
           ],
         ),
