@@ -9,6 +9,9 @@ class MusicStreamHomePage extends StatefulWidget {
 }
 
 class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
+
+  num pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,10 +28,20 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
           ),
         ],
       ),
-      body:
+      body: IndexedStack(
+
+        children: [
+
+        ],
+      ),
       bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
+          onTap: (idx){
+            setState(() {
+              pageIndex = idx;
+            });
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(
