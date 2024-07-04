@@ -86,7 +86,19 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.red,
                       ),
-                    )
+                    ),
+                    Gap(24),
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Text(
+                          "Stay",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ))
                   ],
                 );
               }).toList(),
