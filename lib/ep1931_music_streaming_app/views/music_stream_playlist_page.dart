@@ -23,17 +23,21 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
           ),
         ],
       ),
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 16,
-          mainAxisSpacing: 16,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+          ),
+          itemBuilder: (context, index) {
+            return Container(
+              color: Colors.blue,
+              
+            );
+          },
         ),
-        itemBuilder: (context, index) {
-          return Container(
-            color: Colors.blue,
-          );
-        },
       ),
     );
   }
