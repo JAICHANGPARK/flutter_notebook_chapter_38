@@ -56,10 +56,7 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
             ),
             Gap(12),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 16
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -80,11 +77,19 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
               ),
             ),
             Column(
-              children: List.generate(10, (index){
+              children: List.generate(10, (index) {
                 return Row(
-                  children: [],
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                      ),
+                    )
+                  ],
                 );
-              });
+              }).toList(),
             )
           ],
         ),
