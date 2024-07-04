@@ -83,7 +83,11 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     ),
                   ),
                   Positioned(
+                    right: 24,
+                    bottom: 26,
                     child: Container(
+                      height: 58,
+                      width: 58,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,color: Colors.white
                       ),
