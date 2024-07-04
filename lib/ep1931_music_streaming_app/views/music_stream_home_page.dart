@@ -29,14 +29,16 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
         ],
       ),
       body: IndexedStack(
-
+        index: pageIndex.toInt(),
         children: [
 
         ],
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
+
         child: BottomNavigationBar(
+          currentIndex: pageIndex.toInt(),
           onTap: (idx){
             setState(() {
               pageIndex = idx;
