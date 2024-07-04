@@ -9,7 +9,6 @@ class MusicStreamHomePage extends StatefulWidget {
 }
 
 class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
-
   num pageIndex = 0;
 
   @override
@@ -31,15 +30,16 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
       body: IndexedStack(
         index: pageIndex.toInt(),
         children: [
-
+          Center(
+            child: Text("Home"),
+          ),
         ],
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
-
         child: BottomNavigationBar(
           currentIndex: pageIndex.toInt(),
-          onTap: (idx){
+          onTap: (idx) {
             setState(() {
               pageIndex = idx;
             });
