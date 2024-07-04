@@ -31,7 +31,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
             crossAxisCount: 2,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
-            childAspectRatio: .8,
+            childAspectRatio: .75,
           ),
           itemBuilder: (context, index) {
             return Container(
