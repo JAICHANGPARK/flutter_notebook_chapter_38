@@ -30,6 +30,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
             crossAxisCount: 2,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
+            childAspectRatio: .9,
           ),
           itemBuilder: (context, index) {
             return Container(
@@ -40,7 +41,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     left: 16,
                     right: 16,
                     top: 0,
-                    bottom: 0,
+                    bottom: 62,
                     child: Container(
                       color: Colors.purple[50],
                     ),
@@ -49,7 +50,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     left: 0,
                     right: 0,
                     top: 16,
-                    bottom: 32,
+                    bottom: 42,
                     child: Container(
                       color: Colors.purple[50],
                     ),
