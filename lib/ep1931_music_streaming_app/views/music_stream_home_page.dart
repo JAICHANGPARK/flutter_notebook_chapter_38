@@ -109,6 +109,13 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
                             ],
                           ),
                         ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.more_vert,
+                          ),
+                          color: Colors.grey,
+                        ),
                       ],
                     ),
                   );
