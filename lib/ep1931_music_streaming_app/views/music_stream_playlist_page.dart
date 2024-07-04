@@ -43,7 +43,10 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     top: 0,
                     bottom: 62,
                     child: Container(
-                      color: Colors.purple[50],
+                      decoration: BoxDecoration(
+                        color: Colors.purple[50],
+                        borderRadius: BorderRadius.circular(16),
+                      ),
                     ),
                   ),
                   Positioned(
@@ -52,7 +55,10 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     top: 16,
                     bottom: 42,
                     child: Container(
-                      color: Colors.purple[50],
+                      decoration: BoxDecoration(
+                        color: Colors.purple[200],
+                        borderRadius: BorderRadius.circular(16),
+                      ),
                     ),
                   ),
                   Positioned(
