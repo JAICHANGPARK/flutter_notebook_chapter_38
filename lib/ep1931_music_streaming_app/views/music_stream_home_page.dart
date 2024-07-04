@@ -82,31 +82,35 @@ class _MusicStreamHomePageState extends State<MusicStreamHomePage> {
               ),
               child: Column(
                 children: List.generate(10, (index) {
-                  return Row(
-                    children: [
-                      Container(
-                        height: 72,
-                        width: 72,
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      ),
-                      Gap(24),
-                      Expanded(
-                          child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Stay",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 72,
+                          width: 72,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(8),
                           ),
-                          Text("The Kid, ... ... ...")
-                        ],
-                      ))
-                    ],
+                        ),
+                        Gap(32),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Stay",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text("The Kid, ... ... ...")
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   );
                 }).toList(),
               ),
