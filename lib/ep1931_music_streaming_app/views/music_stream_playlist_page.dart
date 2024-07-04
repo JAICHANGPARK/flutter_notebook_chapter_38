@@ -14,11 +14,11 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Playlists"),
+        title: const Text("Playlists"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.apps,
             ),
           ),
@@ -27,7 +27,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
@@ -61,7 +61,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 0,
                     bottom: 0,
                     child: Column(
@@ -87,7 +87,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     child: Container(
                       height: 58,
                       width: 58,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,color: Colors.white
                       ),
                     ),
