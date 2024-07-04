@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MusicStreamPlaylistPage extends StatefulWidget {
   const MusicStreamPlaylistPage({super.key});
@@ -30,7 +31,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
             crossAxisCount: 2,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
-            childAspectRatio: .9,
+            childAspectRatio: .8,
           ),
           itemBuilder: (context, index) {
             return Container(
@@ -53,7 +54,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     left: 0,
                     right: 0,
                     top: 16,
-                    bottom: 42,
+                    bottom: 52,
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.purple[200],
@@ -71,8 +72,10 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                           "Dance",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            fontSize: 16,
                           ),
                         ),
+                        Gap(5),
                         Text(
                           "134 Songs",
                         )
