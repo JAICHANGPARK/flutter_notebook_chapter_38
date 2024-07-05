@@ -6,7 +6,7 @@
 - Kam
 - https://dribbble.com/shots/24472473-Pet-Care-App
 
-<img src="https://cdn.dribbble.com/userupload/14881954/file/original-051e19d16c48e8cdf92993218ca7d4da.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15454485/file/original-3b9a7d7ebbe9b6c7ec7812de7d6918f4.png?resize=1600x1600"/>
 
 ## EP1931-1933
 
