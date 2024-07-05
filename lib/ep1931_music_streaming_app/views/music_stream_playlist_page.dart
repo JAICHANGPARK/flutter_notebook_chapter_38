@@ -89,10 +89,11 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                       height: 58,
                       width: 58,
                       decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+                      padding: EdgeInsets.all(8),
                       child: Container(
                         decoration: ShapeDecoration(
                           shape: PolygonBorder(sides: 8),
-                          color: Colors.blue,
+                          color: Colors.purple,
                         ),
                         child: IconButton(
                           icon: Icon(
