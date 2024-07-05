@@ -60,6 +60,26 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                         color: Colors.purple[200],
                         borderRadius: BorderRadius.circular(24),
                       ),
+                      child: Column(
+                        children: [
+                          Text(
+                            "Best Dance",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "Songs 2024",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.white
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   const Positioned(
