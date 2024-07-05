@@ -39,6 +39,27 @@ class PetCareStartPage extends StatelessWidget {
                     fontSize: 16,
                   ),
                 ),
+                Spacer(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        "Get Started",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           )
