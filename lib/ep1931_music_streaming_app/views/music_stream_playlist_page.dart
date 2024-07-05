@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_polygon/flutter_polygon.dart';
 import 'package:gap/gap.dart';
 
 class MusicStreamPlaylistPage extends StatefulWidget {
@@ -87,8 +88,11 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     child: Container(
                       height: 58,
                       width: 58,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,color: Colors.white
+                      decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+                      child: Container(
+                        decoration: ShapeDecoration(
+                          shape: PolygonBorder(sides: 8),
+                        ),
                       ),
                     ),
                   ),
