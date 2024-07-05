@@ -43,6 +43,11 @@ class PetCareStartPage extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
+                    borderRadius: BorderRadius.circular(8)
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 32,
+                    vertical: 8,
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -54,6 +59,7 @@ class PetCareStartPage extends StatelessWidget {
                           fontSize: 18,
                         ),
                       ),
+                      Gap(12),
                       Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.white,
