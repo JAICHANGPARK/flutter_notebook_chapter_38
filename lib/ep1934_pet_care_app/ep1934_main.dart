@@ -21,6 +21,8 @@ class PetCareApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router();
+    return MaterialApp.router(
+      routerConfig: _router,
+    );
   }
 }
