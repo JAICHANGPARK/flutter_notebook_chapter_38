@@ -56,6 +56,7 @@ class PetCareStartPage extends StatelessWidget {
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
+                        color: Colors.white,
                       )
                     ],
                   ),
