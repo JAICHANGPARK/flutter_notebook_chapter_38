@@ -17,7 +17,7 @@ class PetCareStartPage extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 120,
+            top: 100,
             bottom: 42,
             left: 0,
             right: 0,
@@ -56,7 +56,7 @@ class PetCareStartPage extends StatelessWidget {
                         "Get Started",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 24,
                         ),
                       ),
                       Gap(12),
