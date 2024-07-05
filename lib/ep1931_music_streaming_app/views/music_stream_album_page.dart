@@ -14,7 +14,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Album",
         ),
         centerTitle: true,
@@ -22,7 +22,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             height: 400,
             child: Stack(
               children: [
@@ -47,7 +47,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => MusicStreamAlbumPage(),
+                          builder: (context) => const MusicStreamAlbumPage(),
                         ),
                       );
                     },
@@ -56,7 +56,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                         color: Colors.purple[200],
                         borderRadius: BorderRadius.circular(24),
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -108,18 +108,19 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                     height: 80,
                     width: 80,
                     decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.white),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: Container(
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         shape: PolygonBorder(sides: 8),
                         color: Colors.black,
                       ),
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.play_arrow,
                         ),
                         color: Colors.white,
                         onPressed: () {},
+                        iconSize: 32,
                       ),
                     ),
                   ),
