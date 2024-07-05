@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PetCareStartPage extends StatelessWidget {
   const PetCareStartPage({super.key});
@@ -20,7 +21,21 @@ class PetCareStartPage extends StatelessWidget {
             left: 0,
             right: 0,
             child: Column(
-              children: [],
+              children: [
+                Text(
+                  "Pet Care",
+                  style: GoogleFonts.pacifico(
+                    color: Colors.white,
+                    fontSize: 42,
+                  ),
+                ),
+                Text(
+                  "Let's Start Making\nyour pet's lives better.",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ],
             ),
           )
         ],
