@@ -23,26 +23,26 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
         children: [
           Container(
             margin: const EdgeInsets.all(16),
-            height: 400,
+            height: 440,
             child: Stack(
               children: [
-                Positioned(
-                  left: 16,
-                  right: 16,
-                  top: 0,
-                  bottom: 62,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.purple[50],
-                      borderRadius: BorderRadius.circular(24),
-                    ),
-                  ),
-                ),
+                // Positioned(
+                //   left: 16,
+                //   right: 16,
+                //   top: 0,
+                //   bottom: 62,
+                //   child: Container(
+                //     decoration: BoxDecoration(
+                //       color: Colors.purple[50],
+                //       borderRadius: BorderRadius.circular(24),
+                //     ),
+                //   ),
+                // ),
                 Positioned(
                   left: 0,
                   right: 0,
-                  top: 16,
-                  bottom: 64,
+                  top: 8,
+                  bottom: 100,
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(
@@ -91,7 +91,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                         "Dance",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                          fontSize: 24,
                         ),
                       ),
                       Gap(5),
@@ -103,7 +103,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                 ),
                 Positioned(
                   right: 42,
-                  bottom: 26,
+                  bottom: 50,
                   child: Container(
                     height: 80,
                     width: 80,
