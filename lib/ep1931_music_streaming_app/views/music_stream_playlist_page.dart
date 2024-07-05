@@ -61,6 +61,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             "Best Dance",
@@ -70,6 +71,7 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                               color: Colors.white,
                             ),
                           ),
+                          Gap(12),
                           Text(
                             "Songs 2024",
                             style: TextStyle(
