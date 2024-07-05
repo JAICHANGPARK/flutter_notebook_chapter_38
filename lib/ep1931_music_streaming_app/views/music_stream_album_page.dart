@@ -44,8 +44,7 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                   top: 8,
                   bottom: 100,
                   child: GestureDetector(
-                    onTap: () {
-                    },
+                    onTap: () {},
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.purple[200],
@@ -76,22 +75,35 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                     ),
                   ),
                 ),
-                const Positioned(
+                Positioned(
                   left: 0,
                   bottom: 0,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  right: 0,
+                  child: Row(
                     children: [
-                      Text(
-                        "Dance",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 24,
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Dance",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                            Gap(5),
+                            Text(
+                              "134 Songs",
+                            )
+                          ],
                         ),
                       ),
-                      Gap(5),
-                      Text(
-                        "134 Songs",
+                      CircleAvatar(
+                        backgroundColor: Colors.blue[50]!,
+                        foregroundColor: Colors.blue,
+                        child: Icon(Icons.shuffle),
+                        radius: 28,
                       )
                     ],
                   ),
@@ -122,7 +134,8 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                 ),
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );
