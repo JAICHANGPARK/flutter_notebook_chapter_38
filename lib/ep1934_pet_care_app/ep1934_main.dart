@@ -11,6 +11,7 @@ class PetCareApp extends StatelessWidget {
   PetCareApp({super.key});
 
   final _router = GoRouter(
+    initialLocation: "/start",
     routes: [
       GoRoute(
         path: "/start",
