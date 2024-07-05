@@ -92,6 +92,14 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                       child: Container(
                         decoration: ShapeDecoration(
                           shape: PolygonBorder(sides: 8),
+                          color: Colors.blue,
+                        ),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.play_arrow,
+                          ),
+                          color: Colors.white,
+                          onPressed: () {},
                         ),
                       ),
                     ),
