@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_polygon/flutter_polygon.dart';
 import 'package:gap/gap.dart';
 
+import 'music_stream_album_page.dart';
+
 class MusicStreamPlaylistPage extends StatefulWidget {
   const MusicStreamPlaylistPage({super.key});
 
@@ -55,32 +57,37 @@ class _MusicStreamPlaylistPageState extends State<MusicStreamPlaylistPage> {
                     right: 0,
                     top: 16,
                     bottom: 52,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.purple[200],
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Best Dance",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              color: Colors.white,
-                            ),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MusicStreamAlbumPage(),
                           ),
-                          Gap(12),
-                          Text(
-                            "Songs 2024",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              color: Colors.white
+                        );
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.purple[200],
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Best Dance",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
                             ),
-                          )
-                        ],
+                            Gap(12),
+                            Text(
+                              "Songs 2024",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.white),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
