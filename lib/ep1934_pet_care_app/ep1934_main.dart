@@ -6,17 +6,19 @@ void main() {
 }
 
 class PetCareApp extends StatelessWidget {
-  const PetCareApp({super.key});
+  PetCareApp({super.key});
 
-  final _router = GoRouter(routes: [
-    
-    GoRoute(path: "/start", builder: (context, state)=>PetCareStartPage())
-    
-  ]);
+  final _router = GoRouter(
+    routes: [
+      GoRoute(
+        path: "/start",
+        builder: (context, state) => PetCareStartPage(),
+      )
+    ],
+  );
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-
-    );
+    return MaterialApp.router();
   }
 }
