@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PetCareStartPage extends StatelessWidget {
@@ -29,10 +30,13 @@ class PetCareStartPage extends StatelessWidget {
                     fontSize: 42,
                   ),
                 ),
+                Gap(24),
                 Text(
                   "Let's Start Making\nyour pet's lives better.",
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
+                    fontSize: 16,
                   ),
                 ),
               ],
