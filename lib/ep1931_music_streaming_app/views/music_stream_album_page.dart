@@ -45,11 +45,6 @@ class _MusicStreamAlbumPageState extends State<MusicStreamAlbumPage> {
                   bottom: 100,
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => const MusicStreamAlbumPage(),
-                        ),
-                      );
                     },
                     child: Container(
                       decoration: BoxDecoration(
