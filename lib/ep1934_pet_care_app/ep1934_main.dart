@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'views/pet_care_start_page.dart';
+
 void main() {
   runApp(PetCareApp());
 }
