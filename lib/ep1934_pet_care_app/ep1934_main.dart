@@ -49,6 +49,11 @@ class PetCareApp extends StatelessWidget {
           unselectedItemColor: Colors.grey,
           elevation: 20,
         ),
+        cardTheme: CardTheme(
+          color: Colors.white,
+          surfaceTintColor: Colors.white,
+          elevation: 4,
+        ),
       ),
     );
   }
