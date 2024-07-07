@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import 'views/pet_care_home_page.dart';
 import 'views/pet_care_start_page.dart';
 
 void main() {
@@ -16,7 +17,11 @@ class PetCareApp extends StatelessWidget {
       GoRoute(
         path: "/start",
         builder: (context, state) => PetCareStartPage(),
-      )
+      ),
+      GoRoute(
+        path: "/",
+        builder: (context, state) => PetCareHomePage(),
+      ),
     ],
   );
 
@@ -24,6 +29,15 @@ class PetCareApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: _router,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          surfaceTintColor: Colors.white,
+          foregroundColor: Colors.grey,
+        ),
+      ),
     );
   }
 }
