@@ -38,7 +38,29 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 240,
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Container(
+
+              decoration: BoxDecoration(
+
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey[200]!,
+                    offset: Offset(0, -2),
+                    spreadRadius: 3,
+                    blurRadius: 2,
+                  )
+                ]
+              ),
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
