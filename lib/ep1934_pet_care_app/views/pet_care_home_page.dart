@@ -65,22 +65,41 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                   child: Column(
                     children: [
                       Card(
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  "Feeding Schedule",
-                                ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "Edit",
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Feeding Schedule",
                                   ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Edit",
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.timer),
+                                title: Text("Morning"),
+                                subtitle: Text(
+                                  "At 7, Alarms before 10 mins",
                                 ),
-                              ],
-                            )
-                          ],
+                                trailing: Checkbox(
+                                  value: true,
+                                  onChanged: (v) {},
+                                ),
+                              ),
+                              Divider(
+                                endIndent: 120,
+                                indent: 120,
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
