@@ -10,6 +10,17 @@ class PetCareHomePage extends StatefulWidget {
 class _PetCareHomePageState extends State<PetCareHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
+        title: Text(
+          "Pet Care",
+        ),
+
+      ),
+    );
   }
 }
