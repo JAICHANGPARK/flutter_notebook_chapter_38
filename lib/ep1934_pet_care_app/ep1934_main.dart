@@ -41,7 +41,13 @@ class PetCareApp extends StatelessWidget {
             color: Colors.black,
             fontSize: 24,
           ),
-
+        ),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.white,
+          selectedItemColor: Colors.teal,
+          unselectedItemColor: Colors.grey,
+          elevation: 10,
         ),
       ),
     );
