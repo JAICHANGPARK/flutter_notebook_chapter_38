@@ -41,13 +41,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
         children: [
           Container(
             height: 240,
+            decoration: BoxDecoration(
+              color: Colors.grey[50],
+            ),
             child: Placeholder(),
           ),
           Expanded(
             child: Container(
-
               decoration: BoxDecoration(
-
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
@@ -56,7 +57,35 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                     spreadRadius: 3,
                     blurRadius: 2,
                   )
-                ]
+                ],
+              ),
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Card(
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  "Feeding Schedule",
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Edit",
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
