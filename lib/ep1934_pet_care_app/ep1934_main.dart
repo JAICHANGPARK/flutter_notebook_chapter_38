@@ -54,6 +54,16 @@ class PetCareApp extends StatelessWidget {
           surfaceTintColor: Colors.white,
           elevation: 4,
         ),
+        checkboxTheme: CheckboxThemeData(
+          checkColor: WidgetStateProperty.all(Colors.white),
+          fillColor: WidgetStateProperty.resolveWith(
+            (widgetState) {
+              if(widgetState.contains(WidgetState.selected)){
+                return Colors.green;
+              }
+            },
+          ),
+        ),
       ),
     );
   }
