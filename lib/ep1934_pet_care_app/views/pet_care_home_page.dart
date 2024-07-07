@@ -74,6 +74,9 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                 children: [
                                   Text(
                                     "Feeding Schedule",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                    ),
                                   ),
                                   TextButton(
                                     onPressed: () {},
@@ -97,7 +100,18 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                               Divider(
                                 endIndent: 120,
                                 indent: 120,
-                              )
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.timer_sharp),
+                                title: Text("Evening"),
+                                subtitle: Text(
+                                  "At 6, Alarms before 10 mins",
+                                ),
+                                trailing: Checkbox(
+                                  value: false,
+                                  onChanged: (v) {},
+                                ),
+                              ),
                             ],
                           ),
                         ),
