@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'views/pet_care_home_page.dart';
 import 'views/pet_care_start_page.dart';
@@ -36,6 +37,11 @@ class PetCareApp extends StatelessWidget {
           elevation: 0,
           surfaceTintColor: Colors.white,
           foregroundColor: Colors.grey,
+          titleTextStyle: GoogleFonts.pacifico(
+            color: Colors.black,
+            fontSize: 24,
+          ),
+
         ),
       ),
     );
