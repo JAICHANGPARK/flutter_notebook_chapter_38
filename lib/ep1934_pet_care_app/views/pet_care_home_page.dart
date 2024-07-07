@@ -112,6 +112,21 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   onChanged: (v) {},
                                 ),
                               ),
+                              Divider(
+                                endIndent: 120,
+                                indent: 120,
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.add_circle_outline),
+                                title: Text("Add New"),
+                                subtitle: Text(
+                                  "Set Alarm",
+                                ),
+                                trailing: Checkbox(
+                                  value: false,
+                                  onChanged: (v) {},
+                                ),
+                              ),
                             ],
                           ),
                         ),
