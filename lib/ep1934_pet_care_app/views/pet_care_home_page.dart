@@ -32,7 +32,32 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
               Icons.notifications,
             ),
           ),
-          SizedBox(width: 16,),
+          SizedBox(
+            width: 16,
+          ),
+        ],
+      ),
+      body: Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.grid_view),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.pets_outlined),
+            label: "Pet Profile",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.connect_without_contact),
+            label: "Community",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Settings",
+          ),
         ],
       ),
     );
