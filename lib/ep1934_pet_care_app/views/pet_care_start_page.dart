@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PetCareStartPage extends StatelessWidget {
@@ -40,31 +41,36 @@ class PetCareStartPage extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(8)
-                  ),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 32,
-                    vertical: 8,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        "Get Started",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
+                GestureDetector(
+                  onTap: (){
+                    context.go("/");
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(8)
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 32,
+                      vertical: 8,
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Get Started",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                          ),
                         ),
-                      ),
-                      Gap(12),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                      )
-                    ],
+                        Gap(12),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
