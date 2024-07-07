@@ -12,6 +12,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {},
@@ -19,7 +20,20 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
         title: Text(
           "Pet Care",
         ),
-
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+            ),
+          ),
+          Badge(
+            child: Icon(
+              Icons.notifications,
+            ),
+          ),
+          SizedBox(width: 16,),
+        ],
       ),
     );
   }
