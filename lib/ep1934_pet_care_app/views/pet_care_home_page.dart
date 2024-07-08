@@ -211,6 +211,18 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                     color: Colors.grey,
                                   ),
                                 ),
+                                padding: EdgeInsets.all(8),
+                                child: Row(
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          "Grooming Session",
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               )
                             ],
                           ),
