@@ -218,9 +218,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   children: [
                                     Expanded(
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             "Grooming Session",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 14,
+                                            ),
                                           ),
                                           Row(
                                             children: [
@@ -236,12 +241,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                     ),
                                     Gap(16),
                                     Expanded(
-                                        child: Container(
-                                          height: 120,
-                                      decoration: BoxDecoration(
-                                        color: Colors.teal,
+                                      child: Container(
+                                        height: 82,
+                                        decoration: BoxDecoration(
+                                          color: Colors.teal,
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
                                       ),
-                                    ))
+                                    )
                                   ],
                                 ),
                               )
