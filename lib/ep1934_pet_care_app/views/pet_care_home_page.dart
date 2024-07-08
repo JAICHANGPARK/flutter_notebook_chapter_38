@@ -210,6 +210,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   border: Border.all(
                                     color: Colors.grey,
                                   ),
+                                  borderRadius: BorderRadius.circular(6),
                                 ),
                                 padding: EdgeInsets.all(8),
                                 child: Row(
@@ -218,9 +219,25 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                       children: [
                                         Text(
                                           "Grooming Session",
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.calendar_today,
+                                              size: 12,
+                                            ),
+                                            Text("Tomorrow")
+                                          ],
                                         )
                                       ],
-                                    )
+                                    ),
+                                    Expanded(
+                                        child: Container(
+                                          height: 120,
+                                      decoration: BoxDecoration(
+                                        color: Colors.teal,
+                                      ),
+                                    ))
                                   ],
                                 ),
                               )
