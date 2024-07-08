@@ -44,7 +44,17 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
             decoration: BoxDecoration(
               color: Colors.grey[50],
             ),
-            child: Placeholder(),
+            child: Stack(
+              children: [
+                Positioned(
+                  right: 0,
+                  bottom: 0,
+                  child: Image.network(
+                    "https://cdn.pixabay.com/photo/2024/05/14/05/43/ai-generated-8760385_1280.png",
+                  ),
+                )
+              ],
+            ),
           ),
           Expanded(
             child: Container(
