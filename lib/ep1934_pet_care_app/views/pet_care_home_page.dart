@@ -55,7 +55,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                   ),
                 ),
                 Positioned(
-                  left: 32,
+                  left: 42,
                   bottom: 42,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,7 +68,9 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                         ),
                       ),
                       Text("3 Years Old"),
-                      Text("Border Collie",)
+                      Text(
+                        "Border Collie",
+                      )
                     ],
                   ),
                 ),
@@ -111,6 +113,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                     onPressed: () {},
                                     child: Text(
                                       "Edit",
+                                    ),
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: Colors.blue,
+                                      textStyle: TextStyle(
+                                        decoration: TextDecoration.underline,
+                                        decorationColor: Colors.blue,
+                                        height: 1.2,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -158,6 +168,11 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                               ),
                             ],
                           ),
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          
                         ),
                       )
                     ],
