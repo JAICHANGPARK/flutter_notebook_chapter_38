@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class PetCareHomePage extends StatefulWidget {
   const PetCareHomePage({super.key});
@@ -215,22 +216,25 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                 padding: EdgeInsets.all(8),
                                 child: Row(
                                   children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          "Grooming Session",
-                                        ),
-                                        Row(
-                                          children: [
-                                            Icon(
-                                              Icons.calendar_today,
-                                              size: 12,
-                                            ),
-                                            Text("Tomorrow")
-                                          ],
-                                        )
-                                      ],
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Grooming Session",
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.calendar_today,
+                                                size: 12,
+                                              ),
+                                              Text("Tomorrow")
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ),
+                                    Gap(16),
                                     Expanded(
                                         child: Container(
                                           height: 120,
