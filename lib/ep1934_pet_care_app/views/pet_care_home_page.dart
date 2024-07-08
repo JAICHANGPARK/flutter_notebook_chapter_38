@@ -52,7 +52,21 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                   child: Image.network(
                     "https://cdn.pixabay.com/photo/2024/05/14/05/43/ai-generated-8760385_1280.png",
                   ),
-                )
+                ),
+                Positioned(
+                  left: 24,
+                  bottom: 24,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Max",
+                        style: TextStyle(
+                          color: Colors.teal,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
