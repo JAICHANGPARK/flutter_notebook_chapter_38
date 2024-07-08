@@ -48,22 +48,27 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
               children: [
                 Positioned(
                   right: 0,
-                  bottom: 0,
+                  bottom: -42,
                   child: Image.network(
+                    width: 240,
                     "https://cdn.pixabay.com/photo/2024/05/14/05/43/ai-generated-8760385_1280.png",
                   ),
                 ),
                 Positioned(
-                  left: 24,
-                  bottom: 24,
+                  left: 32,
+                  bottom: 42,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Max",
                         style: TextStyle(
                           color: Colors.teal,
+                          fontSize: 32,
                         ),
-                      )
+                      ),
+                      Text("3 Years Old"),
+                      Text("Border Collie",)
                     ],
                   ),
                 ),
