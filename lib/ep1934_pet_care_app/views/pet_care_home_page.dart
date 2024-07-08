@@ -224,16 +224,34 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                             "Grooming Session",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 14,
+                                              fontSize: 16,
                                             ),
                                           ),
+                                          Gap(12),
                                           Row(
                                             children: [
                                               Icon(
                                                 Icons.calendar_today,
                                                 size: 12,
                                               ),
+                                              Gap(6),
                                               Text("Tomorrow")
+                                            ],
+                                          ),
+                                          Gap(12),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.timer,
+                                                size: 12,
+                                              ),
+                                              Gap(6),
+                                              Text(
+                                                "10:00 AM",
+                                                style: TextStyle(
+                                                  color: Colors.blue,
+                                                ),
+                                              )
                                             ],
                                           )
                                         ],
