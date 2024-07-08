@@ -172,7 +172,34 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                       ),
                       Card(
                         child: Column(
-                          
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Upcoming Appointments",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Edit",
+                                  ),
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.blue,
+                                    textStyle: TextStyle(
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: Colors.blue,
+                                      height: 1.2,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       )
                     ],
