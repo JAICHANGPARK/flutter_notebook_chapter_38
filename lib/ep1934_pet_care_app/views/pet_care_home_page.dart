@@ -14,25 +14,25 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
       appBar: AppBar(
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
           onPressed: () {},
         ),
-        title: Text(
+        title: const Text(
           "Pet Care",
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
             ),
           ),
-          Badge(
+          const Badge(
             child: Icon(
               Icons.notifications,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 16,
           ),
         ],
@@ -54,7 +54,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                     "https://cdn.pixabay.com/photo/2024/05/14/05/43/ai-generated-8760385_1280.png",
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 42,
                   bottom: 42,
                   child: Column(
@@ -84,7 +84,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey[200]!,
-                    offset: Offset(0, -2),
+                    offset: const Offset(0, -2),
                     spreadRadius: 3,
                     blurRadius: 2,
                   )
@@ -103,7 +103,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Feeding Schedule",
                                     style: TextStyle(
                                       fontSize: 18,
@@ -111,12 +111,12 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   ),
                                   TextButton(
                                     onPressed: () {},
-                                    child: Text(
+                                    child: const Text(
                                       "Edit",
                                     ),
                                     style: TextButton.styleFrom(
                                       foregroundColor: Colors.blue,
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         decoration: TextDecoration.underline,
                                         decorationColor: Colors.blue,
                                         height: 1.2,
@@ -126,9 +126,9 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                 ],
                               ),
                               ListTile(
-                                leading: Icon(Icons.timer),
-                                title: Text("Morning"),
-                                subtitle: Text(
+                                leading: const Icon(Icons.timer),
+                                title: const Text("Morning"),
+                                subtitle: const Text(
                                   "At 7, Alarms before 10 mins",
                                 ),
                                 trailing: Checkbox(
@@ -136,14 +136,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   onChanged: (v) {},
                                 ),
                               ),
-                              Divider(
+                              const Divider(
                                 endIndent: 120,
                                 indent: 120,
                               ),
                               ListTile(
-                                leading: Icon(Icons.timer_sharp),
-                                title: Text("Evening"),
-                                subtitle: Text(
+                                leading: const Icon(Icons.timer_sharp),
+                                title: const Text("Evening"),
+                                subtitle: const Text(
                                   "At 6, Alarms before 10 mins",
                                 ),
                                 trailing: Checkbox(
@@ -151,14 +151,14 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                   onChanged: (v) {},
                                 ),
                               ),
-                              Divider(
+                              const Divider(
                                 endIndent: 120,
                                 indent: 120,
                               ),
                               ListTile(
-                                leading: Icon(Icons.add_circle_outline),
-                                title: Text("Add New"),
-                                subtitle: Text(
+                                leading: const Icon(Icons.add_circle_outline),
+                                title: const Text("Add New"),
+                                subtitle: const Text(
                                   "Set Alarm",
                                 ),
                                 trailing: Checkbox(
@@ -170,36 +170,50 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                           ),
                         ),
                       ),
+                      SizedBox(
+                        height: 24,
+                      ),
                       Card(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Upcoming Appointments",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                  ),
-                                ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "Edit",
-                                  ),
-                                  style: TextButton.styleFrom(
-                                    foregroundColor: Colors.blue,
-                                    textStyle: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      decorationColor: Colors.blue,
-                                      height: 1.2,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text(
+                                    "Upcoming Appointments",
+                                    style: TextStyle(
+                                      fontSize: 18,
                                     ),
                                   ),
+                                  TextButton(
+                                    onPressed: () {},
+                                    child: const Text(
+                                      "Edit",
+                                    ),
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: Colors.blue,
+                                      textStyle: const TextStyle(
+                                        decoration: TextDecoration.underline,
+                                        decorationColor: Colors.blue,
+                                        height: 1.2,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
                                 ),
-                              ],
-                            ),
-                          ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
@@ -212,19 +226,19 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.grid_view),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.pets_outlined),
             label: "Pet Profile",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.connect_without_contact),
             label: "Community",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: "Settings",
           ),
