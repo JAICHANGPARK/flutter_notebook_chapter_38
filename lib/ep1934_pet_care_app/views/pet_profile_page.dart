@@ -33,6 +33,7 @@ class _PetProfilePageState extends State<PetProfilePage> {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 4),
                     decoration: BoxDecoration(
                         color: Colors.grey[100],
                         border: Border.all(
@@ -40,8 +41,10 @@ class _PetProfilePageState extends State<PetProfilePage> {
                         )),
                     child: Row(
                       children: [
-                        Text(
-                          "Vaccination History",
+                        Expanded(
+                          child: Text(
+                            "Vaccination History",
+                          ),
                         ),
                         IconButton(
                           onPressed: () {},
