@@ -289,7 +289,6 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
           });
         },
         currentIndex: pageIndex,
-
         items: [
           const BottomNavigationBarItem(
             icon: Icon(Icons.grid_view),
