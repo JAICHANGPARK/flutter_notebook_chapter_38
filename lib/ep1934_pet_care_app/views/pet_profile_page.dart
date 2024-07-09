@@ -19,7 +19,7 @@ class _PetProfilePageState extends State<PetProfilePage> {
             Container(
               height: 88,
               decoration: BoxDecoration(
-                color: Colors.grey[100],
+                color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(6),
               ),
             ),
