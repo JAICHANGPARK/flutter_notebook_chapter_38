@@ -219,7 +219,7 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
                                     Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
+                                        children: const [
                                           Text(
                                             "Grooming Session",
                                             style: TextStyle(
@@ -289,20 +289,20 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
           });
         },
         currentIndex: pageIndex,
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(Icons.grid_view),
             label: "Home",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.pets_outlined),
             label: "Pet Profile",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.connect_without_contact),
             label: "Community",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: "Settings",
           ),
