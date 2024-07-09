@@ -23,6 +23,38 @@ class _PetProfilePageState extends State<PetProfilePage> {
                 borderRadius: BorderRadius.circular(6),
               ),
             ),
+            Card(
+              child: Column(
+                children: [
+                  Text(
+                    "Health Records",
+                    style: TextStyle(
+                      fontSize: 24,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[100],
+                        border: Border.all(
+                          color: Colors.grey,
+                        )),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Vaccination History",
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
