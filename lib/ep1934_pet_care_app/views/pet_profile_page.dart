@@ -24,38 +24,42 @@ class _PetProfilePageState extends State<PetProfilePage> {
               ),
             ),
             Card(
-              child: Column(
-                children: [
-                  Text(
-                    "Health Records",
-                    style: TextStyle(
-                      fontSize: 24,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Text(
+                      "Health Records",
+                      style: TextStyle(
+                        fontSize: 24,
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 4),
-                    decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        border: Border.all(
-                          color: Colors.grey,
-                        )),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "Vaccination History",
+                    Container(
+                      padding: EdgeInsets.only(left: 12),
+                      margin: EdgeInsets.symmetric(vertical: 4),
+                      decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          border: Border.all(
+                            color: Colors.grey,
+                          )),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              "Vaccination History",
+                            ),
                           ),
-                        ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_forward_ios,
-                          ),
-                        )
-                      ],
-                    ),
-                  )
-                ],
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.arrow_forward_ios,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             )
           ],
