@@ -11,6 +11,12 @@ class PetProfilePage extends StatefulWidget {
 class _PetProfilePageState extends State<PetProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
