@@ -283,6 +283,13 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (idx){
+          setState(() {
+            pageIndex = idx;
+          });
+        },
+        currentIndex: pageIndex,
+
         items: [
           const BottomNavigationBarItem(
             icon: Icon(Icons.grid_view),
@@ -304,4 +311,6 @@ class _PetCareHomePageState extends State<PetCareHomePage> {
       ),
     );
   }
+
+  int pageIndex = 0;
 }
