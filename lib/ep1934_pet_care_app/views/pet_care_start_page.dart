@@ -31,8 +31,8 @@ class PetCareStartPage extends StatelessWidget {
                     fontSize: 42,
                   ),
                 ),
-                Gap(24),
-                Text(
+                const Gap(24),
+                const Text(
                   "Let's Start Making\nyour pet's lives better.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -40,21 +40,18 @@ class PetCareStartPage extends StatelessWidget {
                     fontSize: 16,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     context.go("/");
                   },
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
-                    padding: EdgeInsets.symmetric(
+                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 32,
                       vertical: 8,
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
