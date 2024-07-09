@@ -13,8 +13,9 @@ class _PetProfilePageState extends State<PetProfilePage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          
+
         ],
       ),
     );
