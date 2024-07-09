@@ -138,7 +138,7 @@ class _PetProfilePageState extends State<PetProfilePage> {
                         children: [
                           Expanded(
                             child: Text(
-                              "Vaccination History",
+                              "Allergies & Dietary",
                               style: TextStyle(
                                 fontSize: 18,
                               ),
