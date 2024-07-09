@@ -17,11 +17,11 @@ class PetCareApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: "/start",
-        builder: (context, state) => PetCareStartPage(),
+        builder: (context, state) => const PetCareStartPage(),
       ),
       GoRoute(
         path: "/",
-        builder: (context, state) => PetCareHomePage(),
+        builder: (context, state) => const PetCareHomePage(),
       ),
     ],
   );
@@ -42,14 +42,14 @@ class PetCareApp extends StatelessWidget {
             fontSize: 24,
           ),
         ),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.white,
           selectedItemColor: Colors.teal,
           unselectedItemColor: Colors.grey,
           elevation: 20,
         ),
-        cardTheme: CardTheme(
+        cardTheme: const CardTheme(
           color: Colors.white,
           surfaceTintColor: Colors.white,
           elevation: 4,
