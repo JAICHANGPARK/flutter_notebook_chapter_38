@@ -3,10 +3,10 @@
 ## EP1938
 
 - Online Learning App
-- Kam
-- https://dribbble.com/shots/24472473-Pet-Care-App
+- Umme Jannath Tamanna
+- https://dribbble.com/shots/24462009-Online-Learning-App
 
-<img src="https://cdn.dribbble.com/userupload/15454485/file/original-3b9a7d7ebbe9b6c7ec7812de7d6918f4.png?resize=1600x1600"/>
+<img src="https://cdn.dribbble.com/userupload/15423622/file/original-ad5f0c1e72ac1d02b38697206e48fed9.png?resize=1400x1050"/>
 
 ## EP1934-1937
 
