@@ -34,7 +34,13 @@ class OnlineLearningStartPage extends StatelessWidget {
                 color: Colors.lightGreenAccent,
               ),
               child: Center(
-                child: Text(),
+                child: Text(
+                  "Let's Start Learning!",
+                  style: GoogleFonts.sora(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
               ),
             )
           ],
