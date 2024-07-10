@@ -29,9 +29,14 @@ class OnlineLearningStartPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+            Spacer(),
             Container(
               decoration: BoxDecoration(
                 color: Colors.lightGreenAccent,
+              ),
+              margin: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.symmetric(
+                vertical: 12,
               ),
               child: Center(
                 child: Text(
@@ -42,7 +47,8 @@ class OnlineLearningStartPage extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            Gap(42),
           ],
         ),
       ),
