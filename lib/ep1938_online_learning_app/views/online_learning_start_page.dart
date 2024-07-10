@@ -28,6 +28,14 @@ class OnlineLearningStartPage extends StatelessWidget {
                 fontSize: 24,
               ),
               textAlign: TextAlign.center,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.lightGreenAccent,
+              ),
+              child: Center(
+                child: Text(),
+              ),
             )
           ],
         ),
