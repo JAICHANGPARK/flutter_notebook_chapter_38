@@ -33,7 +33,11 @@ class OnlineLearningStartPage extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: Colors.lightGreenAccent,
+                border: Border.all(width: 2),
+                borderRadius: BorderRadius.circular(4),
+                boxShadow: []
               ),
+
               margin: EdgeInsets.symmetric(horizontal: 24),
               padding: EdgeInsets.symmetric(
                 vertical: 12,
