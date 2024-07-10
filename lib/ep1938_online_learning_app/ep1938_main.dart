@@ -1,10 +1,7 @@
-
-
 import 'package:flutter/material.dart';
 
-
 void main() {
-  
+  runApp(OnlineLearningApp());
 }
 
 class OnlineLearningApp extends StatelessWidget {
@@ -12,8 +9,6 @@ class OnlineLearningApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
-    );
+    return MaterialApp();
   }
 }
