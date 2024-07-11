@@ -13,8 +13,19 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red[50],
+                    shape: BoxShape.circle,
+
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
