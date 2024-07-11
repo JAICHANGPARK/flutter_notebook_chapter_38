@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OnlineLearningHomePage extends StatefulWidget {
   const OnlineLearningHomePage({super.key});
@@ -30,9 +31,8 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                       border: Border.all(),
                       boxShadow: [
                         BoxShadow(
-                            color: Colors.black,
-                            offset: Offset(2, 2),
-
+                          color: Colors.black,
+                          offset: Offset(2, 2),
                         )
                       ],
                     ),
@@ -45,7 +45,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         Text("Hello!"),
                         Text(
                           "Dreamwalker",
-                          style: TextStyle(
+                          style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
                           ),
                         )
@@ -57,13 +57,8 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.lightGreenAccent,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          offset: Offset(2, 2),
-                          blurRadius: 1
-                        )
-                      ],
+                      border: Border.all(),
+                      boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 2), blurRadius: 1)],
                     ),
                     child: Badge(
                       child: Icon(
