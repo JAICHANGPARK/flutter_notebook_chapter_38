@@ -45,9 +45,11 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.lightGreenAccent,
+                      
                     ),
                     child: Badge(
                       child: Icon(
