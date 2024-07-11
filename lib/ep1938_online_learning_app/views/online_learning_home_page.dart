@@ -58,7 +58,13 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                       shape: BoxShape.circle,
                       color: Colors.lightGreenAccent,
                       border: Border.all(),
-                      boxShadow: [BoxShadow(color: Colors.black, offset: Offset(2, 2), blurRadius: 1)],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                          blurRadius: 1,
+                        ),
+                      ],
                     ),
                     child: Badge(
                       child: Icon(
