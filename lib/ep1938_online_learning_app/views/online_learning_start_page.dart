@@ -14,14 +14,14 @@ class OnlineLearningStartPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Gap(42),
+            const Gap(42),
             Container(
               height: 320,
               child: SvgPicture.network(
                 "https://assets-global.website-files.com/64200475697d5630983832ee/64f9ee0444229c0ff7e66a87_02.svg",
               ),
             ),
-            Gap(42),
+            const Gap(42),
             Text(
               "Pick an accessible\ncourse and embark on\nyour digital career\njourney with ease and\nconvenience.",
               style: GoogleFonts.sora(
@@ -30,13 +30,13 @@ class OnlineLearningStartPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            Spacer(),
+            const Spacer(),
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
-                      return OnlineLearningHomePage();
+                      return const OnlineLearningHomePage();
                     },
                   ),
                 );
@@ -47,14 +47,14 @@ class OnlineLearningStartPage extends StatelessWidget {
                   border: Border.all(width: 2),
                   borderRadius: BorderRadius.circular(4),
                   boxShadow: [
-                    BoxShadow(
+                    const BoxShadow(
                       color: Colors.black,
                       offset: Offset(2, 2),
                     ),
                   ],
                 ),
-                margin: EdgeInsets.symmetric(horizontal: 24),
-                padding: EdgeInsets.symmetric(
+                margin: const EdgeInsets.symmetric(horizontal: 24),
+                padding: const EdgeInsets.symmetric(
                   vertical: 12,
                 ),
                 child: Center(
@@ -68,7 +68,7 @@ class OnlineLearningStartPage extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(42),
+            const Gap(42),
           ],
         ),
       ),
