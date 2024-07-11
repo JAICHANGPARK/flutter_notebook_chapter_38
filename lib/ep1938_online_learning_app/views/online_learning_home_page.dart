@@ -85,6 +85,13 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(6),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black,
+                    offset: Offset(2, 2),
+                    blurRadius: 1,
+                  ),
+                ],
               ),
             )
           ],
