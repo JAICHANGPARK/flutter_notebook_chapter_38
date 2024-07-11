@@ -123,7 +123,19 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.favorite_outline,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.chat_outlined,
+                    ),
+                  ),
                 ],
               ),
             )
