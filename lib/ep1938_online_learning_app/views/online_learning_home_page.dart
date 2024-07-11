@@ -27,6 +27,14 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.red[50],
                       shape: BoxShape.circle,
+                      border: Border.all(),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2, 2),
+
+                        )
+                      ],
                     ),
                   ),
                   Gap(12),
@@ -53,7 +61,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         BoxShadow(
                           color: Colors.black,
                           offset: Offset(2, 2),
-                          blurRadius: 2
+                          blurRadius: 1
                         )
                       ],
                     ),
