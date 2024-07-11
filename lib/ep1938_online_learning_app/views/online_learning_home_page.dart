@@ -26,7 +26,19 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.red[50],
                       shape: BoxShape.circle,
-
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Hello!"),
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
