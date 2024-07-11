@@ -94,9 +94,35 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                   ),
                 ],
               ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 24,
+              ),
               child: Row(
                 children: [
-                  
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                        ),
+                        Gap(4),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
