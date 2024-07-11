@@ -47,6 +47,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                           "Dreamwalker",
                           style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
+                            fontSize: 16,
                           ),
                         )
                       ],
@@ -74,7 +75,10 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
