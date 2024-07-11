@@ -83,6 +83,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
               margin: EdgeInsets.all(16),
               height: 62,
               decoration: BoxDecoration(
+                color: Colors.white,
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(6),
                 boxShadow: [
@@ -91,6 +92,11 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     offset: Offset(2, 2),
                     blurRadius: 1,
                   ),
+                ],
+              ),
+              child: Row(
+                children: [
+                  
                 ],
               ),
             )
