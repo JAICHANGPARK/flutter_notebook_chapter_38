@@ -107,6 +107,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     ),
                     padding: EdgeInsets.symmetric(
                       horizontal: 12,
+                      vertical: 4,
                     ),
                     child: Row(
                       children: [
