@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class OnlineLearningHomePage extends StatefulWidget {
   const OnlineLearningHomePage({super.key});
@@ -28,8 +29,10 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                       shape: BoxShape.circle,
                     ),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Hello!"),
                         Text(
@@ -39,6 +42,14 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                           ),
                         )
                       ],
+                    ),
+                  ),
+                  Container(
+                    
+                    child: Badge(
+                      child: Icon(
+                        Icons.notifications_active_outlined,
+                      ),
                     ),
                   )
                 ],
