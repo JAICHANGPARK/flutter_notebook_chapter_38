@@ -79,6 +79,14 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
             Expanded(
               child: Placeholder(),
             ),
+            Container(
+              margin: EdgeInsets.all(16),
+              height: 62,
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(6),
+              ),
+            )
           ],
         ),
       ),
