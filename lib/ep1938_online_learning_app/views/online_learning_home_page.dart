@@ -168,8 +168,9 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         ],
                       ),
                     ),
+                    Gap(12),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16,),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
