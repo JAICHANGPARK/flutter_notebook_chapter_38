@@ -80,9 +80,17 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
               child: Column(
                 children: [
                   Container(
+                    margin: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.white,
-
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        )
+                      ],
                     ),
                     child: TextField(
                       decoration: InputDecoration(
