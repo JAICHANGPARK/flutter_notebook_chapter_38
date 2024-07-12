@@ -170,7 +170,9 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     ),
                     Gap(12),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16,),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -194,11 +196,14 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                           ),
                           Container(
                             height: 240,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {},
+                            ),
                           )
                         ],
                       ),
                     )
-
                   ],
                 ),
               ),
