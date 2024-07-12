@@ -106,7 +106,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     Gap(12),
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 16),
-                      height: 160,
+                      height: 140,
                       decoration: BoxDecoration(
                         color: Colors.pink[50],
                         border: Border.all(),
@@ -195,10 +195,12 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                             ],
                           ),
                           Container(
-                            height: 240,
+                            height: 200,
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index) {},
+                              itemBuilder: (context, index) {
+                                return Placeholder();
+                              },
                             ),
                           )
                         ],
