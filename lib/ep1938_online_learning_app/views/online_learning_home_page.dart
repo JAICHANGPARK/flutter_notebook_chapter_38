@@ -98,6 +98,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                 horizontal: 24,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -134,6 +135,12 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     onPressed: () {},
                     icon: Icon(
                       Icons.chat_outlined,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.person_3_outlined,
                     ),
                   ),
                 ],
