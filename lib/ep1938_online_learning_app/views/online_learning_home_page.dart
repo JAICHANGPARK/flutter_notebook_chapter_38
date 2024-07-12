@@ -92,13 +92,25 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         )
                       ],
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Search",
+                        icon: Icon(Icons.search),
                       ),
                     ),
                   ),
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(),
+                      boxShadow: [],
+                      
+
+                    ),
+                  )
                 ],
               ),
             ),
