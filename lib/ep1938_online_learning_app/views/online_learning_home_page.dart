@@ -106,7 +106,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     height: 160,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.pink[50],
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(8),
                       boxShadow: [
@@ -120,6 +120,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     padding: EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "What would you\nlike to learn today",
