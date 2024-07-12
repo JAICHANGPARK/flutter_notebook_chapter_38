@@ -77,119 +77,119 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
               ),
             ),
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(),
-                      borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          offset: Offset(2, 2),
-                        )
-                      ],
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: "Search",
-                        icon: Icon(Icons.search),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(),
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2, 2),
+                          )
+                        ],
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Search",
+                          icon: Icon(Icons.search),
+                        ),
                       ),
                     ),
-                  ),
-                  Gap(12),
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 16),
-                    height: 160,
-                    decoration: BoxDecoration(
-                      color: Colors.pink[50],
-                      border: Border.all(),
-                      borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black,
-                          offset: Offset(2, 2),
-                        )
-                      ],
+                    Gap(12),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 16),
+                      height: 160,
+                      decoration: BoxDecoration(
+                        color: Colors.pink[50],
+                        border: Border.all(),
+                        borderRadius: BorderRadius.circular(8),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black,
+                            offset: Offset(2, 2),
+                          )
+                        ],
+                      ),
+                      width: double.infinity,
+                      padding: EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "What would you\nlike to learn today",
+                            style: GoogleFonts.sora(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Gap(16),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            padding: EdgeInsets.all(8),
+                            child: Text(
+                              "Let's Start",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    width: double.infinity,
-                    padding: EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Padding(
+                      padding: const EdgeInsets.only(top: 32, left: 16, bottom: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Top Category",
+                            style: GoogleFonts.sora(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Gap(16),
+                          SizedBox(
+                            height: 64,
+                            child: Placeholder(),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
                       children: [
                         Text(
-                          "What would you\nlike to learn today",
+                          "Popular courses",
                           style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
-                        Gap(16),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          padding: EdgeInsets.all(8),
+                        TextButton(
+                          onPressed: () {},
                           child: Text(
-                            "Let's Start",
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
+                            "View all",
                           ),
                         ),
                       ],
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 16,
-                      left: 16,
-                      bottom: 16
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Top Category",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Gap(16),
-                        SizedBox(
-                          height: 64,
-                          child: Placeholder(),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        "Popular courses",
-                        style: GoogleFonts.sora(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "View all",
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 240,
-                  )
-                ],
+                    Container(
+                      height: 240,
+                    )
+                  ],
+                ),
               ),
             ),
             Container(
