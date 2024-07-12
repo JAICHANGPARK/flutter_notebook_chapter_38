@@ -145,6 +145,35 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         ),
                       ],
                     ),
+                  ),
+                  Text(
+                    "Top Category",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 64,
+                    child: Placeholder(),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Popular courses",
+                        style: GoogleFonts.sora(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "View all",
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    height: 240,
                   )
                 ],
               ),
