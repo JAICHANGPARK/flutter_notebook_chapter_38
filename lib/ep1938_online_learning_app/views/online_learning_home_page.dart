@@ -168,26 +168,36 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         ],
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "Popular courses",
-                          style: GoogleFonts.sora(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Popular courses",
+                                style: GoogleFonts.sora(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "View all",
+                                ),
+                              ),
+                            ],
                           ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "View all",
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      height: 240,
+                          Container(
+                            height: 240,
+                          )
+                        ],
+                      ),
                     )
+
                   ],
                 ),
               ),
