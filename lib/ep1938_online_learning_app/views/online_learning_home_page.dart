@@ -101,14 +101,19 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                       ),
                     ),
                   ),
+                  Gap(12),
                   Container(
-                    height: 200,
+                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    height: 160,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(),
-                      boxShadow: [],
-                      
-
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(2, 2),
+                        )
+                      ],
                     ),
                   )
                 ],
