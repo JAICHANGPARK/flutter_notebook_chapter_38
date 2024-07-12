@@ -78,6 +78,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
             ),
             Expanded(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     margin: EdgeInsets.all(16),
@@ -146,15 +147,28 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                       ],
                     ),
                   ),
-                  Text(
-                    "Top Category",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 16,
+                      left: 16,
+                      bottom: 16
                     ),
-                  ),
-                  SizedBox(
-                    height: 64,
-                    child: Placeholder(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Top Category",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Gap(16),
+                        SizedBox(
+                          height: 64,
+                          child: Placeholder(),
+                        ),
+                      ],
+                    ),
                   ),
                   Row(
                     children: [
