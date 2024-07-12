@@ -116,6 +116,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         )
                       ],
                     ),
+                    width: double.infinity,
                     padding: EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -124,8 +125,10 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                           "What would you\nlike to learn today",
                           style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
+                            fontSize: 16,
                           ),
                         ),
+                        Gap(16),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
