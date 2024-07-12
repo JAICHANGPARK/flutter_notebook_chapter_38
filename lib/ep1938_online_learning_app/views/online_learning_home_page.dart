@@ -116,6 +116,7 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                         )
                       ],
                     ),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -124,7 +125,20 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                           style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
                           ),
-                        )
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Text(
+                            "Let's Start",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )
