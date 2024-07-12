@@ -108,10 +108,22 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(),
+                      borderRadius: BorderRadius.circular(8),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black,
                           offset: Offset(2, 2),
+                        )
+                      ],
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "What would you\nlike to learn today",
+                          style: GoogleFonts.sora(
+                            fontWeight: FontWeight.bold,
+                          ),
                         )
                       ],
                     ),
