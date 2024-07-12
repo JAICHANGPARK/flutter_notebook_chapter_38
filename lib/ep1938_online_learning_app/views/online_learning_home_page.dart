@@ -77,7 +77,17 @@ class _OnlineLearningHomePageState extends State<OnlineLearningHomePage> {
               ),
             ),
             Expanded(
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Container(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
               margin: EdgeInsets.all(16),
