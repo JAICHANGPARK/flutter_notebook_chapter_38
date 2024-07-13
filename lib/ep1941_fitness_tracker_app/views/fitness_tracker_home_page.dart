@@ -44,7 +44,9 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       Icons.notifications_rounded,
                     ),
                   ),
+                  Gap(8),
                   CircleAvatar(
+                    radius: 16,
                     backgroundColor: Colors.grey[100],
                   )
                 ],
@@ -55,9 +57,29 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
             ),
             Container(
               height: 64,
-              color: Colors.blue,
+              color: Colors.grey,
               child: Row(
-                children: [],
+                children: [
+                  GestureDetector(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.blue,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Overview",
+                          ),
+                          Icon(
+                            Icons.track_changes,
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
               ),
             )
           ],
