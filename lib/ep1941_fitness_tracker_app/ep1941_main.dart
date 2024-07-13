@@ -18,7 +18,7 @@ class FitnessTrackerApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: GoRouter(
         navigatorKey: rootKey,
-        initialLocation: "/",
+        initialLocation: "/overview",
         routes: [
           StatefulShellRoute.indexedStack(
             parentNavigatorKey: rootKey,
