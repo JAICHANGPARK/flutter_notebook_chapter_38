@@ -13,7 +13,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+          Text("Overview")
       ],
     );
   }
