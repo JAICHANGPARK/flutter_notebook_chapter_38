@@ -19,7 +19,21 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [],
+            ),
+            Expanded(
+              child: widget.navigationShell,
+            ),
+            Container(
+              height: 64,
+              color: Colors.blue,
+              child: Row(
+                children: [],
+              ),
+            )
+          ],
         ),
       ),
     );
