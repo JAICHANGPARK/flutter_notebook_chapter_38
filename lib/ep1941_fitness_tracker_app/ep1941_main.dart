@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_38/ep1941_fitness_tracker_app/views/fitness_tracker_home_page.dart';
+import 'package:flutter_notebook_chapter_38/ep1941_fitness_tracker_app/views/fitness_tracker_overview_widget.dart';
 import 'package:go_router/go_router.dart';
 
 GlobalKey<NavigatorState> rootKey = GlobalKey();
@@ -20,15 +22,22 @@ class FitnessTrackerApp extends StatelessWidget {
         routes: [
           StatefulShellRoute.indexedStack(
             parentNavigatorKey: rootKey,
+            builder: (context, state, navShell) {
+              return FitnessTrackerHomePage(
+                navigationShell: navShell,
+              );
+            },
             branches: [
               StatefulShellBranch(
                 navigatorKey: subKey,
-                initialLocation: "/",
+                initialLocation: "/overview",
                 routes: [
                   GoRoute(
-                    path: "/",
-                    builder:
-                  )
+                    path: "/overview",
+                    builder: (context, state) {
+                      return FitnessTrackerOverviewWidget();
+                    },
+                  ),
                 ],
               )
             ],
