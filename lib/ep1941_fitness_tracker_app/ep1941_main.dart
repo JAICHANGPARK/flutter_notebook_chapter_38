@@ -29,7 +29,6 @@ class FitnessTrackerApp extends StatelessWidget {
             },
             branches: [
               StatefulShellBranch(
-                navigatorKey: subKey,
                 initialLocation: "/overview",
                 routes: [
                   GoRoute(
