@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_38
 
-## EP1938
+## EP1941
+
+- FitFusion Fitness Tracker - Mobile App
+- V. Alipov
+- https://dribbble.com/shots/24506314-FitFusion-Fitness-Tracker-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/15553450/file/original-80024845071a568fe3550f64019c1aec.png?resize=1905x1429"/>
+
+
+## EP1938-1940
 
 - Online Learning App
 - Umme Jannath Tamanna
