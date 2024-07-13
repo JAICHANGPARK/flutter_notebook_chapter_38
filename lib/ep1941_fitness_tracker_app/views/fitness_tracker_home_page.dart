@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 class FitnessTrackerHomePage extends StatefulWidget {
@@ -20,8 +21,34 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Overview",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                  Gap(6),
+                  Text("Wed, 10, Jul"),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.calendar_month),
+                  ),
+                  Badge(
+                    label: Text("3"),
+                    child: Icon(
+                      Icons.notifications_rounded,
+                    ),
+                  ),
+                  CircleAvatar(
+                    backgroundColor: Colors.grey[100],
+                  )
+                ],
+              ),
             ),
             Expanded(
               child: widget.navigationShell,
