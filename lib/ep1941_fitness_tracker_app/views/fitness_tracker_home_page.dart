@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:go_router/go_router.dart';
 
 class FitnessTrackerHomePage extends StatefulWidget {
-  const FitnessTrackerHomePage({super.key});
+  final StatefulNavigationShell navigationShell;
+
+  const FitnessTrackerHomePage({
+    super.key,
+    required this.navigationShell,
+  });
 
   @override
   State<FitnessTrackerHomePage> createState() => _FitnessTrackerHomePageState();
@@ -14,9 +19,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
     );
