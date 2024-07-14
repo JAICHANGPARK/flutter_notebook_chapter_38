@@ -59,6 +59,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
               height: 64,
               margin: EdgeInsets.all(8),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
                     child: Container(
@@ -116,7 +117,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       vertical: 12,
                     ),
                     child: Icon(
-                      Icons.fitness_center,
+                      Icons.circle,
                     ),
                   ),
                   Container(
@@ -131,7 +132,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       vertical: 12,
                     ),
                     child: Icon(
-                      Icons.fitness_center,
+                      Icons.emoji_events_outlined,
                     ),
                   ),
                   Container(
@@ -146,7 +147,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       vertical: 12,
                     ),
                     child: Icon(
-                      Icons.fitness_center,
+                      Icons.more_horiz,
                     ),
                   )
                 ],
