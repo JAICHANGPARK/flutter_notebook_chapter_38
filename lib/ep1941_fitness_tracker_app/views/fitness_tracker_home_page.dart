@@ -70,7 +70,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         borderRadius: BorderRadius.circular(42),
                       ),
                       padding: EdgeInsets.symmetric(
-                        horizontal: 8,
+                        horizontal: 12,
                         vertical: 12,
                       ),
                       child: Row(
@@ -102,7 +102,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       vertical: 12,
                     ),
                     child: Icon(
-                      Icons.fitness_center,
+                      Icons.fitness_center, color: Colors.grey,
                     ),
                   ),
                   Container(
@@ -117,7 +117,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       vertical: 12,
                     ),
                     child: Icon(
-                      Icons.circle,
+                      Icons.circle, color: Colors.grey,
                     ),
                   ),
                   Container(
@@ -133,6 +133,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     ),
                     child: Icon(
                       Icons.emoji_events_outlined,
+                      color: Colors.grey,
                     ),
                   ),
                   Container(
@@ -148,6 +149,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     ),
                     child: Icon(
                       Icons.more_horiz,
+                      color: Colors.grey,
                     ),
                   )
                 ],
