@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FitnessTrackerHomePage extends StatefulWidget {
   final StatefulNavigationShell navigationShell;
@@ -26,10 +27,15 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  const Text(
-                    "Overview",
-                    style: TextStyle(
-                      fontSize: 16,
+                  Text(
+                    switch (widget.navigationShell.currentIndex) {
+                      0 => "Overview",
+                      1 => "Activity",
+                      _ => "",
+                    },
+                    style: GoogleFonts.sora(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   const Gap(6),
@@ -63,7 +69,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       widget.navigationShell.goBranch(0);
                     },
                     child: Container(
@@ -95,7 +101,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       widget.navigationShell.goBranch(1);
                     },
                     child: Container(
@@ -110,12 +116,13 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         vertical: 12,
                       ),
                       child: const Icon(
-                        Icons.fitness_center, color: Colors.grey,
+                        Icons.fitness_center,
+                        color: Colors.grey,
                       ),
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       widget.navigationShell.goBranch(2);
                     },
                     child: Container(
@@ -130,7 +137,8 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         vertical: 12,
                       ),
                       child: const Icon(
-                        Icons.circle, color: Colors.grey,
+                        Icons.circle,
+                        color: Colors.grey,
                       ),
                     ),
                   ),
