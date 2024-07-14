@@ -104,13 +104,13 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                         Row(
                           children: [
                             Icon(
-                              Icons.directions_run,
+                              Icons.flag,
                               size: 14,
-                              color: Colors.lightGreenAccent,
+                              color: Colors.blue,
                             ),
                             Gap(4),
                             Text(
-                              "Steps",
+                              "Distance",
                             )
                           ],
                         ),
@@ -123,7 +123,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                          text: "6.4",
+                                          text: "90",
                                           style: TextStyle(
                                             fontSize: 24,
                                           )),
@@ -136,14 +136,20 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                 Row(
                                   children: [
                                     Icon(
-                                      Icons.arrow_drop_up,
-                                      color: Colors.lightGreen,
+                                      Icons.arrow_drop_down,
+                                      color: Colors.red,
                                     ),
-                                    Text("3.8 km")
+                                    Text("4.72 km")
                                   ],
                                 )
                               ],
                             ),
+                            Spacer(),
+                            CircularPercentIndicator(
+                              radius: 24,
+                              percent: 0,
+                              center: Text("0%"),
+                            )
                           ],
                         )
                       ],
