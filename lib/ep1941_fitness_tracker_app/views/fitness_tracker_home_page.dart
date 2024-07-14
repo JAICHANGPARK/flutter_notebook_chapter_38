@@ -63,7 +63,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                 children: [
                   GestureDetector(
                     onTap: (){
-                      
+                      widget.navigationShell.goBranch(0);
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -93,34 +93,44 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
+                  GestureDetector(
+                    onTap: (){
+                      widget.navigationShell.goBranch(1);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(42),
                       ),
-                      borderRadius: BorderRadius.circular(42),
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 12,
-                    ),
-                    child: Icon(
-                      Icons.fitness_center, color: Colors.grey,
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 12,
+                      ),
+                      child: Icon(
+                        Icons.fitness_center, color: Colors.grey,
+                      ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
+                  GestureDetector(
+                    onTap: (){
+                      widget.navigationShell.goBranch(2);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(42),
                       ),
-                      borderRadius: BorderRadius.circular(42),
-                    ),
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 12,
-                    ),
-                    child: Icon(
-                      Icons.circle, color: Colors.grey,
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 12,
+                      ),
+                      child: Icon(
+                        Icons.circle, color: Colors.grey,
+                      ),
                     ),
                   ),
                   Container(
