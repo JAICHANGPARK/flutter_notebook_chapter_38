@@ -312,9 +312,10 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               ),
             ),
           ),
+
           Container(
-            height: 160,
-            margin: EdgeInsets.symmetric(vertical: 8),
+            height: 180,
+
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.grey[400]!,
