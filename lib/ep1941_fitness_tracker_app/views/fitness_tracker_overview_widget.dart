@@ -18,7 +18,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 140,
+            height: 130,
             child: Row(
               children: [
                 Expanded(
@@ -158,7 +158,169 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 ),
               ],
             ),
-          )
+          ),
+          Gap(8),
+          SizedBox(
+            height: 130,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.directions_run,
+                              size: 14,
+                              color: Colors.lightGreenAccent,
+                            ),
+                            Gap(4),
+                            Text(
+                              "Steps",
+                            )
+                          ],
+                        ),
+                        Spacer(),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text.rich(
+                                  TextSpan(
+                                    children: [
+                                      TextSpan(
+                                          text: "6.4",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          )),
+                                      TextSpan(
+                                        text: " km",
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.arrow_drop_up,
+                                      color: Colors.lightGreen,
+                                    ),
+                                    Text("3.8 km")
+                                  ],
+                                )
+                              ],
+                            ),
+                            Spacer(),
+                            CircularPercentIndicator(
+                              radius: 24,
+                              percent: .25,
+                              center: Text("25%"),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Gap(8),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                    padding: EdgeInsets.all(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.flag,
+                              size: 14,
+                              color: Colors.blue,
+                            ),
+                            Gap(4),
+                            Text(
+                              "Distance",
+                            )
+                          ],
+                        ),
+                        Spacer(),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text.rich(
+                                  TextSpan(
+                                    children: [
+                                      TextSpan(
+                                          text: "90",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          )),
+                                      TextSpan(
+                                        text: " km",
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.arrow_drop_down,
+                                      color: Colors.red,
+                                    ),
+                                    Text("4.72 km")
+                                  ],
+                                )
+                              ],
+                            ),
+                            Spacer(),
+                            CircularPercentIndicator(
+                              radius: 24,
+                              percent: 0,
+                              center: Text("0%"),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Container(
+            height: 160,
+            margin: EdgeInsets.symmetric(vertical: 8),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.grey[400]!,
+              ),
+            ),
+          ),
+          Container(
+            height: 160,
+            margin: EdgeInsets.symmetric(vertical: 8),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.grey[400]!,
+              ),
+            ),
+          ),
         ],
       ),
     );
