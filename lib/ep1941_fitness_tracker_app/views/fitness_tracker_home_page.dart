@@ -18,6 +18,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      b
       body: SafeArea(
         child: Column(
           children: [
@@ -25,26 +26,26 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Overview",
                     style: TextStyle(
                       fontSize: 16,
                     ),
                   ),
-                  Gap(6),
-                  Text("Wed, 10, Jul"),
-                  Spacer(),
+                  const Gap(6),
+                  const Text("Wed, 10, Jul"),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.calendar_month),
+                    icon: const Icon(Icons.calendar_month),
                   ),
-                  Badge(
+                  const Badge(
                     label: Text("3"),
                     child: Icon(
                       Icons.notifications_rounded,
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   CircleAvatar(
                     radius: 16,
                     backgroundColor: Colors.grey[100],
@@ -57,7 +58,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
             ),
             Container(
               height: 64,
-              margin: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -72,11 +73,11 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             "Overview",
@@ -104,11 +105,11 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.fitness_center, color: Colors.grey,
                       ),
                     ),
@@ -124,11 +125,11 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.circle, color: Colors.grey,
                       ),
                     ),
@@ -140,11 +141,11 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       ),
                       borderRadius: BorderRadius.circular(42),
                     ),
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 12,
                       vertical: 12,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.emoji_events_outlined,
                       color: Colors.grey,
                     ),
@@ -156,11 +157,11 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       ),
                       borderRadius: BorderRadius.circular(42),
                     ),
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 12,
                       vertical: 12,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.more_horiz,
                       color: Colors.grey,
                     ),
