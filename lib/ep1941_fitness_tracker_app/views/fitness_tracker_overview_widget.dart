@@ -86,7 +86,6 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 Gap(8),
                 Expanded(
                   child: Container(
-
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
@@ -95,6 +94,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                     ),
                     padding: EdgeInsets.all(12),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -109,16 +109,19 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                             )
                           ],
                         ),
+                        Spacer(),
                         Row(
                           children: [
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text.rich(
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "6.4",
+                                          text: "6.4",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          )
                                       ),
                                       TextSpan(
                                         text: " km",
