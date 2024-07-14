@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class FitnessTrackerOverviewWidget extends StatefulWidget {
   const FitnessTrackerOverviewWidget({super.key});
@@ -54,11 +55,10 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "6.4",
-                                        style: TextStyle(
-                                          fontSize: 24,
-                                        )
-                                      ),
+                                          text: "6.4",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          )),
                                       TextSpan(
                                         text: " km",
                                       ),
@@ -76,7 +76,12 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                 )
                               ],
                             ),
-
+                            Spacer(),
+                            CircularPercentIndicator(
+                              radius: 24,
+                              percent: .25,
+                              center: Text("25%"),
+                            )
                           ],
                         )
                       ],
@@ -121,8 +126,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                           text: "6.4",
                                           style: TextStyle(
                                             fontSize: 24,
-                                          )
-                                      ),
+                                          )),
                                       TextSpan(
                                         text: " km",
                                       ),
@@ -140,7 +144,6 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                 )
                               ],
                             ),
-
                           ],
                         )
                       ],
