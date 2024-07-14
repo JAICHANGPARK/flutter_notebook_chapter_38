@@ -66,17 +66,33 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         border: Border.all(
                           color: Colors.blue,
                         ),
+                        borderRadius: BorderRadius.circular(42),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 12,
                       ),
                       child: Row(
                         children: [
                           Text(
                             "Overview",
                           ),
+                          Gap(12),
                           Icon(
                             Icons.track_changes,
                           ),
                         ],
                       ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[100]!,
+                        ),
+                        borderRadius: BorderRadius.circular(42)),
+                    child: Icon(
+                      Icons.fitness_center,
                     ),
                   )
                 ],
