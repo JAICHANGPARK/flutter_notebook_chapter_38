@@ -57,7 +57,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
             ),
             Container(
               height: 64,
-              color: Colors.grey,
+              margin: EdgeInsets.all(8),
               child: Row(
                 children: [
                   GestureDetector(
@@ -76,10 +76,14 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         children: [
                           Text(
                             "Overview",
+                            style: TextStyle(
+                              color: Colors.blue,
+                            ),
                           ),
                           Gap(12),
                           Icon(
                             Icons.track_changes,
+                            color: Colors.blue,
                           ),
                         ],
                       ),
@@ -87,10 +91,60 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[100]!,
-                        ),
-                        borderRadius: BorderRadius.circular(42)),
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(42),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 12,
+                    ),
+                    child: Icon(
+                      Icons.fitness_center,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(42),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 12,
+                    ),
+                    child: Icon(
+                      Icons.fitness_center,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(42),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 12,
+                    ),
+                    child: Icon(
+                      Icons.fitness_center,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(42),
+                    ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 12,
+                    ),
                     child: Icon(
                       Icons.fitness_center,
                     ),
