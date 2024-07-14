@@ -62,6 +62,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
+                    onTap: (){},
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
