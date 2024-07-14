@@ -18,7 +18,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      b
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
