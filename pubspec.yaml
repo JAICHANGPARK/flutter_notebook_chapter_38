@@ -17,6 +17,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   flutter_polygon: ^0.3.0+2
   flutter_svg:
+  percent_indicator: ^4.2.3
 
 dev_dependencies:
   flutter_test:
