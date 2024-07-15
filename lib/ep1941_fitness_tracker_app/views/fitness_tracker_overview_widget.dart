@@ -441,7 +441,16 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200]!,
-
+                  ),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 12,
+                        child: Text(""),
+                      ),
+                      Text("Dream Walker"),
+                      Text("Cycling"),
+                    ],
                   ),
                 )
               ],
