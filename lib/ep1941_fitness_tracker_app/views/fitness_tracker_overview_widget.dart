@@ -434,12 +434,14 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               border: Border.all(
                 color: Colors.grey[400]!,
               ),
+              borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
               children: [
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200]!,
+
                   ),
                 )
               ],
