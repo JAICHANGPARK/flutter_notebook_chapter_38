@@ -328,10 +328,12 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                     )
                   ],
                 ),
+                Gap(8),
                 Text(
                   "Last 7 days",
                   style: TextStyle(),
                 ),
+                Gap(12),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
