@@ -470,12 +470,14 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
-                    
+                    borderRadius: BorderRadius.circular(32),
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 24,vertical: 8),
                   child: Text(
                     "Join Challenge",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 16,
                     ),
                   ),
                 )
