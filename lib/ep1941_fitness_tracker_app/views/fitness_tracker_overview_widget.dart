@@ -179,13 +179,13 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                         Row(
                           children: [
                             Icon(
-                              Icons.directions_run,
+                              Icons.timer_sharp,
                               size: 14,
-                              color: Colors.lightGreenAccent,
+                              color: Colors.purple,
                             ),
                             Gap(4),
                             Text(
-                              "Steps",
+                              "Time",
                             )
                           ],
                         ),
@@ -198,12 +198,20 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                          text: "6.4",
+                                          text: "5",
                                           style: TextStyle(
                                             fontSize: 24,
                                           )),
                                       TextSpan(
-                                        text: " km",
+                                        text: " h",
+                                      ),
+                                      TextSpan(
+                                          text: "37",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                          )),
+                                      TextSpan(
+                                        text: " min",
                                       ),
                                     ],
                                   ),
@@ -214,17 +222,12 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                       Icons.arrow_drop_up,
                                       color: Colors.lightGreen,
                                     ),
-                                    Text("3.8 km")
+                                    Text("24 min")
                                   ],
                                 )
                               ],
                             ),
-                            Spacer(),
-                            CircularPercentIndicator(
-                              radius: 24,
-                              percent: .25,
-                              center: Text("25%"),
-                            )
+                          
                           ],
                         )
                       ],
@@ -253,7 +256,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                             ),
                             Gap(4),
                             Text(
-                              "Distance",
+                              "Calrories",
                             )
                           ],
                         ),
@@ -266,12 +269,12 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                   TextSpan(
                                     children: [
                                       TextSpan(
-                                          text: "90",
+                                          text: "1,364",
                                           style: TextStyle(
                                             fontSize: 24,
                                           )),
                                       TextSpan(
-                                        text: " km",
+                                        text: "cal",
                                       ),
                                     ],
                                   ),
@@ -280,9 +283,9 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                   children: [
                                     Icon(
                                       Icons.arrow_drop_down,
-                                      color: Colors.red,
+                                      color: Colors.green,
                                     ),
-                                    Text("4.72 km")
+                                    Text("4.72 cal")
                                   ],
                                 )
                               ],
@@ -290,8 +293,9 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                             Spacer(),
                             CircularPercentIndicator(
                               radius: 24,
-                              percent: 0,
-                              center: Text("0%"),
+                              percent: 0.64,
+                              progressColor: Colors.blue,
+                              center: Text("64%"),
                             )
                           ],
                         )
