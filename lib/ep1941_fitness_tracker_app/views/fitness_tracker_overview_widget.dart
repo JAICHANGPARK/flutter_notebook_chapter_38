@@ -429,7 +429,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
             ),
           ),
           Container(
-            
+
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.grey[400]!,
@@ -465,6 +465,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "Take on the Cycling\nChallenge of a Lifetime",
