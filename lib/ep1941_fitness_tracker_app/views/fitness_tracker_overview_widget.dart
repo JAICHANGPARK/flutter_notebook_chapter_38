@@ -412,12 +412,12 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                           width: 40,
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.blue,
+                              color: Colors.grey,
                             ),
                             shape: BoxShape.circle,
                           ),
                         ),
-                        Text("Fri"),
+                        Text("Sun"),
                       ],
                     )
                   ],
