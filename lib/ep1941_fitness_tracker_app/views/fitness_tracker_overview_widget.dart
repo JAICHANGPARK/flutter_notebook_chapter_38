@@ -322,6 +322,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                       "Your Daily Goals",
                       style: TextStyle(
                         fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Icon(
