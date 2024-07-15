@@ -387,7 +387,37 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                             shape: BoxShape.circle,
                           ),
                         ),
-                        Text("Mon"),
+                        Text("Fri"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text("Sat"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.blue,
+                            ),
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text("Fri"),
                       ],
                     )
                   ],
