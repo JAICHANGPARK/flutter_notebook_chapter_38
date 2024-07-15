@@ -310,6 +310,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 color: Colors.grey[400]!,
               ),
             ),
+            padding: EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -326,6 +327,47 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                     )
                   ],
                 ),
+                Text(
+                  "Last 7 days",
+                  style: TextStyle(),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[200]!,
+                        ),
+                        Text("Mon"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(),
+                        Text("Mon"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(),
+                        Text("Mon"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(),
+                        Text("Mon"),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(),
+                        Text("Mon"),
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
           ),
