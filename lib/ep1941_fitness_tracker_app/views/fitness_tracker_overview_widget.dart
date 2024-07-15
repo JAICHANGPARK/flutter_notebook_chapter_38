@@ -444,7 +444,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                   ),
                   padding: EdgeInsets.symmetric(
                     horizontal: 12,
-                    vertical: 4,
+                    vertical: 8,
                   ),
                   child: Row(
                     children: [
@@ -452,9 +452,31 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                         radius: 12,
                         child: Text(""),
                       ),
+                      Gap(4),
                       Text("Dream Walker"),
-                      Text("Cycling"),
+                      Text(" Cycling"),
+                      Spacer(),
+                      Text("2:00 PM")
                     ],
+                  ),
+                ),
+                Text(
+                  "Take on the Cycling\nChallenge of a Lifetime",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    
+                  ),
+                  child: Text(
+                    "Join Challenge",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 )
               ],
