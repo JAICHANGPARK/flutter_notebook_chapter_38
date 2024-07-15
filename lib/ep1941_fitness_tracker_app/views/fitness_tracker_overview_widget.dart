@@ -309,6 +309,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               border: Border.all(
                 color: Colors.grey[400]!,
               ),
+              borderRadius: BorderRadius.circular(8),
             ),
             padding: EdgeInsets.all(12),
             child: Column(
