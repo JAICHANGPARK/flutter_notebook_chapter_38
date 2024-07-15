@@ -349,13 +349,19 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                     ),
                     Column(
                       children: [
-                        CircleAvatar(),
-                        Text("Mon"),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[200]!,
+                        ),
+                        Text("Tue"),
                       ],
                     ),
                     Column(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          backgroundColor: Colors.blue,
+                          foregroundColor: Colors.white,
+                          child: Icon(Icons.check),
+                        ),
                         Text("Mon"),
                       ],
                     ),
