@@ -436,7 +436,9 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               ),
               borderRadius: BorderRadius.circular(8),
             ),
+
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -460,27 +462,36 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                     ],
                   ),
                 ),
-                Text(
-                  "Take on the Cycling\nChallenge of a Lifetime",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        "Take on the Cycling\nChallenge of a Lifetime",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Gap(12),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 24,vertical: 8),
+                        child: Text(
+                          "Join Challenge",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(32),
-                  ),
-                  padding: EdgeInsets.symmetric(horizontal: 24,vertical: 8),
-                  child: Text(
-                    "Join Challenge",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                )
+
               ],
             ),
           ),
