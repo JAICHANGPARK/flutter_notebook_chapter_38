@@ -311,6 +311,11 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                 color: Colors.grey[400]!,
               ),
             ),
+            child: Column(
+              children: [
+                
+              ],
+            ),
           ),
 
           Container(
