@@ -227,7 +227,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
                                 )
                               ],
                             ),
-                          
+
                           ],
                         )
                       ],
