@@ -302,7 +302,6 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               ],
             ),
           ),
-
           Container(
             height: 160,
             margin: EdgeInsets.symmetric(vertical: 8),
@@ -312,15 +311,26 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               ),
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                
+                Row(
+                  children: [
+                    Text(
+                      "Your Daily Goals",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                    Icon(
+                      Icons.arrow_right_outlined,
+                    )
+                  ],
+                ),
               ],
             ),
           ),
-
           Container(
             height: 180,
-
             decoration: BoxDecoration(
               border: Border.all(
                 color: Colors.grey[400]!,
