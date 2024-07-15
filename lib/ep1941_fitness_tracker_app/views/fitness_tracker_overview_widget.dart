@@ -316,6 +316,7 @@ class _FitnessTrackerOverviewWidgetState extends State<FitnessTrackerOverviewWid
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       "Your Daily Goals",
