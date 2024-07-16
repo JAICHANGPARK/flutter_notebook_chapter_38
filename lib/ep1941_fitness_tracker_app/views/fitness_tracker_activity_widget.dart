@@ -16,6 +16,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
         children: [
           Container(
             height: 46,
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
