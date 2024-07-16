@@ -22,8 +22,12 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               itemBuilder: (context, index) {
                 return Container(
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    border: Border.all(
+                      color: Colors.blue,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
                   ),
+                  padding: EdgeInsets.symmetric(horizontal: 8),
                   child: Row(
                     children: [
                       Icon(
