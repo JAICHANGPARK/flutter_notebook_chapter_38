@@ -21,6 +21,9 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
                   child: Row(
                     children: [
                       Icon(
