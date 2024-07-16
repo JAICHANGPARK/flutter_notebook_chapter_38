@@ -86,6 +86,39 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                       ],
                     ),
                   ),
+                  Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Distance",
+                          ),
+                          Text("6.4 km"),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            "Elev Gain",
+                          ),
+                          Text(
+                            "85 m",
+                          )
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            "Time",
+                          ),
+                          Text(
+                            "85 m",
+                          )
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             );
