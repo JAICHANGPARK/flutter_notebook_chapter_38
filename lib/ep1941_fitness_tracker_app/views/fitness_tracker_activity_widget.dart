@@ -192,7 +192,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               ],
             ),
           ),
-          ...List.generate(3, (index) {
+          ...List.generate(2, (index) {
             return Container(
               margin: EdgeInsets.all(8),
               decoration: BoxDecoration(
