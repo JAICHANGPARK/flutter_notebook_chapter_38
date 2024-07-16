@@ -11,6 +11,12 @@ class FitnessTrackerActivityWidget extends StatefulWidget {
 class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container(
+      child: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
