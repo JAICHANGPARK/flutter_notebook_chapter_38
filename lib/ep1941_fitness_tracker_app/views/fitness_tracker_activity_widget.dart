@@ -40,7 +40,33 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                 );
               },
             ),
-          )
+          ),
+          Row(
+            children: [
+              Text(
+                "Today",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Spacer(),
+              Icon(
+                Icons.flag,
+                color: Colors.cyan,
+                size: 16,
+              ),
+              Text(
+                "24.5 km",
+              )
+            ],
+          ),
+          ...List.generate(3, (index){
+            return Container(
+              decoration: BoxDecoration(
+                
+              ),
+            );
+          }).toList(),
         ],
       ),
     );
