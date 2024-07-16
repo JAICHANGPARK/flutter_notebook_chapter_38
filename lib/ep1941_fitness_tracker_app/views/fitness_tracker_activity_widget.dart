@@ -110,49 +110,52 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
-
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "Distance",
+                        Expanded(
+                          child: Row(
+                            children: [  Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  "Distance",
+                                ),
+                                Text(
+                                  "6.4 km",
+                                  style: GoogleFonts.sora(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
-                            Text(
-                              "6.4 km",
-                              style: GoogleFonts.sora(
-                                fontWeight: FontWeight.bold,
+                              Column(
+                                children: [
+                                  const Text(
+                                    "Elev Gain",
+                                  ),
+                                  Text(
+                                    "85 m",
+                                    style: GoogleFonts.sora(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
                               ),
-                            ),
-                          ],
+                              Column(
+                                children: [
+                                  const Text(
+                                    "Time",
+                                  ),
+                                  Text(
+                                    "2h 27m",
+                                    style: GoogleFonts.sora(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              ),],
+                          ),
                         ),
-                        Column(
-                          children: [
-                            const Text(
-                              "Elev Gain",
-                            ),
-                            Text(
-                              "85 m",
-                              style: GoogleFonts.sora(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            const Text(
-                              "Time",
-                            ),
-                            Text(
-                              "2h 27m",
-                              style: GoogleFonts.sora(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )
-                          ],
-                        ),
-                        Spacer(),
+                        
                         CircleAvatar(
                           backgroundColor: Colors.green,
                           foregroundColor: Colors.white,
