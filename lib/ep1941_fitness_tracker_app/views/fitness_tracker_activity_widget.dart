@@ -14,7 +14,10 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
     return Container(
       child: Column(
         children: [
-          
+          Container(
+            height: 46,
+          )
+
         ],
       ),
     );
