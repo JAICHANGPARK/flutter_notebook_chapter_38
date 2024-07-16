@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FitnessTrackerActivityWidget extends StatefulWidget {
@@ -51,6 +52,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               },
             ),
           ),
+          Gap(8),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: const Row(
@@ -113,6 +115,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                       children: [
                         Expanded(
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [  Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -155,7 +158,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                               ),],
                           ),
                         ),
-                        
+                        Gap(32),
                         CircleAvatar(
                           backgroundColor: Colors.green,
                           foregroundColor: Colors.white,
