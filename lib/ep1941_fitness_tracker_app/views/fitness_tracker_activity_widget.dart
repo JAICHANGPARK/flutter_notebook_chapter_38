@@ -75,6 +75,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
           ),
           ...List.generate(3, (index) {
             return Container(
+              margin: EdgeInsets.all(8),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Colors.grey[300]!,
@@ -84,7 +85,10 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               child: Column(
                 children: [
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 4,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.grey[200]!,
                     ),
