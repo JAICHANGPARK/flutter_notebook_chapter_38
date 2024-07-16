@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FitnessTrackerActivityWidget extends StatefulWidget {
   const FitnessTrackerActivityWidget({super.key});
@@ -94,7 +95,12 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                           Text(
                             "Distance",
                           ),
-                          Text("6.4 km"),
+                          Text(
+                            "6.4 km",
+                            style: GoogleFonts.sora(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                       Column(
@@ -104,6 +110,9 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                           ),
                           Text(
                             "85 m",
+                            style: GoogleFonts.sora(
+                              fontWeight: FontWeight.bold,
+                            ),
                           )
                         ],
                       ),
@@ -113,7 +122,10 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                             "Time",
                           ),
                           Text(
-                            "85 m",
+                            "2h 27m",
+                            style: GoogleFonts.sora(
+                              fontWeight: FontWeight.bold,
+                            ),
                           )
                         ],
                       )
