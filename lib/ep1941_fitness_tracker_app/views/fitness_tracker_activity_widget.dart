@@ -15,7 +15,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
       child: Column(
         children: [
           Container(
-            height: 46,
+            height: 42,
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -51,24 +51,27 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               },
             ),
           ),
-          const Row(
-            children: [
-              Text(
-                "Today",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: const Row(
+              children: [
+                Text(
+                  "Today",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              Spacer(),
-              Icon(
-                Icons.flag,
-                color: Colors.cyan,
-                size: 16,
-              ),
-              Text(
-                "24.5 km",
-              )
-            ],
+                Spacer(),
+                Icon(
+                  Icons.flag,
+                  color: Colors.cyan,
+                  size: 16,
+                ),
+                Text(
+                  "24.5 km",
+                )
+              ],
+            ),
           ),
           ...List.generate(3, (index) {
             return Container(
