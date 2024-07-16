@@ -68,6 +68,26 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                 ),
                 borderRadius: BorderRadius.circular(8),
               ),
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]!,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Afternoon Run - Lower Saxony",
+                        ),
+                        Text(
+                          "5:29 PM",
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             );
           }).toList(),
         ],
