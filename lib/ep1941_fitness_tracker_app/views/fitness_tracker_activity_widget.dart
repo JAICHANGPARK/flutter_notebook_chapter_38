@@ -83,6 +83,10 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                         ),
                         Text(
                           "5:29 PM",
+                          style: GoogleFonts.sora(
+                            fontWeight: FontWeight.bold,
+                          ),
+
                         )
                       ],
                     ),
