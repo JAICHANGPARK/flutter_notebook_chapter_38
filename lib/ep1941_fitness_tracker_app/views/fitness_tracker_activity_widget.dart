@@ -72,6 +72,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               child: Column(
                 children: [
                   Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       color: Colors.grey[200]!,
                     ),
@@ -86,7 +87,6 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                           style: GoogleFonts.sora(
                             fontWeight: FontWeight.bold,
                           ),
-
                         )
                       ],
                     ),
