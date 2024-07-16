@@ -60,10 +60,13 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               )
             ],
           ),
-          ...List.generate(3, (index){
+          ...List.generate(3, (index) {
             return Container(
               decoration: BoxDecoration(
-                
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+                borderRadius: BorderRadius.circular(8),
               ),
             );
           }).toList(),
