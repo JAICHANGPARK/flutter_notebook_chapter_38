@@ -16,7 +16,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
         children: [
           Container(
             height: 46,
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
@@ -27,9 +27,9 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                     ),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 8),
-                  margin: EdgeInsets.only(right: 8),
-                  child: Row(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  margin: const EdgeInsets.only(right: 8),
+                  child: const Row(
                     children: [
                       Icon(
                         Icons.motorcycle,
@@ -51,7 +51,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               },
             ),
           ),
-          Row(
+          const Row(
             children: [
               Text(
                 "Today",
@@ -81,14 +81,14 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       color: Colors.grey[200]!,
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Afternoon Run - Lower Saxony",
                         ),
                         Text(
@@ -105,7 +105,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Distance",
                           ),
                           Text(
@@ -118,7 +118,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                       ),
                       Column(
                         children: [
-                          Text(
+                          const Text(
                             "Elev Gain",
                           ),
                           Text(
@@ -131,7 +131,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                       ),
                       Column(
                         children: [
-                          Text(
+                          const Text(
                             "Time",
                           ),
                           Text(
