@@ -28,6 +28,7 @@ class _FitnessTrackerActivityWidgetState extends State<FitnessTrackerActivityWid
                     borderRadius: BorderRadius.circular(8),
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 8),
+                  margin: EdgeInsets.only(right: 8),
                   child: Row(
                     children: [
                       Icon(
