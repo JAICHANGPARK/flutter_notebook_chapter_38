@@ -157,26 +157,60 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: Icon(
-                        Icons.circle,
-                        color: widget.navigationShell.currentIndex == 2 ? Colors.blue : Colors.grey,
+                      child: Row(
+                        children: [
+                          if (widget.navigationShell.currentIndex == 2)
+                            Row(
+                              children: [
+                                Text(
+                                  "Record",
+                                  style: TextStyle(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Gap(12),
+                              ],
+                            ),
+                          Icon(
+                            Icons.circle,
+                            color: widget.navigationShell.currentIndex == 2 ? Colors.blue : Colors.grey,
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
+                  widget(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        borderRadius: BorderRadius.circular(42),
                       ),
-                      borderRadius: BorderRadius.circular(42),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 12,
-                    ),
-                    child: const Icon(
-                      Icons.emoji_events_outlined,
-                      color: Colors.grey,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 12,
+                      ),
+                      child: Row(
+                        children: [
+                          if (widget.navigationShell.currentIndex == 3)
+                            Row(
+                              children: [
+                                Text(
+                                  "Activity",
+                                  style: TextStyle(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Gap(12),
+                              ],
+                            ),
+                          const Icon(
+                            Icons.emoji_events_outlined,
+                            color: Colors.grey,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Container(
