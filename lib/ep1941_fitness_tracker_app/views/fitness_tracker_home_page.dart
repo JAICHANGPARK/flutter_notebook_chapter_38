@@ -179,11 +179,14 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       ),
                     ),
                   ),
-                  widget(
+                  GestureDetector(
+                    onTap: () {
+                      widget.navigationShell.goBranch(3);
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.grey[300]!,
+                          color: widget.navigationShell.currentIndex == 3 ? Colors.blue : Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
@@ -197,7 +200,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                             Row(
                               children: [
                                 Text(
-                                  "Activity",
+                                  "Challenges",
                                   style: TextStyle(
                                     color: Colors.blue,
                                   ),
@@ -205,9 +208,9 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                                 Gap(12),
                               ],
                             ),
-                          const Icon(
+                          Icon(
                             Icons.emoji_events_outlined,
-                            color: Colors.grey,
+                            color: widget.navigationShell.currentIndex == 3 ? Colors.blue : Colors.grey,
                           ),
                         ],
                       ),
