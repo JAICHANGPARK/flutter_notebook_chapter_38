@@ -86,13 +86,17 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                       child: Row(
                         children: [
                           if (widget.navigationShell.currentIndex == 0)
-                            Text(
-                              "Overview",
-                              style: TextStyle(
-                                color: Colors.blue,
-                              ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Overview",
+                                  style: TextStyle(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Gap(12),
+                              ],
                             ),
-                          Gap(12),
                           Icon(
                             Icons.track_changes,
                             color: widget.navigationShell.currentIndex == 0 ? Colors.blue : Colors.grey,
@@ -116,9 +120,9 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: const Icon(
+                      child: Icon(
                         Icons.fitness_center,
-                        color: Colors.grey,
+                        color: widget.navigationShell.currentIndex == 1 ? Colors.blue : Colors.grey,
                       ),
                     ),
                   ),
@@ -129,7 +133,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.grey[300]!,
+                          color: widget.navigationShell.currentIndex == 2 ? Colors.blue : Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
@@ -137,9 +141,9 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: const Icon(
+                      child: Icon(
                         Icons.circle,
-                        color: Colors.grey,
+                        color: widget.navigationShell.currentIndex == 2 ? Colors.blue : Colors.grey,
                       ),
                     ),
                   ),
