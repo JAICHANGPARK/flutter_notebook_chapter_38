@@ -75,7 +75,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.blue,
+                          color: widget.navigationShell.currentIndex == 0 ? Colors.blue : Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
@@ -83,18 +83,19 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: const Row(
+                      child: Row(
                         children: [
-                          Text(
-                            "Overview",
-                            style: TextStyle(
-                              color: Colors.blue,
+                          if (widget.navigationShell.currentIndex == 0)
+                            Text(
+                              "Overview",
+                              style: TextStyle(
+                                color: Colors.blue,
+                              ),
                             ),
-                          ),
                           Gap(12),
                           Icon(
                             Icons.track_changes,
-                            color: Colors.blue,
+                            color: widget.navigationShell.currentIndex == 0 ? Colors.blue : Colors.grey,
                           ),
                         ],
                       ),
@@ -107,7 +108,7 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Colors.grey[300]!,
+                          color: widget.navigationShell.currentIndex == 1 ? Colors.blue : Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(42),
                       ),
