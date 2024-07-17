@@ -5,6 +5,8 @@ import 'package:flutter_notebook_chapter_38/ep1941_fitness_tracker_app/views/fit
 import 'package:flutter_notebook_chapter_38/ep1941_fitness_tracker_app/views/fitness_tracker_overview_widget.dart';
 import 'package:go_router/go_router.dart';
 
+import 'views/fitness_tracker_challenges_widget.dart';
+
 GlobalKey<NavigatorState> rootKey = GlobalKey();
 GlobalKey<NavigatorState> subKey = GlobalKey();
 
@@ -65,7 +67,7 @@ class FitnessTrackerApp extends StatelessWidget {
                   GoRoute(
                     path: "/challenges",
                     builder: (context, state) {
-                      return FitnessRecordWidget();
+                      return FitnessTrackerChallengesWidget();
                     },
                   ),
                 ],
