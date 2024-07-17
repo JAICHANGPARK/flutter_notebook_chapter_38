@@ -23,8 +23,8 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
               return Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    // color: Colors.blue,
-                  ),
+                      // color: Colors.blue,
+                      ),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -36,9 +36,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                     ),
                     Text(
                       "Workouts",
-                      style: TextStyle(
-
-                      ),
+                      style: TextStyle(),
                     ),
                   ],
                 ),
@@ -47,6 +45,13 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
           ),
         ),
         Gap(8),
+        Container(
+          height: 240,
+          child: Placeholder(),
+        ),
+        Expanded(child: GridView.builder(gridDelegate: SliverGridDelegate(), itemBuilder: (context, index) {
+          return Container();
+        },))
       ],
     );
   }
