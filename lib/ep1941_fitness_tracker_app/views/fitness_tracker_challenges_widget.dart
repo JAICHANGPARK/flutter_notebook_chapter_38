@@ -23,7 +23,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
               return Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Colors.blue,
+                    // color: Colors.blue,
                   ),
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -32,19 +32,14 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                 child: const Row(
                   children: [
                     Icon(
-                      Icons.motorcycle,
-                      color: Colors.blue,
+                      Icons.fitness_center,
                     ),
                     Text(
-                      "Bicycle",
+                      "Workouts",
                       style: TextStyle(
-                        color: Colors.blue,
+
                       ),
                     ),
-                    Icon(
-                      Icons.clear,
-                      color: Colors.blue,
-                    )
                   ],
                 ),
               );
