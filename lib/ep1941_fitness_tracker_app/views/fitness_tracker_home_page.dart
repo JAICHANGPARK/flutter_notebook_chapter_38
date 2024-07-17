@@ -120,9 +120,25 @@ class _FitnessTrackerHomePageState extends State<FitnessTrackerHomePage> {
                         horizontal: 12,
                         vertical: 12,
                       ),
-                      child: Icon(
-                        Icons.fitness_center,
-                        color: widget.navigationShell.currentIndex == 1 ? Colors.blue : Colors.grey,
+                      child: Row(
+                        children: [
+                          if (widget.navigationShell.currentIndex == 1)
+                            Row(
+                              children: [
+                                Text(
+                                  "Activity",
+                                  style: TextStyle(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Gap(12),
+                              ],
+                            ),
+                          Icon(
+                            Icons.fitness_center,
+                            color: widget.navigationShell.currentIndex == 1 ? Colors.blue : Colors.grey,
+                          ),
+                        ],
                       ),
                     ),
                   ),
