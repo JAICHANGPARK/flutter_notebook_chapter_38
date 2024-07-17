@@ -47,22 +47,30 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
         Gap(8),
         Container(
           height: 240,
+          margin: EdgeInsets.all(8),
           child: Placeholder(),
         ),
         Expanded(
-            child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-
-          ),
-          itemBuilder: (context, index) {
-            return Container(
-              decoration: BoxDecoration(
-                
-              ),
-            );
-          },
-        ))
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GridView.builder(
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 8,
+              mainAxisSpacing: 8,
+                        ),
+                        itemBuilder: (context, index) {
+              return Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                  ),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              );
+                        },
+                      ),
+            ))
       ],
     );
   }
