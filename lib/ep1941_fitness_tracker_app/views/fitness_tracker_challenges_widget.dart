@@ -49,9 +49,20 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
           height: 240,
           child: Placeholder(),
         ),
-        Expanded(child: GridView.builder(gridDelegate: SliverGridDelegate(), itemBuilder: (context, index) {
-          return Container();
-        },))
+        Expanded(
+            child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+
+          ),
+          itemBuilder: (context, index) {
+            return Container(
+              decoration: BoxDecoration(
+                
+              ),
+            );
+          },
+        ))
       ],
     );
   }
