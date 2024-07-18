@@ -85,7 +85,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                           )
                         ],
                       ),
-                      Gap(6),
+                      Gap(8),
                       Text(
                         "The Map Flow State Challenge",
                         style: TextStyle(
@@ -93,13 +93,21 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      Gap(8),
                       Row(
                         children: [
                           Icon(
                             Icons.group,
                             size: 12,
                           ),
-                          Text("85"),
+                          Gap(4),
+                          Text(
+                            "85",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Gap(4),
                           Text("Participants"),
                         ],
                       ),
