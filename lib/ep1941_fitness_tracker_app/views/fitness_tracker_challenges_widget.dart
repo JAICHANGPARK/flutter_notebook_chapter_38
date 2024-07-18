@@ -23,8 +23,8 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
               return Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    // color: Colors.blue,
-                  ),
+                      // color: Colors.blue,
+                      ),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -71,12 +71,19 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                     children: [
                       Row(
                         children: [
-                          CircleAvatar()
+                          CircleAvatar(),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.grey[300]!,
                             ),
+                            child: Text('Jul 13'),
                           )
+                        ],
+                      ),
+                      Text("The Map Flow State Challenge"),
+                      Row(
+                        children: [
+                          
                         ],
                       )
                     ],
@@ -84,7 +91,8 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                 );
               },
             ),
-          ),)
+          ),
+        )
       ],
     );
   }
