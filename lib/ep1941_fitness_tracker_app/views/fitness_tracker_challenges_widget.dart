@@ -48,7 +48,85 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
         Container(
           height: 240,
           margin: EdgeInsets.all(8),
-          child: Placeholder(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[300]!,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    child: Text('Jul 13'),
+                  )
+                ],
+              ),
+              Gap(8),
+              Text(
+                "The Map Flow State Challenge",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Gap(8),
+              Row(
+                children: [
+                  Icon(
+                    Icons.group,
+                    size: 12,
+                  ),
+                  Gap(4),
+                  Text(
+                    "85",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Gap(4),
+                  Text("Participants"),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.timelapse,
+                    size: 12,
+                  ),
+                  Gap(4),
+                  Text(
+                    "8",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Gap(4),
+                  Text("Day left"),
+                ],
+              ),
+              Gap(8),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(24)
+                ),
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Center(
+                  child: Text(
+                    "Join",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
         Expanded(
           child: Padding(
