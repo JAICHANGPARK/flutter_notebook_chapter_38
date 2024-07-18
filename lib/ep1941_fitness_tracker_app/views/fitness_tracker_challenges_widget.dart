@@ -47,6 +47,13 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
         Gap(8),
         Container(
           height: 240,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(
+              color: Colors.grey[400]!,
+            ),
+            
+          ),
           margin: EdgeInsets.all(8),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -111,10 +118,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
               ),
               Gap(8),
               Container(
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(24)
-                ),
+                decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
                 padding: EdgeInsets.symmetric(vertical: 8),
                 child: Center(
                   child: Text(
@@ -210,10 +214,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                       ),
                       Gap(8),
                       Container(
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(24)),
                         padding: EdgeInsets.symmetric(vertical: 8),
                         child: Center(
                           child: Text(
