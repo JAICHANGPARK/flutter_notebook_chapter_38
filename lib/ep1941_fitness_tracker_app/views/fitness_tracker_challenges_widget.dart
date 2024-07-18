@@ -67,6 +67,20 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                     ),
                     borderRadius: BorderRadius.circular(8),
                   ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar()
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300]!,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 );
               },
             ),
