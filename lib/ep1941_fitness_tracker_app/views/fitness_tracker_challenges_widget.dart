@@ -80,11 +80,19 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                               color: Colors.grey[300]!,
                               borderRadius: BorderRadius.circular(24),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                             child: Text('Jul 13'),
                           )
                         ],
                       ),
-                      Text("The Map Flow State Challenge"),
+                      Gap(6),
+                      Text(
+                        "The Map Flow State Challenge",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Row(
                         children: [
                           Icon(
