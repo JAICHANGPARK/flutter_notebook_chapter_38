@@ -117,13 +117,28 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                             Icons.timelapse,
                             size: 12,
                           ),
-                          Text("8"),
+                          Gap(4),
+                          Text(
+                            "8",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Gap(4),
                           Text("Day left"),
                         ],
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
                         child: Center(
-                          child: Text("Join"),
+                          child: Text(
+                            "Join",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       )
                     ],
