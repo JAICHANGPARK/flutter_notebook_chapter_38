@@ -23,8 +23,8 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
               return Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                      // color: Colors.blue,
-                      ),
+                    // color: Colors.blue,
+                  ),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -51,26 +51,26 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
           child: Placeholder(),
         ),
         Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 8,
-              mainAxisSpacing: 8,
-                        ),
-                        itemBuilder: (context, index) {
-              return Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+              ),
+              itemBuilder: (context, index) {
+                return Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              );
-                        },
-                      ),
-            ))
+                );
+              },
+            ),
+          ),)
       ],
     );
   }
