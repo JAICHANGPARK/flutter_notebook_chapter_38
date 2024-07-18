@@ -83,8 +83,25 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                       Text("The Map Flow State Challenge"),
                       Row(
                         children: [
-                          
+                          Icon(Icons.group, size: 12,),
+                          Text("85"),
+                          Text("Participants"),
+
+
                         ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.timelapse, size: 12,),
+                          Text("8"),
+                          Text("Day left"),
+
+                        ],
+                      ),
+                      Container(
+                        child: Center(
+                          child: Text("Join"),
+                        ),
                       )
                     ],
                   ),
