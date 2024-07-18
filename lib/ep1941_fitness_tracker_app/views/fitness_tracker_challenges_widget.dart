@@ -58,6 +58,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                 crossAxisCount: 2,
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
+                childAspectRatio: .9,
               ),
               itemBuilder: (context, index) {
                 return Container(
@@ -69,6 +70,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                   ),
                   padding: EdgeInsets.all(12),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
@@ -128,6 +130,7 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                           Text("Day left"),
                         ],
                       ),
+                      Gap(8),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.blue,
