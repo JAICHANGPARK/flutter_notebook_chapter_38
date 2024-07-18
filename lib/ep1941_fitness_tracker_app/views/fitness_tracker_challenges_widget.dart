@@ -134,7 +134,9 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.blue,
+                          borderRadius: BorderRadius.circular(24)
                         ),
+                        padding: EdgeInsets.symmetric(vertical: 8),
                         child: Center(
                           child: Text(
                             "Join",
