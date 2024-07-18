@@ -67,14 +67,18 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                     ),
                     borderRadius: BorderRadius.circular(8),
                   ),
+                  padding: EdgeInsets.all(12),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.grey[300]!,
+                              borderRadius: BorderRadius.circular(24),
                             ),
                             child: Text('Jul 13'),
                           )
@@ -83,19 +87,22 @@ class _FitnessTrackerChallengesWidgetState extends State<FitnessTrackerChallenge
                       Text("The Map Flow State Challenge"),
                       Row(
                         children: [
-                          Icon(Icons.group, size: 12,),
+                          Icon(
+                            Icons.group,
+                            size: 12,
+                          ),
                           Text("85"),
                           Text("Participants"),
-
-
                         ],
                       ),
                       Row(
                         children: [
-                          Icon(Icons.timelapse, size: 12,),
+                          Icon(
+                            Icons.timelapse,
+                            size: 12,
+                          ),
                           Text("8"),
                           Text("Day left"),
-
                         ],
                       ),
                       Container(
