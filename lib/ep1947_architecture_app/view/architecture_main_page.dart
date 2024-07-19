@@ -76,9 +76,19 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               child: Text(
                 "NEW SHOTS DAILY",
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: Colors.indigo,
                 ),
               ),
+            ),
+            Text(
+              "Discover the world's top\narchitexts & creatives",
+              style: TextStyle(
+                fontSize: 24,
+              ),
+            ),
+            Text(
+              "Save hours of Design research with our library of 100,000+\n"
+              "shots from the world's best architects",
             )
           ],
         ),
