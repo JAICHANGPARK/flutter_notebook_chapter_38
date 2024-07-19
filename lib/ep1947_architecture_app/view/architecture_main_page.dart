@@ -91,10 +91,16 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               ),
               textAlign: TextAlign.center,
             ),
+            Gap(24),
             Text(
               "Save hours of Design research with our library of 100,000+\n"
               "shots from the world's best architects",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 12,
+              ),
             ),
+            Gap(16),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
