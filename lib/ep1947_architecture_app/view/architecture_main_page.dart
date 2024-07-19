@@ -105,6 +105,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                   child: Center(child: Text('Join for free')),
                 ),
+                
                 Container(
                   width: 120,
                   padding: EdgeInsets.symmetric(
@@ -116,6 +117,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     color: Colors.grey[200]!,
                   )),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Log in'),
                       CircleAvatar(
