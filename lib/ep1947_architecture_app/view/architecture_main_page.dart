@@ -66,7 +66,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             ),
 
             Container(
-              margin: EdgeInsets.symmetric(vertical: 32),
+              margin: EdgeInsets.symmetric(vertical: 24),
               decoration: BoxDecoration(
                 color: Colors.blue[100],
                 borderRadius: BorderRadius.circular(4),
