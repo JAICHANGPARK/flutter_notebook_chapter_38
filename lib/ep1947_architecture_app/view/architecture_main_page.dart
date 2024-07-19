@@ -22,13 +22,24 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 children: [
                   Text(
                     "Au",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
                   ),
-                  Gap(6),
+
                   Expanded(
                     child: Container(
+                      margin: EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         color: Colors.grey[200]!,
                         borderRadius: BorderRadius.circular(32),
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Search for projects",
+                        ),
                       ),
                     ),
                   ),
@@ -41,7 +52,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ],
               ),
             ),
-            Divider(height: 0,),
+            Divider(
+              height: 0,
+            ),
           ],
         ),
       ),
