@@ -38,14 +38,17 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: TextField(
                         decoration: InputDecoration(
-                            hintText: "Search for projects",
-                            hintStyle: TextStyle(
-                              fontSize: 12,
-                            ),
-                            border: InputBorder.none,
-                            icon: Icon(
-                              Icons.search,
-                            )),
+                          hintText: "Search for projects",
+                          hintStyle: TextStyle(
+                            fontSize: 12,
+                          ),
+                          isDense: true,
+                          // contentPadding: EdgeInsets.zero,
+                          border: InputBorder.none,
+                          icon: Icon(
+                            Icons.search,
+                          ),
+                        ),
                       ),
                     ),
                   ),
