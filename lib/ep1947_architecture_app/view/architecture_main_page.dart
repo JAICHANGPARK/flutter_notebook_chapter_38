@@ -79,6 +79,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 "NEW SHOTS DAILY",
                 style: TextStyle(
                   color: Colors.indigo,
+                  fontSize: 12,
                 ),
               ),
             ),
@@ -86,7 +87,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               "Discover the world's top\narchitexts & creatives",
               style: TextStyle(
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
+              textAlign: TextAlign.center,
             ),
             Text(
               "Save hours of Design research with our library of 100,000+\n"
