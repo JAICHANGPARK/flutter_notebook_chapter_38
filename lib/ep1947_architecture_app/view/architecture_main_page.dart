@@ -64,7 +64,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Divider(
               height: 0,
             ),
+
             Container(
+              margin: EdgeInsets.symmetric(vertical: 32),
               decoration: BoxDecoration(
                 color: Colors.blue[100],
                 borderRadius: BorderRadius.circular(4),
