@@ -24,10 +24,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     "Au",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 16,
+                      fontSize: 18,
                     ),
                   ),
-
                   Expanded(
                     child: Container(
                       margin: EdgeInsets.symmetric(horizontal: 12),
@@ -38,8 +37,11 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Search for projects",
-                        ),
+                            hintText: "Search for projects",
+                            border: InputBorder.none,
+                            icon: Icon(
+                              Icons.search,
+                            )),
                       ),
                     ),
                   ),
