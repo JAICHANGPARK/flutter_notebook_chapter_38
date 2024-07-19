@@ -89,6 +89,34 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Text(
               "Save hours of Design research with our library of 100,000+\n"
               "shots from the world's best architects",
+            ),
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.brown[100]!,
+                  ),
+                  child: Text('Join for free'),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                    color: Colors.grey[200]!,
+                  )),
+                  child: Row(
+                    children: [
+                      Text('Log in'),
+                      CircleAvatar(
+                        radius: 8,
+                        child: Icon(
+                          Icons.arrow_forward,
+                          size: 12,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
             )
           ],
         ),
