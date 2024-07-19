@@ -105,7 +105,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                   child: Center(child: Text('Join for free')),
                 ),
-                
+                Gap(12),
                 Container(
                   width: 120,
                   padding: EdgeInsets.symmetric(
