@@ -91,10 +91,16 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               "shots from the world's best architects",
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 5,
+                  ),
                   decoration: BoxDecoration(
                     color: Colors.brown[100]!,
+                    borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text('Join for free'),
                 ),
