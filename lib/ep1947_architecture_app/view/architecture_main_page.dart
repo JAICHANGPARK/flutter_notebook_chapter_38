@@ -23,12 +23,19 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ),
                 Gap(6),
                 Expanded(
-                    child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200]!,
-                    borderRadius: BorderRadius.circular(32),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]!,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
                   ),
-                )),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.menu,
+                  ),
+                )
               ],
             )
           ],
