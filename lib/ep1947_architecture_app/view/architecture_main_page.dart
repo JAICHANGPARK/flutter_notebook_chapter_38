@@ -29,6 +29,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                   Expanded(
                     child: Container(
+                      height: 38,
                       margin: EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         color: Colors.grey[200]!,
@@ -38,6 +39,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       child: TextField(
                         decoration: InputDecoration(
                             hintText: "Search for projects",
+                            hintStyle: TextStyle(
+                              fontSize: 12,
+                            ),
                             border: InputBorder.none,
                             icon: Icon(
                               Icons.search,
