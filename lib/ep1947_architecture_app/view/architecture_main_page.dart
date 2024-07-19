@@ -22,6 +22,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   "Au",
                 ),
                 Gap(6),
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200]!,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                )),
               ],
             )
           ],
