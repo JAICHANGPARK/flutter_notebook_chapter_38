@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-
+  runApp(ArchitectureApp());
 }
 
 
@@ -12,7 +12,7 @@ class ArchitectureApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+
     );
   }
 }
