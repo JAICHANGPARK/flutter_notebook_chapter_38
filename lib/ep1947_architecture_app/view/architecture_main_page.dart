@@ -16,28 +16,32 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Text(
-                  "Au",
-                ),
-                Gap(6),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200]!,
-                      borderRadius: BorderRadius.circular(32),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Au",
+                  ),
+                  Gap(6),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200]!,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
                     ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.menu,
-                  ),
-                )
-              ],
-            )
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.menu,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Divider(height: 0,),
           ],
         ),
       ),
