@@ -6,7 +6,7 @@
 - Levi Wilson for QClay
 - https://dribbble.com/shots/24469525-Qumiqo-Architecture-Mobile-Design
 
-<img src="https://cdn.dribbble.com/userupload/15553450/file/original-80024845071a568fe3550f64019c1aec.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15446290/file/original-90b7de08551dc6025d91c2564457e0e5.png?resize=1905x1429"/>
 
 
 ## EP1941-1946
