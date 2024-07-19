@@ -131,6 +131,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Log in'),
+                      Gap(6),
                       CircleAvatar(
                         radius: 8,
                         child: Icon(
@@ -142,7 +143,10 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                 ),
               ],
-            )
+            ),
+            Divider(
+              height: 42,
+            ),
           ],
         ),
       ),
