@@ -86,12 +86,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Text(
               "Discover the world's top\narchitexts & creatives",
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 28,
+
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),
-            Gap(24),
+            Gap(16),
             Text(
               "Save hours of Design research with our library of 100,000+\n"
               "shots from the world's best architects",
