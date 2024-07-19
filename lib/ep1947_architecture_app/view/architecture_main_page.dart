@@ -64,6 +64,22 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Divider(
               height: 0,
             ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.blue[100],
+                borderRadius: BorderRadius.circular(4),
+              ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 12,
+                vertical: 4,
+              ),
+              child: Text(
+                "NEW SHOTS DAILY",
+                style: TextStyle(
+                  color: Colors.blue,
+                ),
+              ),
+            )
           ],
         ),
       ),
