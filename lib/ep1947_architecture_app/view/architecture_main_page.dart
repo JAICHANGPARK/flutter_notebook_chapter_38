@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:gap/gap.dart';
 
 class ArchitectureMainPage extends StatefulWidget {
   const ArchitectureMainPage({super.key});
@@ -13,6 +13,20 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  "Au",
+                ),
+                Gap(6),
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
