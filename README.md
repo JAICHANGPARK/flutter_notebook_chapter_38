@@ -2,9 +2,9 @@
 
 ## EP1947
 
-- FitFusion Fitness Tracker - Mobile App
-- V. Alipov
-- https://dribbble.com/shots/24506314-FitFusion-Fitness-Tracker-Mobile-App
+- Qumiqo - Architecture Mobile Design
+- Levi Wilson for QClay
+- https://dribbble.com/shots/24469525-Qumiqo-Architecture-Mobile-Design
 
 <img src="https://cdn.dribbble.com/userupload/15553450/file/original-80024845071a568fe3550f64019c1aec.png?resize=1905x1429"/>
 
