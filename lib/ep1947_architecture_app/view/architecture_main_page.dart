@@ -175,6 +175,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                           Icons.tune,
                           size: 16,
                         ),
+                        Gap(12),
                         Text(
                           "Weekly",
                         ),
