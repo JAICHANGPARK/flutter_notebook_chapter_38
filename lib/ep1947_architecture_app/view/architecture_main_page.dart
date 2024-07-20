@@ -184,7 +184,15 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            SizedBox(
+              height: 32,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container();
+                },
+              ),
+            ),
           ],
         ),
       ),
