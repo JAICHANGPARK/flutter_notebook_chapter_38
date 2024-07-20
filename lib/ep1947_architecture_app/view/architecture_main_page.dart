@@ -202,8 +202,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
-                      
-                      color: index == 0? Colors.brown[100] : Colors.white,
+                      color: index == 0 ? Colors.brown[100] : Colors.white,
+                      borderRadius: BorderRadius.circular(24),
                     ),
                     child: Text("${tabs[index]}"),
                   );
