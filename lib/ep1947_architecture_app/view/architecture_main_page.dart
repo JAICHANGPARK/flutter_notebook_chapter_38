@@ -202,7 +202,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                     decoration: BoxDecoration(
-                      color: Colors.brown[100],
+                      
+                      color: index == 0? Colors.brown[100] : Colors.white,
                     ),
                     child: Text("${tabs[index]}"),
                   );
