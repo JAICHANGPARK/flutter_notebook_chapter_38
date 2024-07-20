@@ -221,6 +221,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ),
               ),
             ),
+            Expanded(
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                  ),
+                  itemBuilder: (context, index) {}),
+            ),
           ],
         ),
       ),
