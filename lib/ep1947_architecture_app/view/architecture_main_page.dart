@@ -206,7 +206,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       borderRadius: BorderRadius.circular(24),
 
                     ),
-                    child: Text("${tabs[index]}"),
+                    child: Center(child: Text("${tabs[index]}")),
                   );
                 },
               ),
