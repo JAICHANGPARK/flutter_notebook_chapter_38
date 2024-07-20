@@ -64,7 +64,6 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Divider(
               height: 0,
             ),
-
             Container(
               margin: EdgeInsets.symmetric(vertical: 24),
               decoration: BoxDecoration(
@@ -87,7 +86,6 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               "Discover the world's top\narchitexts & creatives",
               style: TextStyle(
                 fontSize: 28,
-
                 fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
@@ -108,7 +106,6 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 Container(
                   width: 120,
                   padding: EdgeInsets.symmetric(
-
                     vertical: 5,
                   ),
                   decoration: BoxDecoration(
@@ -121,7 +118,6 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 Container(
                   width: 120,
                   padding: EdgeInsets.symmetric(
-
                     vertical: 5,
                   ),
                   decoration: BoxDecoration(
@@ -148,6 +144,24 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Divider(
               height: 42,
             ),
+            Row(
+              children: [
+                Text(
+                  "Popular Shots",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
