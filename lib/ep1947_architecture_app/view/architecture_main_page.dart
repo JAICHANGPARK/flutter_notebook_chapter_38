@@ -27,7 +27,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "Au",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -37,13 +37,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   Expanded(
                     child: Container(
                       height: 38,
-                      margin: EdgeInsets.symmetric(horizontal: 12),
+                      margin: const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(
                         color: Colors.grey[200]!,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: const TextField(
                         decoration: InputDecoration(
                           hintText: "Search for projects",
                           hintStyle: TextStyle(
@@ -61,27 +61,27 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.menu,
                     ),
                   )
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               height: 0,
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 24),
+              margin: const EdgeInsets.symmetric(vertical: 24),
               decoration: BoxDecoration(
                 color: Colors.blue[100],
                 borderRadius: BorderRadius.circular(4),
               ),
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 12,
                 vertical: 4,
               ),
-              child: Text(
+              child: const Text(
                 "NEW SHOTS DAILY",
                 style: TextStyle(
                   color: Colors.indigo,
@@ -89,7 +89,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ),
               ),
             ),
-            Text(
+            const Text(
               "Discover the world's top\narchitexts & creatives",
               style: TextStyle(
                 fontSize: 28,
@@ -97,8 +97,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               ),
               textAlign: TextAlign.center,
             ),
-            Gap(16),
-            Text(
+            const Gap(16),
+            const Text(
               "Save hours of Design research with our library of 100,000+\n"
               "shots from the world's best architects",
               textAlign: TextAlign.center,
@@ -106,32 +106,34 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 fontSize: 12,
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 120,
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 5,
                   ),
                   decoration: BoxDecoration(
                     color: Colors.brown[100]!,
                     borderRadius: BorderRadius.circular(4),
                   ),
-                  child: Center(child: Text('Join for free')),
+                  child: const Center(
+                    child: Text('Join for free'),
+                  ),
                 ),
-                Gap(12),
+                const Gap(12),
                 Container(
                   width: 120,
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 5,
                   ),
                   decoration: BoxDecoration(
                       border: Border.all(
                     color: Colors.grey[200]!,
                   )),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Log in'),
@@ -148,7 +150,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               height: 42,
             ),
             Padding(
@@ -158,7 +160,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Popular Shots",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -166,7 +168,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 16,
                       vertical: 8,
                     ),
@@ -176,7 +178,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       ),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Icon(
                           Icons.tune,
