@@ -207,8 +207,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   itemCount: tabs.length,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 8),
-                      padding: EdgeInsets.symmetric(
+                      margin: const EdgeInsets.only(right: 8),
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 24,
                       ),
                       decoration: BoxDecoration(
