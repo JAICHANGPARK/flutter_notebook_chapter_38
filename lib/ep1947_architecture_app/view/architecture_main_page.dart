@@ -144,26 +144,35 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Divider(
               height: 42,
             ),
-            Row(
-              children: [
-                Text(
-                  "Popular Shots",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300]!,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    "Popular Shots",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
-                    borderRadius: BorderRadius.circular(24),
                   ),
-                  child: Row(
-                    children: [Icon(Icons.tune), Text("Weeklu")],
-                  ),
-                )
-              ],
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    child: Row(
+                      children: [Icon(Icons.tune), Text("Weeklu")],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
