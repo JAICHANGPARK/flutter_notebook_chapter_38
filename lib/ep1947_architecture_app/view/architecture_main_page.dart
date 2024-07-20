@@ -229,6 +229,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       crossAxisCount: 2,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
+                      childAspectRatio: tabs.length % 3 == 0 ? 1.1 : 0.4,
                     ),
                     itemBuilder: (context, index) {
                       return Container(
