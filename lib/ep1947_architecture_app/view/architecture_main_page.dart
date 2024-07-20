@@ -9,6 +9,13 @@ class ArchitectureMainPage extends StatefulWidget {
 }
 
 class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
+  List<String> tabs = [
+    "All",
+    "Residential",
+    "Interior",
+    "Commercial & Office",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
