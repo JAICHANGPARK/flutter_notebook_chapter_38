@@ -149,11 +149,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 horizontal: 16,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Popular Shots",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 24,
                     ),
                   ),
                   Container(
