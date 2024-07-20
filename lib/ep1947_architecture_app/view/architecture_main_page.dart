@@ -170,7 +170,12 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       borderRadius: BorderRadius.circular(24),
                     ),
                     child: Row(
-                      children: [Icon(Icons.tune), Text("Weeklu")],
+                      children: [
+                        Icon(Icons.tune),
+                        Text(
+                          "Weekly",
+                        ),
+                      ],
                     ),
                   )
                 ],
