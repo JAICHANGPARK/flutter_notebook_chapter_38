@@ -198,7 +198,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               padding: const EdgeInsets.only(
                 left: 16,
                 top: 16,
-                bottom: 16,
+                bottom: 6,
               ),
               child: SizedBox(
                 height: 32,
@@ -222,17 +222,20 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               ),
             ),
             Expanded(
-              child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 16,
-                    mainAxisSpacing: 16,
-                  ),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      color: Colors.brown,
-                    );
-                  }),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                    ),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        color: Colors.brown,
+                      );
+                    }),
+              ),
             ),
           ],
         ),
