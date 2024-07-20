@@ -160,8 +160,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 4,
+                      horizontal: 16,
+                      vertical: 8,
                     ),
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -171,7 +171,10 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     ),
                     child: Row(
                       children: [
-                        Icon(Icons.tune),
+                        Icon(
+                          Icons.tune,
+                          size: 16,
+                        ),
                         Text(
                           "Weekly",
                         ),
