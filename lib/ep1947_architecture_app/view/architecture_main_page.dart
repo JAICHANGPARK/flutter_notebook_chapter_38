@@ -194,21 +194,30 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 32,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: tabs.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    decoration: BoxDecoration(
-                      color: index == 0 ? Colors.brown[100] : Colors.grey[200],
-                      borderRadius: BorderRadius.circular(24),
-
-                    ),
-                    child: Center(child: Text("${tabs[index]}")),
-                  );
-                },
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                top: 16,
+                bottom: 16,
+              ),
+              child: SizedBox(
+                height: 32,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: tabs.length,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 24,
+                      ),
+                      decoration: BoxDecoration(
+                        color: index == 0 ? Colors.brown[100] : Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Center(child: Text("${tabs[index]}")),
+                    );
+                  },
+                ),
               ),
             ),
           ],
