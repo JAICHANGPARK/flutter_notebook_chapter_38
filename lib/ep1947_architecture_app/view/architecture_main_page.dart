@@ -197,8 +197,11 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             SizedBox(
               height: 32,
               child: ListView.builder(
+                itemCount: tabs.length,
                 itemBuilder: (context, index) {
-                  return Container();
+                  return Container(
+                    child: Text("${tabs[index]}"),
+                  );
                 },
               ),
             ),
