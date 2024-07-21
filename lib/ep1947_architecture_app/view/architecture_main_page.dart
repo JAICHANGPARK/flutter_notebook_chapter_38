@@ -234,7 +234,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   children: [
                     StaggeredGridTile.count(
                       crossAxisCellCount: 2,
-                      mainAxisCellCount: 0,
+                      mainAxisCellCount: 2,
                       child: Container(
                         color: Colors.blue,
                       ),
