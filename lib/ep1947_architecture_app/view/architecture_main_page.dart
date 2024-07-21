@@ -229,8 +229,8 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 child: MasonryGridView.count(
                   itemCount: 16,
                   crossAxisCount: 2,
-                  mainAxisSpacing: 8,
-                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
                   itemBuilder: (context, index) {
                     print("${index} : ${index % 2}");
                     return Container(
@@ -240,8 +240,14 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                       child: Column(
                         children: [
                           Expanded(
-                            child: Container(),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.brown,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
                           ),
+                          Gap(8),
                           Row(
                             children: [
                               CircleAvatar(
