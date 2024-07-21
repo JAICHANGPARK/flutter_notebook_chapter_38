@@ -227,14 +227,17 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: MasonryGridView.count(
-                  itemCount: 10,
+                  itemCount: 16,
                   crossAxisCount: 2,
-                  mainAxisSpacing: 4,
-                  crossAxisSpacing: 4,
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
                   itemBuilder: (context, index) {
                     return Container(
                       color: Colors.blue,
-                      height: index % 2 == 0 ? 150 : 300,
+                      height: index % 2 == 0 ? 154 : 316,
+                      child: Center(
+                        child: CircleAvatar(),
+                      ),
                     );
                   },
                 ),
