@@ -232,11 +232,15 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   mainAxisSpacing: 8,
                   crossAxisSpacing: 8,
                   itemBuilder: (context, index) {
+                    print("${index} : ${index % 2}");
                     return Container(
                       color: Colors.blue,
-                      height: index % 2 == 0 ? 154 : 316,
+                      // height: 100,
+                      height: (index ) % 2 == 0 ? 154 : 316,
                       child: Center(
-                        child: CircleAvatar(),
+                        child: CircleAvatar(
+                          child: Text("$index"),
+                        ),
                       ),
                     );
                   },
