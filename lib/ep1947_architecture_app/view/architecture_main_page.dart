@@ -225,8 +225,13 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: StaggeredGrid.count(
+                child: MasonryGridView.count(
                   crossAxisCount: 2,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Tile(
+
+                    );
+                  },
                 ),
                 // child: GridView.builder(
                 //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
