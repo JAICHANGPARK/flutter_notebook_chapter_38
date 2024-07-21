@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:gap/gap.dart';
 
 class ArchitectureMainPage extends StatefulWidget {
@@ -224,19 +225,22 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                      childAspectRatio: 1.1,
-                    ),
-
-                    itemBuilder: (context, index) {
-                      return Container(
-                        color: Colors.brown,
-                      );
-                    }),
+                child: StaggeredGrid.count(
+                  crossAxisCount: 2,
+                ),
+                // child: GridView.builder(
+                //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //       crossAxisCount: 2,
+                //       crossAxisSpacing: 16,
+                //       mainAxisSpacing: 16,
+                //       childAspectRatio: 1.1,
+                //     ),
+                //
+                //     itemBuilder: (context, index) {
+                //       return Container(
+                //         color: Colors.brown,
+                //       );
+                //     }),
               ),
             ),
           ],
