@@ -226,27 +226,62 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                // child: MasonryGridView.count(
-                //   crossAxisCount: 2,
-                //   itemBuilder: (BuildContext context, int index) {
-                //    return Container(
-                //      color: Colors.brown,
-                //    );
+                child: StaggeredGrid.count(
+                  crossAxisCount: 4,
+                  mainAxisSpacing: 8,
+                  crossAxisSpacing: 8,
+
+                  children: [
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 0,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 1,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 1,
+                      mainAxisCellCount: 1,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+                    StaggeredGridTile.count(
+                      crossAxisCellCount: 4,
+                      mainAxisCellCount: 2,
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
+                ),
+                // child: GridView.builder(
+                //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //     crossAxisCount: 2,
+                //     crossAxisSpacing: 16,
+                //     mainAxisSpacing: 16,
+                //     childAspectRatio: 1.1,
+                //   ),
+                //   itemBuilder: (context, index) {
+                //     return Container(
+                //       color: Colors.brown,
+                //     );
                 //   },
                 // ),
-                child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 16,
-                    mainAxisSpacing: 16,
-                    childAspectRatio: 1.1,
-                  ),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      color: Colors.brown,
-                    );
-                  },
-                ),
               ),
             ),
           ],
