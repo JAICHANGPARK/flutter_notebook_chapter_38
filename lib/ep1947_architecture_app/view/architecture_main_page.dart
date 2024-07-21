@@ -234,19 +234,19 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 //    );
                 //   },
                 // ),
-                // child: GridView.builder(
-                //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                //       crossAxisCount: 2,
-                //       crossAxisSpacing: 16,
-                //       mainAxisSpacing: 16,
-                //       childAspectRatio: 1.1,
-                //     ),
-                //
-                //     itemBuilder: (context, index) {
-                //       return Container(
-                //         color: Colors.brown,
-                //       );
-                //     }),
+                child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                    childAspectRatio: 1.1,
+                  ),
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.brown,
+                    );
+                  },
+                ),
               ),
             ),
           ],
