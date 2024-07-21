@@ -236,11 +236,25 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                     return Container(
                       color: Colors.blue,
                       // height: 100,
-                      height: (index ) % 2 == 0 ? 154 : 316,
-                      child: Center(
-                        child: CircleAvatar(
-                          child: Text("$index"),
-                        ),
+                      height: (index) % 2 == 0 ? 154 : 316,
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 12,
+                              ),
+                              Text("Dream walker"),
+                              Icon(
+                                Icons.location_on_outlined,
+                                size: 12,
+                              ),
+                            ],
+                          )
+                        ],
                       ),
                     );
                   },
