@@ -247,7 +247,14 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                               CircleAvatar(
                                 radius: 12,
                               ),
-                              Text("Dream walker"),
+                              Text(
+                                "Dream walker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              ),
+                              Spacer(),
                               Icon(
                                 Icons.location_on_outlined,
                                 size: 12,
