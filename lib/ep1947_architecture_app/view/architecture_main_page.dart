@@ -234,7 +234,7 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                   itemBuilder: (context, index) {
                     print("${index} : ${index % 2}");
                     return Container(
-                      color: Colors.blue,
+                      // color: Colors.blue,
                       // height: 100,
                       height: (index) % 2 == 0 ? 154 : 316,
                       child: Column(
