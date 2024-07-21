@@ -252,6 +252,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                                 Icons.location_on_outlined,
                                 size: 12,
                               ),
+                              Text(
+                                "348",
+                              )
                             ],
                           )
                         ],
