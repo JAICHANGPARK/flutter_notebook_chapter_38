@@ -245,8 +245,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 12,
+                                radius: 8,
                               ),
+                              Gap(4),
                               Text(
                                 "Dream walker",
                                 style: TextStyle(
