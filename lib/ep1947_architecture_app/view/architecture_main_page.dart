@@ -226,49 +226,61 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: StaggeredGrid.count(
-                  crossAxisCount: 4,
-                  mainAxisSpacing: 8,
-                  crossAxisSpacing: 8,
-
-                  children: [
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 2,
-                      child: Container(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 1,
-                      child: Container(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 1,
-                      child: Container(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 1,
-                      mainAxisCellCount: 1,
-                      child: Container(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    StaggeredGridTile.count(
-                      crossAxisCellCount: 4,
-                      mainAxisCellCount: 2,
-                      child: Container(
-                        color: Colors.blue,
-                      ),
-                    )
-                  ],
+                child: MasonryGridView.count(
+                  itemCount: 10,
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 4,
+                  crossAxisSpacing: 4,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.blue,
+                      height: index % 2 == 0 ? 150 : 300,
+                    );
+                  },
                 ),
+                // child: StaggeredGrid.count(
+                //   crossAxisCount: 4,
+                //   mainAxisSpacing: 8,
+                //   crossAxisSpacing: 8,
+                //
+                //   children: [
+                //     StaggeredGridTile.count(
+                //       crossAxisCellCount: 2,
+                //       mainAxisCellCount: 2,
+                //       child: Container(
+                //         color: Colors.blue,
+                //       ),
+                //     ),
+                //     StaggeredGridTile.count(
+                //       crossAxisCellCount: 2,
+                //       mainAxisCellCount: 1,
+                //       child: Container(
+                //         color: Colors.blue,
+                //       ),
+                //     ),
+                //     StaggeredGridTile.count(
+                //       crossAxisCellCount: 1,
+                //       mainAxisCellCount: 1,
+                //       child: Container(
+                //         color: Colors.blue,
+                //       ),
+                //     ),
+                //     StaggeredGridTile.count(
+                //       crossAxisCellCount: 1,
+                //       mainAxisCellCount: 1,
+                //       child: Container(
+                //         color: Colors.blue,
+                //       ),
+                //     ),
+                //     StaggeredGridTile.count(
+                //       crossAxisCellCount: 4,
+                //       mainAxisCellCount: 2,
+                //       child: Container(
+                //         color: Colors.blue,
+                //       ),
+                //     )
+                //   ],
+                // ),
                 // child: GridView.builder(
                 //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 //     crossAxisCount: 2,
