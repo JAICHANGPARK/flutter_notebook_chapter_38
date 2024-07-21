@@ -226,14 +226,14 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: MasonryGridView.count(
-                  crossAxisCount: 2,
-                  itemBuilder: (BuildContext context, int index) {
-                   return Container(
-                     color: Colors.brown,
-                   );
-                  },
-                ),
+                // child: MasonryGridView.count(
+                //   crossAxisCount: 2,
+                //   itemBuilder: (BuildContext context, int index) {
+                //    return Container(
+                //      color: Colors.brown,
+                //    );
+                //   },
+                // ),
                 // child: GridView.builder(
                 //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 //       crossAxisCount: 2,
