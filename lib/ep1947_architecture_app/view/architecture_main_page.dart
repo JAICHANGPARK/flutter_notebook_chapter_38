@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
 import 'package:gap/gap.dart';
 
 class ArchitectureMainPage extends StatefulWidget {
@@ -228,9 +229,9 @@ class _ArchitectureMainPageState extends State<ArchitectureMainPage> {
                 child: MasonryGridView.count(
                   crossAxisCount: 2,
                   itemBuilder: (BuildContext context, int index) {
-                    return Tile(
-
-                    );
+                   return Container(
+                     color: Colors.brown,
+                   );
                   },
                 ),
                 // child: GridView.builder(
