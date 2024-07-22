@@ -41,7 +41,15 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                   ),
                 ],
               ),
-              Text("Payment\nMagic"),
+              Gap(42),
+              Text(
+                "Payment\nMagic",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 42,
+                ),
+                textAlign: TextAlign.center,
+              ),
               Text(
                 "The modern capital platform for\nGrowth on your terms",
               ),
