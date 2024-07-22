@@ -55,13 +55,22 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                 "The modern capital platform for\nGrowth on your terms",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  
                   fontSize: 24,
                 ),
               ),
               Container(
-                decoration: BoxDecoration(),
-                child: Text("Open Account"),
+                padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+                child: Text(
+                  "Open Account",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
               ),
               Text("*No Credit Score Required Any Further"),
               Spacer(),
