@@ -1,6 +1,8 @@
 
-void main() {
+import 'package:flutter/material.dart';
 
+void main() {
+  runApp(PaymentsApp());
 }
 
 class PaymentsApp extends StatelessWidget {
