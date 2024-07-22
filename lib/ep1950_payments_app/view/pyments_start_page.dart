@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class PaymentsStartPage extends StatefulWidget {
   const PaymentsStartPage({super.key});
@@ -26,6 +27,7 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                       fontSize: 24,
                     ),
                   ),
+                  Gap(8),
                   Icon(
                     Icons.check_circle,
                     size: 16,
