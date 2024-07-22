@@ -29,9 +29,21 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                 ),
               ],
             ),
-            Text("Payment"),
-            Text("Magic"),
-            Text("The modern capital platform for\nGrowth on your terms",),
+            Text("Payment\nMagic"),
+            Text(
+              "The modern capital platform for\nGrowth on your terms",
+            ),
+            Container(
+              decoration: BoxDecoration(),
+              child: Text("Open Account"),
+            ),
+            Text("*No Credit Score Required Any Further"),
+            Spacer(),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            )
           ],
         ),
       ),
