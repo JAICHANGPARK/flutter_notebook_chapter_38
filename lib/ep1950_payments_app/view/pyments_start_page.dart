@@ -63,9 +63,10 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                   top: 24,
                   bottom: 16,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                padding: EdgeInsets.symmetric(horizontal: 42, vertical: 16),
                 decoration: BoxDecoration(
                   color: Colors.black,
+                  borderRadius: BorderRadius.circular(32),
                 ),
                 child: Text(
                   "Open Account",
@@ -81,6 +82,29 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Text(
+                            "For Partners",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text("Owners On Your Platform.")
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
