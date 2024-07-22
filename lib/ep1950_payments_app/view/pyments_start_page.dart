@@ -12,7 +12,17 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
 
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
