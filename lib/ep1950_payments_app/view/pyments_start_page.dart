@@ -88,11 +88,14 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                 child: Row(
                   children: [
                     Container(
+                      height: 64,
+                      width: 64,
                       decoration: BoxDecoration(
                         color: Colors.yellow,
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
+                    Gap(12),m
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
