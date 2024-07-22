@@ -59,6 +59,10 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                 ),
               ),
               Container(
+                margin: EdgeInsets.only(
+                  top: 24,
+                  bottom: 16,
+                ),
                 padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                 decoration: BoxDecoration(
                   color: Colors.black,
