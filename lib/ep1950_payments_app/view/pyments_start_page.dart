@@ -28,7 +28,10 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                   ),
                 ),
               ],
-            )
+            ),
+            Text("Payment"),
+            Text("Magic"),
+            Text("The modern capital platform for\nGrowth on your terms",),
           ],
         ),
       ),
