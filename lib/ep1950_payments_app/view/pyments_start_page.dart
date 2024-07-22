@@ -151,7 +151,8 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                     )
                   ],
                 ),
-              )
+              ),
+              Gap(32),
             ],
           ),
         ),
