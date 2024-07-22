@@ -82,7 +82,9 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
                 ),
+                padding: EdgeInsets.all(16),
                 child: Row(
                   children: [
                     Container(
@@ -93,6 +95,7 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                     ),
                     Expanded(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "For Partners",
@@ -100,6 +103,7 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+                          Gap(8),
                           Text("Owners On Your Platform.")
                         ],
                       ),
