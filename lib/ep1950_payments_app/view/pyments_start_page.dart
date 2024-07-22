@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PaymentsStartPage extends StatefulWidget {
   const PaymentsStartPage({super.key});
 
@@ -17,7 +16,17 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
           children: [
             Row(
               children: [
-
+                Text("Pay"),
+                Icon(
+                  Icons.check_circle,
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.menu,
+                  ),
+                ),
               ],
             )
           ],
