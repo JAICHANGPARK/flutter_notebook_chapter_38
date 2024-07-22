@@ -95,7 +95,7 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    Gap(12),m
+                    Gap(12),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,6 +104,44 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                             "For Partners",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                          Gap(8),
+                          Text("Owners On Your Platform.")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Gap(16),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                padding: EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    Gap(12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "For Enterprises",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
                             ),
                           ),
                           Gap(8),
