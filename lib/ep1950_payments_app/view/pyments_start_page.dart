@@ -55,8 +55,8 @@ class _PaymentsStartPageState extends State<PaymentsStartPage> {
                 "The modern capital platform for\nGrowth on your terms",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 54,
+                  
+                  fontSize: 24,
                 ),
               ),
               Container(
